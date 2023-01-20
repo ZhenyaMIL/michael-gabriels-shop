@@ -1,0 +1,1 @@
+export default {"id":"136406728954/settings","themeId":"136406728954","moveToCart":false,"loginRequired":false,"sharedWishlistPageHandle":"shared-wishlist","wishlistPageHandle":"wishlist","klaviyo":false,"facebookPixel":false,"googleAnalytics":false,"appmateAnalytics":true}

@@ -1,0 +1,48 @@
+<div class="custom-fields-section v2">
+  
+    {% if resource_type == "products" %}
+    <div class="custom-fields-section__products">
+      {% for block in blocks %}
+      {% if block.type contains "cf_" %}
+      <div {{ block.shopify_attributes }} class="custom-fields-section__item
+                  custom-fields-section__item--{{ block.type }}
+                  custom-fields-section__item--{{ block.type }}--{{ block.settings.key }}
+                  {% if block.settings.cols != blank %}{{ "cf-width-" | append: block.settings.cols | append: "-of-12" }}{% else %}cf-width-12-of-12{% endif %}">
+        {% case block.settings.key %}
+                  {% when "custom_fields.diamond_information" %}
+            {% render "custom_fields.products.diamond_information", block:block %}
+                  {% when "custom_fields.product_information" %}
+            {% render "custom_fields.products.product_information", block:block %}
+                  {% when "reviews.rating_count" %}
+            {% render "reviews.products.rating_count", block:block %}
+                  {% when "reviews.rating" %}
+            {% render "reviews.products.rating", block:block %}
+                  {% when "custom_fields.gemstone_shape" %}
+            {% render "custom_fields.products.gemstone_shape", block:block %}
+                  {% when "my_fields.product_details" %}
+            {% render "my_fields.products.product_details", block:block %}
+                  {% when "descriptors.subtitle" %}
+            {% render "descriptors.products.subtitle", block:block %}
+                  {% when "custom.engagement_ring_stone_details" %}
+            {% render "custom.products.engagement_ring_stone_details", block:block %}
+                  {% when "custom_fields.accordion_widget_1" %}
+            {% render "custom_fields.products.accordion_widget_1", block:block %}
+                  {% when "custom_fields.columns_widget_test" %}
+            {% render "custom_fields.products.columns_widget_test", block:block %}
+                  {% when "custom_fields.additional-information" %}
+            {% render "custom_fields.products.additional-information", block:block %}
+                  {% when "custom.style" %}
+            {% render "custom.products.style", block:block %}
+                  {% when "custom.size" %}
+            {% render "custom.products.size", block:block %}
+                  {% when "custom_fields.shapes" %}
+            {% render "custom_fields.products.shapes", block:block %}
+        
+        {% endcase %}
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  
+</div>

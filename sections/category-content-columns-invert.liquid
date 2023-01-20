@@ -1,0 +1,233 @@
+<section id="section-{{ section.id }}" class="Section--spacingNormal">
+    <div class="ContainerCentered ContainerFlex">
+        <div class="WideColumn">
+            {% render 'banner-block' %}
+        </div>
+        <div class="ThinColumn">
+            <div class="ThinColumnWrap ColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+                {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                    <div class="ContentWrapper ContentColumn">
+                        {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+                            <header class="SectionHeader TextCenter">
+                                {%- if section.settings.subheading != blank -%}
+                                    <h3 class="Header__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                                {%- endif -%}
+
+                                {%- if section.settings.title != blank -%}
+                                    <p class="Header__Heading Heading u-h1">{{ section.settings.title | escape }}</p>
+                                {%- endif -%}
+                                {%- if section.settings.content != blank -%}
+                                    <div class="Header__Description">
+                                        {{ section.settings.content }}
+                                    </div>
+                                {%- endif -%}
+                                <div class="Header__Icons">
+                                    {% for block in section.blocks %}
+                                        {% assign icon = block.settings.icon %}
+                                        <div class="IconLink">
+                                            <div class="IconLink__Icon">{%- render 'icon', icon: icon -%}
+                                            </div>
+                                            <a href="{{ block.settings.link_url }}"
+                                               class="Link IconLink__Link">{{ block.settings.link_title | escape }}</a>
+
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </header>
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.ContainerCentered--Flex {
+    display: flex;
+}
+.WideColumn {
+    flex-grow: 1;
+}
+.ThinColumn {
+    flex-grow: 1;
+}
+
+.SectionHeader {
+    margin-bottom: 25px;
+}
+.SectionHeader.SectionHeader--MiddleIndent {
+    margin-bottom: 30px;
+}
+.ThinColumnWrap {
+    width: 100%;
+    padding: 40px 10%;
+
+}
+.ColumnWrap--Background {
+    background-color: #F6F6F6;
+    padding: 20px 40px 10px 40px;
+}
+
+@media (min-width: 981px) {
+    .ColumnWrap--Background {
+        padding: 40px 80px 20px 80px;
+    }
+    .ThinColumnWrap {
+        width: 100%;
+        padding: 40px 15%;
+
+    }
+}
+.Header__Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+}
+.IconLink__Icon {
+    height: 42px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.IconLink__Icon .Icon {
+    height: 42px;
+    width: 100%;
+    fill: #B5945E;
+}
+
+.IconLink {
+    display: flex;
+    flex-direction: column;
+    padding: 0 35px;
+}
+.IconLink__Link {
+    text-transform: uppercase;
+}
+.SectionHeader__Link {
+    padding: 40px 0;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Content Columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Column 1 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Column 1  Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column 1 Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+       "id": "background",
+       "label": "Show content with background",
+       "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Column 2 Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Column 2 Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "r_subheading",
+      "label": "Column 2 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "r_title",
+      "label": "Heading",
+      "default": "Column 2  Tell your story"
+    },
+    {
+      "type": "textarea",
+      "id": "r_content",
+      "label": "Column 2 Text",
+      "default": "Add your own custom content to give more information about your store, availability details..."
+    },
+    {
+      "type": "text",
+      "id": "r_link_title",
+      "label": "Link Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "r_link",
+      "label": "Button Title"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Banner text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+    "max_blocks": 3,
+    "blocks": [
+    {
+      "name": "Icon",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_title",
+          "label": "Link title",
+          "default": "Link title"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name"
+        }
+      ]
+    }
+    ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

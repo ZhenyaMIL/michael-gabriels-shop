@@ -1,0 +1,101 @@
+<section id="section-{{ section.id }}" class="">
+  {% render 'banner-fullscreen' %}
+  <div class="Container">
+    <header class="PageHeader">
+      <div class="SectionHeader SectionHeader--center">
+        <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+      </div>
+    </header>
+
+    <div class="PageContent PageContent--narrow Rte PageContent--Showroom">
+      {{ page.content }}
+    </div>
+  </div>
+  <div class="Container BlockIdent">
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/michael-gabriels-shop/showroom" style="min-width:320px;height:750px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Top section image",
+      "info": "1920 x 800px .png recommended"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content",
+      "default": "<p>Content for section</p>"
+    },
+    {
+      "type": "text",
+      "id": "link_title",
+      "label": "Link Title",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Banner content alignment",
+      "options": [
+        {
+          "value": "Left",
+          "label": "Left"
+        },
+        {
+          "value": "Right",
+          "label": "Right"
+        },
+        {
+          "value": "Center",
+          "label": "Center"
+        }
+      ],
+      "default": "Left"
+    },
+    {
+      "type": "select",
+      "id": "content_color",
+      "label": "Content color",
+      "options": [
+        {
+          "value": "Dark",
+          "label": "Dark"
+        },
+        {
+          "value": "Light",
+          "label": "Light"
+        }
+      ],
+      "default": "Light"
+    }
+  ]
+}
+{% endschema %}
+{% javascript %}
+{% endjavascript %}

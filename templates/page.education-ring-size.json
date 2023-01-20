@@ -1,0 +1,170 @@
+{
+  "sections": {
+    "banner-education-ring-size": {
+      "type": "banner-education-ring-size",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-ring-sizes-1920x1080.jpg",
+        "subheading": "Find your",
+        "title": "Ring Size Guide",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "mosaic-blocks-ring-size": {
+      "type": "mosaic-blocks-ring-size",
+      "blocks": {
+        "54d4cfcd-d466-443a-bfcb-9188b4a7a84b": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tile-section1-cols6-690x500.jpg",
+            "subheading": "",
+            "title": "Request a free ring sizer",
+            "content": "<p>We would love to send you a complimentary ring sizer so you can find your size at home. Request a ring sizer, fill out your info below, and we will send you a ring sizer within a few days. <\/p>",
+            "link_title": "Request ring sizer",
+            "link": "shopify:\/\/pages\/request-a-free-ring-sizer"
+          }
+        },
+        "261a8ea8-43d0-4ca7-b41d-8ed7dd15688e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tile-section2-cols6-690x690.jpg",
+            "subheading": "",
+            "title": "Find your measurement with our ring size guide",
+            "content": "<p>When shopping for rings online, it’s important to have the accurate ring size. If you want to measure your size immediately, print out our Ring Sizing Guide. Before printing, make sure the page scaling is properly set. Then follow the instructions to measure your finger or place a ring that already fits well on the chart. Another easy way is to measure your finger with a piece of string and match its length to our size guide. With either method, it’s important to use the exact same finger you plan to purchase the ring for. <\/p>",
+            "link_title": "Download the guide",
+            "link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0569\/6136\/8231\/files\/MG-ring-size-guide.pdf?v=1628633744"
+          }
+        },
+        "ba12d217-3048-41a5-b40c-247d3c24c888": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tile-section3-cols6-690x690.jpg",
+            "subheading": "",
+            "title": "Keep in Mind Our Helpful hints",
+            "content": "<p>1. Measure the finger you plan to wear the ring on. Keep in mind that <br\/>our dominant hands are usually slightly larger!<br\/>2. Fingers expand in the heat and contract in the cold. If your finger <br\/>is not normal body temperature when you measure it, it may not fit <br\/>correctly. <br\/>3. If you can, measure your finger at the end of the day. They tend to <br\/>change sizes as the day progresses.<br\/>4. The average ring size for women is 6 to 6.5, and the average ring <br\/>size for men is 9 to 10. If you don’t know your partner’s ring size and <br\/>are hoping to surprise them, select one of these standards!<br\/>5. If you have a larger knuckle than your finger, take two measurements <br\/>and choose something in between to ensure that your ring will not be too<br\/> loose or shift around. <\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "54d4cfcd-d466-443a-bfcb-9188b4a7a84b",
+        "261a8ea8-43d0-4ca7-b41d-8ed7dd15688e",
+        "ba12d217-3048-41a5-b40c-247d3c24c888"
+      ],
+      "settings": {}
+    },
+    "banner-fullscreen-size-chart": {
+      "type": "banner-fullscreen-size-chart",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/section-ring-sizes-1920x600.jpg",
+        "subheading": "",
+        "title": "International Ring Size Chart",
+        "button_title": "View international size chart",
+        "content": "<p>Content If you are located overseas, please view our international size guide for accurate ring size.for section<\/p>",
+        "content_right": false
+      }
+    },
+    "education-top-favorite": {
+      "type": "education-top-favorite",
+      "blocks": {
+        "f067637a-45bd-4de8-9a73-de441501797d": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style01.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Delicate Halo Ring",
+            "url": ""
+          }
+        },
+        "67ea4f00-a76e-4bdf-bc7e-a83874e40e26": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style02.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Floating Gem Ring",
+            "url": ""
+          }
+        },
+        "ee249dff-bb4c-43a9-ac6e-e2206ff5f573": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style03.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Vintage Ring",
+            "url": ""
+          }
+        },
+        "b130df32-6f97-4217-9dd5-420ee2ba2bb7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style04.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Solitaire Ring",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "f067637a-45bd-4de8-9a73-de441501797d",
+        "67ea4f00-a76e-4bdf-bc7e-a83874e40e26",
+        "ee249dff-bb4c-43a9-ac6e-e2206ff5f573",
+        "b130df32-6f97-4217-9dd5-420ee2ba2bb7"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Our Top Favorites",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "education-get-started": {
+      "type": "education-get-started",
+      "blocks": {
+        "178871db-e11e-4f93-8fa7-c3beddf0acc0": {
+          "type": "block",
+          "settings": {
+            "subtitle": "Shop Women's",
+            "title": "Wedding Rings",
+            "content": "",
+            "url_title": "Shop Now",
+            "url": ""
+          }
+        },
+        "873e7b24-90cc-4991-9f20-43d8e32b0a19": {
+          "type": "block",
+          "settings": {
+            "subtitle": "Shop Men's",
+            "title": "Wedding Rings",
+            "content": "",
+            "url_title": "Shop Now",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "178871db-e11e-4f93-8fa7-c3beddf0acc0",
+        "873e7b24-90cc-4991-9f20-43d8e32b0a19"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rings-transparent.png",
+        "subheading": "",
+        "title": "Get Started",
+        "content": "",
+        "background": true
+      }
+    }
+  },
+  "order": [
+    "banner-education-ring-size",
+    "mosaic-blocks-ring-size",
+    "banner-fullscreen-size-chart",
+    "education-top-favorite",
+    "education-get-started"
+  ]
+}

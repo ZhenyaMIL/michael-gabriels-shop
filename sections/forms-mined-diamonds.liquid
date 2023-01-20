@@ -1,0 +1,99 @@
+<section id="section-{{ section.id }}" class="section-{{ section.id }}">
+    <div class="SectionWrap">
+        <div class="ContainerCentered">
+            <div class="Forms">
+                {% for block in section.blocks %}
+                    <div class="Forms__Item BlockIndent">
+                        <div class="Forms__Title Heading">{{ block.settings.title }}</div>
+                        <div class="Forms__Content">
+                            {{ block.settings.content }}
+                        </div>
+                        <div class="Forms__Link"><a class="Link Link--underline Link--center" href="{{ block.settings.url }}">{{ block.settings.url_title }}</a></div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .SectionWrap {
+        padding: 60px 0 40px;
+    }
+    @media (min-width: 981px) {
+        .SectionWrap {
+            padding: 100px 0 60px;
+        }
+    }
+    .Forms {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .Forms__Item {
+        flex-basis: 300px;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        flex-grow: 1;
+        text-align: center;
+    }
+      @media (min-width: 981px) {
+        .Forms__Item {
+            flex-basis: 210px;
+        }
+    }
+    .Forms__Title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+  .Forms__Content {
+      margin-bottom: 20px;
+  }
+
+</style>
+{% schema %}
+{
+  "name": "Forms",
+  "settings": [
+  ],
+  "max_blocks": 4,
+  "blocks": [
+    {
+      "name": "Form",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content</p>"
+        },
+        {
+          "type": "text",
+          "id": "url_title",
+          "label": "Link title",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,110 @@
+{% if product.metafields.custom_fields["shapes"] != blank %}
+  <div class="custom-field custom-field__shapes custom-field__type--product-reference">
+    <h2 class="custom-field--title">Diamond Shapes</h2>
+    <div class="custom-field--value" style="position: relative;">
+    {% assign product_refs = product.metafields.custom_fields["shapes"] | split: "|" %}
+      <ul class="product-shapes">
+        {% for product_handle in product_refs limit:11 %}
+          <li class="product-shapes--item">
+            {% assign product_ref = all_products[product_handle] %}
+            {% assign shape = product_ref.metafields.custom_fields.gemstone_shape %}
+            <a class="product-shapes--link product-shapes--link__{{ shape | downcase | replace: " ", "-" }}" data-tooltip="{{ shape }}" href="{{ product_ref.url }}">
+              <span class="product-shapes--title">{{ product_ref.title }}</span>
+            </a>
+             {% comment %}{{ product_ref.title | link_to: product_ref.url }}
+             <span  class="shape">{{ shape }}</span>
+            <span class="subtitle">{{ product_ref.metafields.descriptors.subtitle}}</span> {% endcomment %}
+          </li>
+        {% endfor %}
+      </ul>
+
+        <div style="position: absolute; right: -26px; top: 0; width: 26px; opacity: 0.3; cursor: pointer"
+             data-action="open-modal"
+             aria-controls="modal-shapes"
+        >
+            {%- render 'icon' with 'question-mark' -%}
+        </div>
+    </div>
+  </div>
+{% endif %}
+<style>
+.custom-field--title {
+    margin-bottom: 8px;
+}
+.product-shapes {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.product-shapes--item {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+}
+.product-shapes--link {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-size: cover;
+}
+.product-shapes--link.active {
+
+}
+.product-shapes--link.active:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    border: 1px solid currentColor !important;
+}
+
+.product-shapes--title {
+    visibility: hidden;
+    display: none;
+}
+.product-shapes--link {
+}
+.product-shapes--link__round {
+    background-image: url('{{ 'round.svg' | asset_url }} ');
+}
+.product-shapes--link__princess {
+    background-image: url('{{ 'princess.svg' | asset_url }} ');       
+}
+  .product-shapes--link__elongated-cushion {
+    background-image: url('{{ 'elongated-cushion.svg' | asset_url }} ');      
+}
+.product-shapes--link__oval {
+    background-image: url('{{ 'oval-vertical.svg' | asset_url }} ');
+}
+.product-shapes--link__emerald {
+    background-image: url('{{ 'emerald-vertical.svg' | asset_url }} ');
+}
+.product-shapes--link__cushion {
+    background-image: url('{{ 'cushion.svg' | asset_url }} ');
+}
+.product-shapes--link__radiant {
+    background-image: url('{{ 'radiant.svg' | asset_url }} ');
+}
+.product-shapes--link__pear {
+    background-image: url('{{ 'pear.svg' | asset_url }} ');
+}
+.product-shapes--link__heart {
+    background-image: url('{{ 'heart.svg' | asset_url }} ');
+}
+.product-shapes--link__marquise {
+    background-image: url('{{ 'vertical.svg' | asset_url }} ');
+}
+.product-shapes--link__asscher {
+    background-image: url('{{ 'asscher.svg' | asset_url }} ');
+}
+.product-shapes--link__trillion {
+    background-image: url('{{ 'trillion.svg' | asset_url }} ');
+}
+</style>

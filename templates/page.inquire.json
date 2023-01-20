@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "main": {
+      "type": "page-inquire-template",
+      "blocks": {
+        "98f7265b-9eec-4f6b-8d5c-45a7acedbafc": {
+          "type": "text",
+          "settings": {
+            "title": "First Name",
+            "style": "FieldHalf"
+          }
+        },
+        "5b329c0f-d774-4ab7-afcb-cf5895e007b0": {
+          "type": "text",
+          "settings": {
+            "title": "Last Name",
+            "style": "FieldHalf m-l"
+          }
+        },
+        "46854c44-9f28-4ed8-a491-10ee77048916": {
+          "type": "email",
+          "settings": {
+            "title": "Email",
+            "style": "FieldHalf"
+          }
+        },
+        "26f26407-4cf3-45bf-a0d6-cc6d219e64d1": {
+          "type": "telephone",
+          "settings": {
+            "title": "Phone (optional)",
+            "style": "FieldHalf m-l"
+          }
+        },
+        "72b4ba7c-9005-4648-9eb2-1445fc5cd916": {
+          "type": "radio",
+          "settings": {
+            "title": "Purchase type",
+            "style": "Radio-Style LabelHeading",
+            "label-one": "I am purchasing for a loved one",
+            "label-two": "I am purchasing for myself",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": ""
+          }
+        },
+        "e9535504-bb56-4723-8435-478ac21f34df": {
+          "type": "select",
+          "settings": {
+            "title": "Discretion details",
+            "style": "Select-Style",
+            "disable": "Please Select",
+            "label-one": "It is a surprise!",
+            "label-two": "Working together as a couple",
+            "label-three": "He\/She has an idea",
+            "label-four": "Select option four",
+            "label-five": "",
+            "label-six": "",
+            "label-seven": "",
+            "label-eight": "",
+            "label-nine": "",
+            "label-ten": "",
+            "label-eleven": "",
+            "label-twelve": "",
+            "label-thirteen": "",
+            "label-fourteen": "",
+            "label-fifteen": "",
+            "label-sixteen": "",
+            "label-seventeen": "",
+            "label-eighteen": "",
+            "label-nineteen": "",
+            "label-twenty": ""
+          }
+        },
+        "f74235a0-eedb-417c-886b-a907fd2a7235": {
+          "type": "radio",
+          "settings": {
+            "title": "Inquiry type",
+            "style": "Radio-Style LabelHeading",
+            "label-one": "Jewelry",
+            "label-two": "Loose diamonds",
+            "label-three": "",
+            "label-four": "",
+            "label-five": "",
+            "label-six": ""
+          }
+        },
+        "5aa1ea8e-92b0-4367-9593-caad141de4ee": {
+          "type": "select",
+          "settings": {
+            "title": "What type of jewelry are you seeking?",
+            "style": "Select-Style",
+            "disable": "Please Select",
+            "label-one": "Engagement Ring",
+            "label-two": "Wedding Band",
+            "label-three": "Fashion Ring",
+            "label-four": "Earrings",
+            "label-five": "Studs",
+            "label-six": "Necklace",
+            "label-seven": "Bracelet",
+            "label-eight": "Men's jewelry",
+            "label-nine": "Other",
+            "label-ten": "",
+            "label-eleven": "",
+            "label-twelve": "",
+            "label-thirteen": "",
+            "label-fourteen": "",
+            "label-fifteen": "",
+            "label-sixteen": "",
+            "label-seventeen": "",
+            "label-eighteen": "",
+            "label-nineteen": "",
+            "label-twenty": ""
+          }
+        },
+        "9019c341-81d6-42f3-b0e5-1fe9350d61d5": {
+          "type": "select",
+          "settings": {
+            "title": "Min carat weight",
+            "style": "Select-Style",
+            "disable": "Please Select",
+            "label-one": "0.25",
+            "label-two": "0.50",
+            "label-three": "0.75",
+            "label-four": "1.00",
+            "label-five": "1.25",
+            "label-six": "1.50",
+            "label-seven": "1.75",
+            "label-eight": "2.00",
+            "label-nine": "2.25",
+            "label-ten": "2.50",
+            "label-eleven": "2.75",
+            "label-twelve": "3.00",
+            "label-thirteen": "3.25",
+            "label-fourteen": "3.50",
+            "label-fifteen": "3.75",
+            "label-sixteen": "4.00",
+            "label-seventeen": "4.25",
+            "label-eighteen": "4.50",
+            "label-nineteen": "4.75",
+            "label-twenty": "5.00"
+          }
+        },
+        "543a755c-11a3-465c-8e7d-b78d52a7ecb4": {
+          "type": "select",
+          "settings": {
+            "title": "Max carat weight",
+            "style": "Select-Style",
+            "disable": "Please Select",
+            "label-one": "0.25",
+            "label-two": "0.50",
+            "label-three": "0.75",
+            "label-four": "1.00",
+            "label-five": "1.25",
+            "label-six": "1.50",
+            "label-seven": "1.75",
+            "label-eight": "2.00",
+            "label-nine": "2.25",
+            "label-ten": "2.50",
+            "label-eleven": "2.75",
+            "label-twelve": "3.00",
+            "label-thirteen": "3.25",
+            "label-fourteen": "3.50",
+            "label-fifteen": "3.75",
+            "label-sixteen": "4.00",
+            "label-seventeen": "4.25",
+            "label-eighteen": "4.50",
+            "label-nineteen": "4.75",
+            "label-twenty": "5.0+"
+          }
+        },
+        "c777ed2f-9d52-4f59-ab7e-88eb3c570e0c": {
+          "type": "checkbox",
+          "settings": {
+            "title": "What kind of diamond are you looking for?",
+            "style": "Checkbox-Multiply",
+            "label-one": "Round",
+            "label-two": "Princess",
+            "label-three": "Oval",
+            "label-four": "Emerald",
+            "label-five": "Cushion",
+            "label-six": "Radiant",
+            "label-seven": "Pear",
+            "label-eight": "Heart",
+            "label-nine": "Marquise",
+            "label-ten": "Other",
+            "label-eleven": "Asscher",
+            "label-twelve": "Not sure"
+          }
+        },
+        "f1df2cf4-4932-4cb4-aeb3-528aaa0e3d4b": {
+          "type": "text",
+          "settings": {
+            "title": "Please submit links or files of jewelry you like (optional)",
+            "style": "Style"
+          }
+        },
+        "82645b89-0b77-406d-a9c3-cff306215e21": {
+          "type": "body",
+          "settings": {
+            "title": "Please describe your interest, budget and timeline. The more information you provide, the better we can serve you.",
+            "style": "Message"
+          }
+        }
+      },
+      "block_order": [
+        "98f7265b-9eec-4f6b-8d5c-45a7acedbafc",
+        "5b329c0f-d774-4ab7-afcb-cf5895e007b0",
+        "46854c44-9f28-4ed8-a491-10ee77048916",
+        "26f26407-4cf3-45bf-a0d6-cc6d219e64d1",
+        "72b4ba7c-9005-4648-9eb2-1445fc5cd916",
+        "e9535504-bb56-4723-8435-478ac21f34df",
+        "f74235a0-eedb-417c-886b-a907fd2a7235",
+        "5aa1ea8e-92b0-4367-9593-caad141de4ee",
+        "9019c341-81d6-42f3-b0e5-1fe9350d61d5",
+        "543a755c-11a3-465c-8e7d-b78d52a7ecb4",
+        "c777ed2f-9d52-4f59-ab7e-88eb3c570e0c",
+        "f1df2cf4-4932-4cb4-aeb3-528aaa0e3d4b",
+        "82645b89-0b77-406d-a9c3-cff306215e21"
+      ],
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/hero-inquire-long-1920x1080.jpg",
+        "banner_subheading": "MG concierge awaits your inquiry",
+        "banner_heading": "",
+        "content": "<p>This form is for individuals seeking to purchase jewelry or loose diamonds. For other inquiry types, please use our <a href=\"\/pages\/contact-us\" target=\"_blank\" title=\"Contact Us\">contact form<\/a>.<\/p>",
+        "form_heading": "",
+        "submit_text": "Send message"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

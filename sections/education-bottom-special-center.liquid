@@ -1,0 +1,57 @@
+<section id="section-{{ section.id }}">
+    {%- if section.settings.title != blank or section.settings.content != blank -%}
+    <div class="Container">
+        <div class="EducationBottom">
+            {%- if section.settings.title != blank -%}
+                <div class="EducationBottomTitle Heading u-h1 TextCenter">{{ section.settings.title | escape }}</div>
+            {%- endif -%}
+            {%- if section.settings.content != blank -%}
+                <div class="EducationBottomText TextCenter"><p>{{ section.settings.content | escape }} <a href="{{ section.settings.link_url }}">{{ section.settings.link_url_title | escape }}</a></p></div>
+            {%- endif -%}
+        </div>
+        {%- endif -%}
+    </div>
+</section>
+<style>
+    .EducationBottom {
+        margin: 50px 0;
+    }
+    .EducationBottomTitle {
+        margin-bottom: 40px;
+    }
+</style>
+{% schema %}
+{
+  "name": "Section Bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "content",
+      "label": "Bottom section content",
+      "default": "Share with us on Instagram by using "
+    },
+    {
+      "type": "text",
+      "id": "link_url_title",
+      "label": "Bottom section URL Title",
+      "default": "#MichaelGabriels"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Bottom section URL"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,50 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "show_rss": false,
+        "show_tags": true,
+        "show_featured_article": true,
+        "show_category": false
+      }
+    },
+    "shop-now": {
+      "type": "shop-now",
+      "disabled": true,
+      "blocks": {
+        "quote": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>You can use this element to add a quote, content...<\/p>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "quote"
+      ],
+      "settings": {
+        "title": "Shop now",
+        "collection": "",
+        "grid_items_count": 6,
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "657599d3-c1ef-4e7e-ad97-39e7e99225f6": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p>Michael Gabriels is your go-to source for all information on engagement rings. With inspirational and informative jewelry blogs and resources, you can learn all about wedding jewelry in one location. In these fashion jewelry blogs, you will find everything you need to know about diamond rings and sustainable jewelry.<\/p>\n\n<p>Get information about precious diamonds, custom engagement jewelry tips, details about engagement ring history, and so much more! Whether you’re shopping for an engagement ring or just curious about the ins and outs of sustainable jewelry, these engagement jewelry blogs give you a glimpse into the world of fine jewelry.<\/p>\n<p>We prioritize educating you because we genuinely care about helping you make informed and beneficial decisions. At Michael Gabriels, our passion for sustainable fine jewelry is apparent in everything we do.<\/p>\n<h2>What to Expect from Our Custom Jewelry Blog<\/h2>\n\n<p>We make sure to provide you with the best jewelry blogs out there so you can find up-to-date articles on all things diamond jewelry from a reputable, trustworthy source. We aim to provide you with all the knowledge we obtain so you can make the right decision for your personal needs and wants.<\/p>\n\n<p>As you can see below, our sustainable jewelry blogs cover a wide range of topics. By the time you're finished reading these wedding jewelry blogs, you'll have a thorough understanding of what to look for in sustainable brands, how to select the appropriate ring size, the various diamond shapes, and much more.<\/p>\n<h2>Why Choose Michael Gabriels?<\/h2>\n<p>At Michael Gabriels, we pride ourselves on upholding three <a href=\"https:\/\/michaelgabriels.com\/pages\/about-our-jewelry-company\">principles:<\/a><\/p>\n<ul style=\"list-style-position: inside;\">\n<li>Sustainability<\/li> \n<li>Responsibility<\/li>\n<li>Transparency<\/li>\n<\/ul>\n\n<p>We provide ethically sourced and expertly crafted lab-grown and mined diamonds that are tailored to your needs and preferences. Every exquisite piece of jewelry is made with the intention of empowering women worldwide and providing them with jewelry they can be proud to wear.<\/p>\n\n<p>Our engagement rings are <a href=\"https:\/\/michaelgabriels.com\/collections\/engagement-rings\">made-to-order<\/a> and tailored to the needs of our customers, so you get exactly what you want.<\/p> \n\n<p>Are you ready to explore the realm of fine jewelry and discover something new that will guide your decision-making? Read our sustainable jewelry blogs today!<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "shop-now",
+    "657599d3-c1ef-4e7e-ad97-39e7e99225f6"
+  ]
+}

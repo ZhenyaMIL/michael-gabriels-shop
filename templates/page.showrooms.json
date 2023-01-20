@@ -1,0 +1,113 @@
+{
+  "sections": {
+    "showrooms-top": {
+      "type": "showrooms-top",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-visit-showrooms-1920x1080.jpg",
+        "subheading": "Visit our",
+        "title": "Showrooms",
+        "content": "",
+        "link_title": "Learn More",
+        "link": "",
+        "align": "Left",
+        "content_color": "Light"
+      }
+    },
+    "showrooms-middle": {
+      "type": "showrooms-middle",
+      "blocks": {
+        "e90cbc27-59df-447a-abaa-fc724eeed0ac": {
+          "type": "block",
+          "settings": {
+            "link_title": "Personalized Consultation",
+            "link_url": "",
+            "icon": "hands-helping",
+            "content": "Our concierge will respond to your inquiry within 24 hours. \nWe will answer all of your questions to the best of our\n ability and help create the perfect product for your needs."
+          }
+        },
+        "a0414b27-305e-44c1-afaa-2ebb252370f2": {
+          "type": "block",
+          "settings": {
+            "link_title": "Education",
+            "link_url": "",
+            "icon": "book",
+            "content": "Our concierge will happily educate you on the Four\n C’s of the diamond as well as help you understand\n the difference between the precious metal options."
+          }
+        },
+        "348eebdb-6f3e-4a5e-b03f-8954ff847249": {
+          "type": "block",
+          "settings": {
+            "link_title": "Choosing The Ring",
+            "link_url": "",
+            "icon": "gift",
+            "content": "You will have the opportunity to browse through various designs and styles. If you don’t see anything you love, we can custom design to fit your needs."
+          }
+        }
+      },
+      "block_order": [
+        "e90cbc27-59df-447a-abaa-fc724eeed0ac",
+        "a0414b27-305e-44c1-afaa-2ebb252370f2",
+        "348eebdb-6f3e-4a5e-b03f-8954ff847249"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "MG Experience",
+        "content": "<p>Our objective is to assist you in finding the piece of jewelry without the stress. Our concierge will share with you some diamond options to fit you inquiry. When submitting an inquiry, it is important to share with us as much info as possible to help us understand exactly what you are looking for. Here is a little overview of what you can expect from visiting one of our showrooms:<\/p>"
+      }
+    },
+    "showrooms-bottom": {
+      "type": "showrooms-bottom",
+      "blocks": {
+        "9f53b4f1-d672-4f78-a0fa-894b22b49a5d": {
+          "type": "block",
+          "settings": {
+            "city": "New York Store",
+            "address": "<p>46 Howard Street<\/p><p>New York, NY 10013<\/p>",
+            "hours": "Open hours",
+            "hours_details": "<p>Monday - Thursday: 10am - 6pm<\/p><p>Friday: 10am - 2pm<\/p><p>Saturday: Closed<\/p><p>Sunday: By Appointment Only<\/p>"
+          }
+        },
+        "4e7ead97-76f2-495c-bf54-3b8aa2bbf9e0": {
+          "type": "block",
+          "settings": {
+            "city": "Florida Store",
+            "address": "<p>Brickell <\/p><p>FL<\/p><p><\/p>",
+            "hours": "Open hours",
+            "hours_details": "<p>By Appointment Only<\/p>"
+          }
+        },
+        "a7fa29b1-a67f-4d0c-bac0-77c39591936e": {
+          "type": "block",
+          "settings": {
+            "city": "California Store",
+            "address": "<p>8200 Wilshire Blvd<\/p><p>Los Angeles, CA 90210 <\/p>",
+            "hours": "Open hours",
+            "hours_details": "<p>By Appointment Only<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9f53b4f1-d672-4f78-a0fa-894b22b49a5d",
+        "4e7ead97-76f2-495c-bf54-3b8aa2bbf9e0",
+        "a7fa29b1-a67f-4d0c-bac0-77c39591936e"
+      ],
+      "settings": {
+        "title": "Our Showrooms",
+        "subheading": "Locations",
+        "content": "",
+        "link_text": "",
+        "link_url": "",
+        "image": "shopify:\/\/shop_images\/visit-showrooms-section-1920x800.jpg",
+        "b_title": "Customer Service Hours",
+        "b_content": "Moday - Thursday: 10am - 5pm, Friday: 10am - 1pm",
+        "b_link_url_title": "Contact Us",
+        "b_link_url": "shopify:\/\/pages\/contact-us"
+      }
+    }
+  },
+  "order": [
+    "showrooms-top",
+    "showrooms-middle",
+    "showrooms-bottom"
+  ]
+}

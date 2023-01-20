@@ -1,0 +1,87 @@
+<section id="section-{{ section.id }}" class="SectionTabs">
+    <div class="ContainerCentered">
+        <div class="NavTabs">
+            {% for block in section.blocks %}
+                <div class="NavTabs__Item">
+                    <a href="{{ block.settings.link_url }}" class="NavTabs__Link">{{ block.settings.link_title | escape }}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<style>
+  .SectionTabs {
+    border-bottom: 3px solid #f5f1e7;
+    margin-bottom: 50px;
+  }
+  .NavTabs {
+  display: flex;
+    flex-direction: row;
+  }
+  .NavTabs__Item {
+    position: relative;
+    width: 33.33%;
+    min-height: 98px;
+  }
+  .NavTabs__Link {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    text-transform: uppercase;
+    padding: 40px 0;
+    line-height: 1.1;
+  }
+  .NavTabs__Link.active {
+    background-color: #F8F3ED;
+    color: #963;
+    border-bottom: 3px solid #B5945A;
+  }
+</style>
+{% schema %}
+{
+  "name": "Tabs",
+  "settings": [],
+  "blocks": [
+    {
+      "name": "Tab",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+(function () {
+    var links = document.querySelectorAll('.NavTabs__Link');
+    var path = window.location.pathname;
+    links.forEach(function (link) {
+        if (link.getAttribute('href') === path) {
+            link.classList.add('active');
+        }
+    })
+})();
+</script>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+{% endjavascript %}

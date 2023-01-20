@@ -1,0 +1,311 @@
+{
+  "sections": {
+    "banner-education-womens-wedding-rings": {
+      "type": "banner-education-womens-wedding-rings",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-rings-1920x1080-nofade.jpg",
+        "subheading": "Learn About",
+        "title": "Women's Wedding Rings",
+        "content": "",
+        "link_title": "",
+        "link": "",
+        "align": "Left",
+        "content_color": "Light"
+      }
+    },
+    "education-tabs": {
+      "type": "education-tabs",
+      "blocks": {
+        "210adfd9-c24e-42aa-bf13-13ff1ff7d639": {
+          "type": "block",
+          "settings": {
+            "link_title": "Engagement Rings",
+            "link_url": "shopify:\/\/pages\/education-engagement-ring"
+          }
+        },
+        "44a24f4b-22d2-4508-8002-8fd0aea22c11": {
+          "type": "block",
+          "settings": {
+            "link_title": "Women's Wedding Rings",
+            "link_url": "shopify:\/\/pages\/education-womens-wedding-rings"
+          }
+        },
+        "a8d9a6ea-157f-49a9-b984-97436ddb20c3": {
+          "type": "block",
+          "settings": {
+            "link_title": "Men's Wedding Band",
+            "link_url": "shopify:\/\/pages\/education-mens-wedding-band"
+          }
+        }
+      },
+      "block_order": [
+        "210adfd9-c24e-42aa-bf13-13ff1ff7d639",
+        "44a24f4b-22d2-4508-8002-8fd0aea22c11",
+        "a8d9a6ea-157f-49a9-b984-97436ddb20c3"
+      ],
+      "settings": {}
+    },
+    "education-ring-styles": {
+      "type": "education-ring-styles",
+      "blocks": {
+        "7dafc00c-9c5e-476a-b5b8-458a61443b47": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style01.jpg",
+            "subheading": "",
+            "title": "Pave Diamond Rings",
+            "content": "<p>Pave rings are created with small diamond melee, which are set right next to each other. Tiny prongs handcrafted from the rings metal by our craftmen hold the diamonds together. <\/p>",
+            "link_title": "Shop Prong Diamond Rings",
+            "link": "shopify:\/\/collections\/engagement-rings"
+          }
+        },
+        "72e70d04-d852-4256-80e3-bced53430ad7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style02_789d88d6-ddd8-4e9f-9e72-af8442a4c4b2.jpg",
+            "subheading": "",
+            "title": "Half Eternity Diamond Rings",
+            "content": "<p>A half eternity ring typically has less than a full circle of diamonds on the face of the ring. Some prefer half eternity rings, as it may be more comfortable than full eternity rings. <\/p>",
+            "link_title": "Shop Pave Diamond Rings",
+            "link": "shopify:\/\/collections\/engagement-rings"
+          }
+        },
+        "a1f876c3-c7ba-4d11-b832-fd400b701022": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style03.jpg",
+            "subheading": "",
+            "title": "Eternity Diamond Rings",
+            "content": "<p>Full circle of dazzling diamonds, diamond eternity rings shine from at every angle. Eternity bands feature diamonds all the way around the band. Even if the band twists and turns, it will always be showing diamonds. Eternity rings are a great way to symbolize everlasting love and are typically given to their spouse on a significant occasion. <\/p>",
+            "link_title": "Shop Eternity Diamond Rings",
+            "link": "shopify:\/\/collections\/engagement-rings"
+          }
+        }
+      },
+      "block_order": [
+        "7dafc00c-9c5e-476a-b5b8-458a61443b47",
+        "72e70d04-d852-4256-80e3-bced53430ad7",
+        "a1f876c3-c7ba-4d11-b832-fd400b701022"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Wedding Ring Styles",
+        "content": ""
+      }
+    },
+    "education-metal-options-woman": {
+      "type": "education-metal-options-woman",
+      "blocks": {
+        "04af0583-b4e8-4b5f-a3be-77b1a47d270b": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal01.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Platinum",
+            "url": ""
+          }
+        },
+        "bbe7e390-e603-4a5e-b619-3ac2335fcace": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal02.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "White Gold",
+            "url": ""
+          }
+        },
+        "3fdeca2e-80b6-45ef-a429-7380ef2cf1d8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal03.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Rose Gold",
+            "url": ""
+          }
+        },
+        "794fbcdd-4028-490d-b54e-6fdbd30bf1f6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal04.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Yellow Gold",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "04af0583-b4e8-4b5f-a3be-77b1a47d270b",
+        "bbe7e390-e603-4a5e-b619-3ac2335fcace",
+        "3fdeca2e-80b6-45ef-a429-7380ef2cf1d8",
+        "794fbcdd-4028-490d-b54e-6fdbd30bf1f6"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Precious Metal Options",
+        "content": "",
+        "button_label": "Learn more",
+        "button_link": ""
+      }
+    },
+    "banner-fullscreen-wear": {
+      "type": "banner-fullscreen-wear",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/edu-rings-p2-section-1920x400.jpg",
+        "subheading": "How to Wear",
+        "title": "Your Wedding Ring",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "mosaic-blocks-how-to": {
+      "type": "mosaic-blocks-how-to",
+      "blocks": {
+        "39019bbf-1c27-468e-b858-af31753fc71a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-matching.jpg",
+            "subheading": "Matching Your",
+            "title": "Wedding And Engagement Rings",
+            "content": "<p>More and more women prefer their wedding bands to match perfectly with their engagement ring. If you prefer this as well, see our matching sets. These bands will match perfectly with the engagement ring, with the same details such as diamond sizes and placements. <\/p>",
+            "link_title": "Shop Bridal Sets",
+            "link": ""
+          }
+        },
+        "3494a86e-f523-4254-8fac-6b036949c622": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-wearing.jpg",
+            "subheading": "Wearing Your",
+            "title": "Wedding Ring Separately",
+            "content": "<p>Also rising in popularity, some women prefer to wear their wedding band separately on their right hand ring finger. Ideal for traveling and active lifestyles, wearing just your wedding band allows for more flexibility. Many who choose this style prefer having eternity rings as their choice for wedding band. <\/p>",
+            "link_title": "Show Fashion Wedding Rings",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "39019bbf-1c27-468e-b858-af31753fc71a",
+        "3494a86e-f523-4254-8fac-6b036949c622"
+      ],
+      "settings": {}
+    },
+    "text-content-find-size": {
+      "type": "text-content-find-size",
+      "settings": {
+        "subheading": "",
+        "title": "Find your ring size",
+        "content": "<p>Here at MG, we are more than happy in assisting you in finding your correct ring size. If your ring size is not listed on the product you would like to purchase, feel free to email us at Michael@MichaelGabriels.com. If you don’t get the size right the first time, no worries! We offer one complimentary ring resizing within 90 days of your shipment. <\/p>",
+        "background": true
+      }
+    },
+    "education-top-rings": {
+      "type": "education-top-rings",
+      "blocks": {
+        "d36de230-d0fc-40e2-9def-2d20d343a548": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style01_47e54a04-a590-4099-bf57-aa4c4f98bc19.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Commercy",
+            "url": ""
+          }
+        },
+        "7547b831-6201-41b6-b870-0066023fa11c": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style01_47e54a04-a590-4099-bf57-aa4c4f98bc19.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Lucey",
+            "url": ""
+          }
+        },
+        "364c8bb4-13ca-4193-b5ef-685ab7023763": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style02_76e2fd57-e0e1-410b-a410-0043c5bca51a.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Soucia",
+            "url": ""
+          }
+        },
+        "6465f4c0-934f-4815-a585-fa798c6ceee7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style03_d983b0c9-53ba-4448-b224-7f57576ead1e.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Soucia",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "d36de230-d0fc-40e2-9def-2d20d343a548",
+        "7547b831-6201-41b6-b870-0066023fa11c",
+        "364c8bb4-13ca-4193-b5ef-685ab7023763",
+        "6465f4c0-934f-4815-a585-fa798c6ceee7"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Top Women's Wedding Rings",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "education-get-started": {
+      "type": "education-get-started",
+      "blocks": {
+        "dc6a1153-3752-4e2a-a107-eb4cf571fe39": {
+          "type": "block",
+          "settings": {
+            "subtitle": "Shop Women's",
+            "title": "Wedding Rings",
+            "content": "",
+            "url_title": "Shop Now",
+            "url": ""
+          }
+        },
+        "12f3f07e-9584-4c0b-8bfa-44106bfe8f3c": {
+          "type": "block",
+          "settings": {
+            "subtitle": "Shop Men's",
+            "title": "Wedding Rings",
+            "content": "",
+            "url_title": "Shop Now",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "dc6a1153-3752-4e2a-a107-eb4cf571fe39",
+        "12f3f07e-9584-4c0b-8bfa-44106bfe8f3c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rings-transparent.png",
+        "subheading": "",
+        "title": "Get Started",
+        "content": "",
+        "background": true
+      }
+    }
+  },
+  "order": [
+    "banner-education-womens-wedding-rings",
+    "education-tabs",
+    "education-ring-styles",
+    "education-metal-options-woman",
+    "banner-fullscreen-wear",
+    "mosaic-blocks-how-to",
+    "text-content-find-size",
+    "education-top-rings",
+    "education-get-started"
+  ]
+}

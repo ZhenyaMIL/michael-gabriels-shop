@@ -1,0 +1,277 @@
+<section id="section-{{ section.id }}" class="Section--spacingNormal">
+    <div class="ContainerCentered ContainerFlex">
+        <div class="ThinColumn">
+            <div class="ThinColumnWrap ColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+                {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                    <header class="SectionHeader LogoHeader BlockIdent">
+                        {%- if section.settings.subheading != blank -%}
+                            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                        {%- endif -%}
+
+                        {%- if section.settings.title != blank -%}
+                            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                        {%- endif -%}
+
+                        {%- if section.settings.content != blank -%}
+                            <div class="SectionHeader__Description Rte">
+                                {{ section.settings.content }}
+                            </div>
+                        {%- endif -%}
+                    </header>
+                    <div class="IconText">
+                        {% for block in section.blocks %}
+                            {% assign icon = block.settings.icon %}
+                            <div class="IconText__Item">
+                                <div class="IconText__Icon">{%- render 'icon', icon: icon -%}
+                                </div>
+                                <div class="IconText__Title">
+                                    <a href="{{ block.settings.i_link | escape }}">{{ block.settings.i_title | escape }}</a>
+                                </div>
+                                <div class="IconText__Content">
+                                    {{ block.settings.i_content | escape }}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {%- endif -%}
+            </div>
+        </div>
+        <div class="WideColumn">
+            {% render 'banner-block' %}
+        </div>
+    </div>
+</section>
+
+<style>
+    .ContainerCentered--Flex {
+        display: flex;
+    }
+    .WideColumn {
+        flex-grow: 1;
+    }
+    .ThinColumn {
+        flex-grow: 1;
+    }
+    .ImageHero--Wrap {
+        width: 100%;
+    }
+    .ImageHero__Content {
+        position: relative;
+        flex-basis: auto;
+        padding: 20px 40px 10px 40px;
+    }
+    .SectionHeader {
+        margin-bottom: 25px;
+    }
+    .ImageHero--ContentRight{
+        text-align: right;
+        height: 100%;
+        align-items: initial;
+        justify-content: flex-end;
+    }
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+    .ImageHero__Content .ImageHero__Content--Image {
+        padding: 0;
+    }
+    .ThinColumnWrap {
+        width: 100%;
+        padding: 40px 10%;
+
+    }
+    .ColumnWrap--Background {
+        background-color: #F6F6F6;
+        padding: 20px 40px 10px 40px;
+    }
+
+    @media (min-width: 981px) {
+        .ColumnWrap--Background {
+            padding: 40px 80px 20px 80px;
+        }
+        .ThinColumnWrap {
+            width: 100%;
+            padding: 40px 15%;
+
+        }
+    }
+    .IconText__Item {
+        position: relative;
+        display: block;
+        padding-left: 60px;
+        margin-bottom: 30px;
+    }
+    .IconText__Title {
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+    .IconText__Icon {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: 40px;
+    }
+    .IconText__Icon .Icon {
+        height: 24px;
+        width: 24px;
+        fill: #D7C893;
+    }
+    .LogoHeader {
+        position: relative;
+        padding-left: 80px;
+    }
+    .LogoHeader .SectionHeader__Heading {
+        text-transform: uppercase;
+        max-width: 200px;
+        line-height: 1.4;
+    }
+    .LogoHeader:before {
+        content: "";
+        background-image: url('{{ 'logo.png' | asset_url }}');
+        position: absolute;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 80px;
+        width: 80px;
+        left: -25px;
+        top: -8px;
+        text-transform: uppercase;
+    }
+    .SectionHeader__Link {
+        padding: 40px 0;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Content Columns",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Column 1 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Column 1  Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column 1 Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Show content with background",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Column 2 Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Column 2 Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "r_subheading",
+      "label": "Column 2 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "r_title",
+      "label": "Heading",
+      "default": "Column 2  Tell your story"
+    },
+    {
+      "type": "textarea",
+      "id": "r_content",
+      "label": "Column 2 Text",
+      "default": "Add your own custom content to give more information about your store, availability details..."
+    },
+    {
+      "type": "text",
+      "id": "r_link_title",
+      "label": "Link Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "r_link",
+      "label": "Button Title"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "name": "Text with icon",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "i_title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "default": "check"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link name"
+        },
+        {
+          "type": "textarea",
+          "id": "i_content",
+          "label": "Content",
+          "default": "Text content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,207 @@
+<section id="section-{{ section.id }}">
+    <div class="ContainerCentered ContainerFlex">
+        <div class="HalfColumn">
+            <div class="ContentColumnWrap ContentColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+                {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                    <header class="SectionHeader BlockIdent">
+                        {%- if section.settings.subheading != blank -%}
+                            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                        {%- endif -%}
+
+                        {%- if section.settings.title != blank -%}
+                            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                        {%- endif -%}
+
+                        {%- if section.settings.content != blank -%}
+                            <div class="SectionHeader__Description Rte">
+                                {{ section.settings.content }}
+                            </div>
+                        {%- endif -%}
+                    </header>
+                {%- endif -%}
+            </div>
+        </div>
+        <div class="HalfColumn">
+            <div class="TableContent--Wrap">
+                <div class="TableContent">
+                    {% for block in section.blocks %}
+                        <div class="TableContent__Item">
+                            <div class="TableContent__CellLeft">
+                                <span>{{ block.settings.row_title | escape }}</span>
+                            </div>
+                            <div class="TableContent__Title">
+                                {{ block.settings.title | escape }}
+                            </div>
+                            <div class="TableContent__Content">
+                                {{ block.settings.content | escape }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .ContainerCentered--Flex {
+        display: flex;
+    }
+
+    .SectionHeader {
+        margin-bottom: 25px;
+    }
+
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+
+    .ImageHero__Content .ImageHero__Content--Image {
+        padding: 0;
+    }
+
+    .ContentColumnWrap {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .ContentColumnWrap--Background {
+        background-color: #F6F6F6;
+        padding: 20px 40px 10px 40px;
+    }
+
+    @media (min-width: 981px) {
+        .ContentColumnWrap--Background {
+            padding: 40px 80px 20px 80px;
+        }
+
+        .TableContent--Wrap {
+            padding-left: 20px;
+        }
+
+        .ContentColumnWrap {
+            margin-bottom: 0px;
+            margin-right: 20px;
+        }
+    }
+
+    .TableContent--Wrap {
+        display: flex;
+    }
+
+    .TableContent {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        border: 1px solid #acacac;
+    }
+
+    .TableContent:last-child {
+        border-bottom: 0px;
+    }
+
+    .TableContent__Item {
+        position: relative;
+        display: block;
+        padding: 5px 5px 5px 110px;
+        flex-grow: 1;
+        border-bottom: 1px solid #acacac;
+        flex-basis: 90px;
+    }
+
+    .TableContent .TableContent__Item:nth-child(2n) .TableContent__CellLeft {
+        background-color: #E7DBC1;
+    }
+
+    .TableContent__Title {
+        font-weight: bold;
+    }
+
+    .TableContent__Content {
+        line-height: 1.3;
+    }
+
+    .TableContent__CellLeft {
+        display: table;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: 100px;
+        border-right: 1px solid #acacac;
+        background-color: #F0EADA;
+        text-align: center;
+        line-height: 1;
+        height: 100%;
+    }
+
+    .TableContent__CellLeft span {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 10px;
+    }
+</style>
+
+{% schema %}
+{
+  "name": "Content Chart Table",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Column 1 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Column 1  Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column 1 Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Show content with background",
+      "default": false
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "name": "Text in table",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "row_title",
+          "label": "Cell Title",
+          "default": "Cell left"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "Text content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

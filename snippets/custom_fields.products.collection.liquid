@@ -1,0 +1,11 @@
+{% if product.metafields.custom_fields["collection"] != blank %}
+  <div class="custom-field custom-field__collection custom-field__type--field-collection-json">
+    <h3 class="custom-field--title">collection</h3>
+    <div class="custom-field--value">
+      {% for item in product.metafields.custom_fields["collection"] %}
+        <div class="fc-item fc-index--{{ forloop.index0 }}">
+         </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}

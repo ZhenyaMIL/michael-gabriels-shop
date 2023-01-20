@@ -1,0 +1,182 @@
+<section id="section-{{ section.id }}" class="BlockIndent">
+    <div class="ContainerCentered">
+        {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+            <header class="SectionHeader ContentCenter TextCenter">
+                {%- if section.settings.subheading != blank -%}
+                    <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                {%- endif -%}
+
+                {%- if section.settings.title != blank -%}
+                    <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                {%- endif -%}
+
+                {%- if section.settings.content != blank -%}
+                    <div class="SectionHeader__Description TextCenter Rte">
+                        {{ section.settings.content }}
+                    </div>
+                {%- endif -%}
+            </header>
+        {%- endif -%}
+        {%- if section.settings.image != blank -%}
+            <div class="ClarityTable">
+                <div class="ClarityTable__ImageWrap">
+                    <div class="ClarityTable_Image Image--lazyLoad"
+                         style="background-image: url({{ section.settings.image | img_url: '1360x' }})">
+                    </div>
+                </div>
+                <div class="ClarityTable_Table">
+                    {% render 'table-clarity' %}
+                </div>
+            </div>
+        {%- endif -%}
+    </div>
+</section>
+
+<style>
+    .ContainerCentered--Flex {
+        display: flex;
+    }
+
+    .SectionHeader.ContentCenter {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .SectionHeader__Description.TextCenter {
+        max-width: 800px;
+    }
+
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+
+    .ColumnWrap {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .ColumnWrap--Background {
+        background-color: #fbf8f3;
+    }
+
+    @media (min-width: 981px) {
+        .ColumnWrap {
+            padding: 80px 20px;
+        }
+    }
+
+    .ClarityTable {
+        margin: 0px auto;
+        overflow-x: scroll;
+        max-width: 1360px;
+        padding: 40px 0;
+    }
+  
+    @media (min-width: 1400px) {
+        .ClarityTable {
+            overflow-x: hidden;
+        }
+    }
+    .ClarityTable__ImageWrap {
+        min-height: 104px;
+        width: 1360px;
+        position: relative;
+        display: block;
+    }
+
+    .ClarityTable_Image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .ClarityTable_Table {
+        width: 1360px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .quality_name {
+        padding: 10px;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    .qualities {
+        display: flex;
+        flex-direction: row;
+        width: 1360px;
+    }
+
+    .qualities div {
+        padding: 5px 12px;
+    }
+
+    .quality.one:last-child {
+        padding-right: 0;
+    }
+
+    .quality.one:first-child {
+        padding-left: 0;
+    }
+
+    .quality.one {
+        flex-grow: 1;
+        flex-basis: 130px;
+    }
+
+    .quality.two {
+        flex-basis: 250px;
+        flex-grow: 1;
+    }
+</style>
+{% schema %}
+{
+  "name": "Text content Clarity",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Top section image",
+       "info": "1360 x 800px .png recommended"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

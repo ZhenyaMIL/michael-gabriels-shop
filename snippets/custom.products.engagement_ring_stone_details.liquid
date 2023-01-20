@@ -1,0 +1,9 @@
+{% if product.metafields["custom"]["engagement_ring_stone_details"] != blank %}
+  <div class="custom-field custom-field__engagement-ring-stone-details custom-field__type--single-line-text-field">
+    <h3 class="custom-field--title">Engagement Ring Stone Details</h3>
+    <div class="custom-field--value">
+      {{ product.metafields["custom"]["engagement_ring_stone_details"] }}
+
+    </div>
+  </div>
+{% endif %}

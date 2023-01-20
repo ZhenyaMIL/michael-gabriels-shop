@@ -1,0 +1,46 @@
+{%- assign banner_image = section.settings.banner_image -%}
+{%- assign banner_subheading = section.settings.banner_subheading -%}
+{%- assign banner_heading = section.settings.banner_heading -%}
+{%- assign banner_content = section.settings.content -%}
+
+<div class="Container">
+    {%- capture page_title -%}
+        {%- if show_page_title or banner_subheading != blank or banner_text != blank -%}
+            <div class="PageHeader">
+                <div class="SectionHeader SectionHeader--center">
+                    <div class="row row-sm page-title__wrapper">
+                        {%- if text != blank -%}
+                            <div class="SectionHeader__Description">{{ banner_text }}</div>
+                        {%- endif -%}
+                    </div>
+                </div>
+            </div>
+        {%- endif -%}
+    {%- endcapture -%}
+</div>
+<div data-section-id="{{ section.id }}" data-section-type="contact-template">
+    {%- if banner_image -%}
+        {%- render 'banner-inquire', banner_heading: banner_heading, banner_image: banner_image -%}
+    {%- endif -%}
+    {%- if banner_image -%}
+        {%- assign contact_heading = '' -%}
+    {%- endif -%}
+    <div class="Container">
+        {%- if section.settings.content != blank -%}
+            <div class="contact-text">
+                {%- if banner_content != blank -%}
+                    <div class="PageHeader">
+                        <div class="SectionHeader SectionHeader--center">
+                            <div class="contact-column contact-column-form">
+                                <div class="SectionHeader__Description rte">
+                                    {{- section.settings.content -}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {%- endif -%}
+            </div>
+        {%- endif -%}
+        {%- render 'inquire-form' -%}
+    </div>
+</div>

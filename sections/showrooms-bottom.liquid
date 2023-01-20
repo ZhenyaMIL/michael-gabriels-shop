@@ -1,0 +1,246 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="image-with-text-block">
+  {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+
+  <div class="FlexboxIeFix">
+    <div class="ImageHero ImageHero--large" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1', format: 'pjpg' }})"{% endif %}>
+      <div class="ImageHero__ImageWrapper">
+        <div class="ImageHero__Image ImageHero_section-bottom Image--lazyLoad Image--zoomOut {% if section.settings.show_parallax %}ImageHero__Image--parallax{% endif %}"
+             data-optimumx="1.4"
+             data-expand="-150"
+             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+        </div>
+
+        <noscript>
+          <div class="ImageHero__ImageWrapper" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+        </noscript>
+
+        {%- unless section.settings.image != blank -%}
+          <div class="PlaceholderBackground PlaceholderBackground--Dark">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+        {%- endunless -%}
+      </div>
+
+      {%- if section.settings.title != blank or section.settings.content != blank or section.settings.button_label != blank -%}
+        <div class="ImageHero__ContentWrapper ContainerCentered">
+          <div class="ImageHero__BlockContent BlockRight TextRight">
+            {%- if section.settings.title != blank -%}
+              <h2 class="ImageHero__BlockHeading Heading u-h1">{{ section.settings.title | escape }}</h2>
+            {%- endif -%}
+            {%- if section.settings.title != blank -%}
+              <h3 class="ImageHero__BlockSubheading Heading u-h2">{{ section.settings.subheading | escape }}</h3>
+            {%- endif -%}
+
+            {%- if section.settings.content != blank -%}
+              <div class="ImageHero__BlockText Rte">
+                {{ section.settings.content }}
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.link_url != blank -%}
+              <a href="{{ section.settings.link_url }}" class="ImageHero__BlockLink Button Button--primary">{{ section.settings.link_text | escape }}</a>
+            {%- endif -%}
+            <div class="AddressBlock">
+            {% for block in section.blocks %}
+              <div class="AddressBlock__Item">
+              {%- if block.settings.city != blank -%}
+                <div class="AddressBlock__ItemCity">
+                  {{ block.settings.city }}
+                </div>
+              {%- endif -%}
+                {%- if block.settings.address != blank -%}
+                <div class="AddressBlock__ItemAddress">
+                  {{ block.settings.address }}
+                </div>
+              {%- endif -%}
+                {%- if block.settings.hours != blank -%}
+                <div class="AddressBlock__ItemHours">
+                  {{ block.settings.hours }}
+                </div>
+              {%- endif -%}
+                {%- if block.settings.hours_details != blank -%}
+                <div class="AddressBlock__ItemTime">
+                  {{ block.settings.hours_details }}
+                </div>
+              {%- endif -%}
+              </div>
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+  {%- if section.settings.b_title != blank or section.settings.b_content != blank -%}
+  <div class="Container">
+    <div class="Service">
+      {%- if section.settings.b_title != blank -%}
+      <div class="ServiceTitle Heading u-h1 TextCenter">{{ section.settings.b_title | escape }}</div>
+      {%- endif -%}
+      {%- if section.settings.b_content != blank -%}
+      <div class="ServiceText TextCenter"><p>{{ section.settings.b_content | escape }}</p></div>
+      {%- endif -%}
+            {%- if section.settings.b_link_url_title != blank -%}
+      <div class="ServiceButton TextCenter"><p><a class="Button Button--primary" href="{{ section.settings.b_link_url }}">{{ section.settings.b_link_url_title | escape }}</a></p></div>
+      {%- endif -%}
+    </div>
+   {%- endif -%}  
+  </div>
+</section>
+
+{% schema %}
+  {
+  "name": "Showrooms Bottom",
+    "max_blocks": 3,
+    "blocks": [
+    {
+      "name": "Location",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "city",
+          "label": "City"
+        },
+        {
+          "type": "richtext",
+          "id": "address",
+          "label": "Address"
+        },
+        {
+          "type": "text",
+          "id": "hours",
+          "label": "Hours",
+          "default": "Open hours"
+        },
+        {
+          "type": "richtext",
+          "id": "hours_details",
+          "label": "Hour detalis",
+          "default": "<p>details</p>"
+        }
+      ]
+    }
+    ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Full screen section title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Full screen section Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Full screen section text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Full screen link text"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Full screen section URL"
+    },
+    {
+       "type": "image_picker",
+        "id": "image",
+        "label": "Full screen Image",
+        "info": "1920 x 800px .png recommended"
+    },
+    {
+      "type": "text",
+      "id": "b_title",
+      "label": "Bottom section title"
+    },
+    {
+      "type": "text",
+      "id": "b_content",
+      "label": "Bottom section content",
+      "default": "Share with us on Instagram by using "
+    },
+    {
+      "type": "text",
+      "id": "b_link_url_title",
+      "label": "Bottom section URL Title",
+      "default": "#MichaelGabriels"
+    },
+    {
+      "type": "url",
+      "id": "b_link_url",
+      "label": "Bottom section URL"
+    }
+  ]
+}
+{% endschema %}
+<style>
+.ImageHero_section-bottom {
+    background-position-y: top;
+}
+.ImageHero__ContentWrapper {
+    z-index:1;
+}
+.ImageHero__BlockContent {
+    padding: 20px 0;
+}
+.ImageHero__BlockText  {
+    margin-bottom: 40px;
+}
+
+.AddressBlock {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 981px) {
+    .AddressBlock {
+        flex-direction: row;
+    }
+}
+.AddressBlock__Item {
+    padding-left: 20px;
+    line-height: 1.4;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.AddressBlock__ItemCity {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.AddressBlock__ItemAddress {
+    margin-bottom: 10px;
+}
+.AddressBlock__ItemHours {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.AddressBlock__Item p {
+    margin-bottom: 0px;
+}
+.Service {
+    margin: 50px 0;
+}
+.ServiceTitle {
+    margin-bottom: 40px;
+}
+.ServiceButton {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+</style>
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

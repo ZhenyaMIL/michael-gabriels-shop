@@ -1,0 +1,243 @@
+<section id="section-{{ section.id }}" class="CardsShapesSection section-{{ section.id }}">
+    <div class="CardsShapesSectionWrap">
+        <div class="ContainerCentered">
+            {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <header class="SectionHeader BlockIdent TextCenter">
+                    {%- if section.settings.subheading != blank -%}
+                        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                    {%- endif -%}
+
+                    {%- if section.settings.title != blank -%}
+                        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                    {%- endif -%}
+
+                    {%- if section.settings.content != blank -%}
+                        <div class="SectionHeader__Description SectionHeader__Description--Center Rte">
+                            {{ section.settings.content }}
+                        </div>
+                    {%- endif -%}
+                </header>
+            {%- endif -%}
+            <div class="CardsShapes">
+                {% for block in section.blocks %}
+                    <div class="CardsShapes__Item BlockIndent">
+                        
+                            {%- if block.settings.image != blank -%}
+                                <div class="CardsShapes__ImageWrap">
+                                    <div class="CardsShapes__Image"
+                                         style="background-image: url('{{ block.settings.image | img_url: '1000x' }}')"></div>
+                                </div>
+                            {%- endif -%}
+                            {%- if block.settings.title != blank -%}
+                                <div class="CardsShapes__Title Heading">{{ block.settings.title }}</div>
+                            {%- endif -%}
+                            {%- if block.settings.content != blank -%}
+                                <div class="CardsShapes__Content">
+                                    {{ block.settings.content }}
+                                </div>
+                            {%- endif -%}
+                            {%- if block.settings.url_title != blank -%}
+                                <div class="CardsShapes__Link"><a class="Link Link--center"
+                                                                   href="{{ block.settings.url }}">{{ block.settings.url_title }}</a>
+                                </div>
+                            {%- endif -%}
+                        </div>
+                {% endfor %}
+            </div>
+            {%- if section.settings.url_title != blank -%}
+                <div class="CardsShapesSectionLink">
+                    <a class="Button Button--primary"
+                       href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+                </div>
+            {%- endif -%}
+        </div>
+    </div>
+</section>
+<style>
+    .CardsShapesSectionWrap {
+        padding: 50px 0 50px;
+    }
+
+    .CardsShapesSectionWrap--Background {
+        background-color: #FBF8F3;
+    }
+
+    @media (min-width: 981px) {
+        .CardsShapesSectionWrap {
+            padding: 60px 0 60px;
+        }
+
+        .CardsShapes_Background {
+            padding: 40px;
+        }
+    }
+
+    .CardsShapes_Background {
+        padding: 40px 40px 60px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .CardsShapes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .CardsShapes__Item {
+        flex-basis: 300px;
+        margin-bottom: 20px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    @media (min-width: 981px) {
+        .CardsShapes__Item {
+            flex-basis: 300px;
+        }
+    }
+      @media (min-width: 1025px) {
+        .CardsShapes__Item {
+            flex-basis: 200px;
+        }
+    }
+
+    .CardsShapes__Title {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .CardsShapes__Content {
+        margin-bottom: 20px;
+    }
+
+    .CardsShapes__ImageWrap {
+        position: relative;
+        display: block;
+        max-width: 100%;
+      width: 200px;
+      height:200px;
+        margin: 20px auto;
+    }
+
+    .CardsShapes__Image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .CardsShapes__Link {
+text-transform: uppercase;
+    }
+
+    .CardsShapesSectionLink .CardsShapes__Link {
+        text-decoration: none;
+    }
+
+    .SectionHeader__Description--Center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .CardsShapesSectionLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+</style>
+{% schema %}
+{
+  "name": "Cards Shapes",
+  "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content for section</p>"
+        },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "max_blocks": 6,
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "block",
+      "settings": [
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Image",
+       "info": "400 x 400px .png recommended"
+    },
+    {
+       "type": "image_picker",
+       "id": "image_background",
+       "label": "Background image",
+       "info": "460 x 600px .png recommended"
+    },
+
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content</p>"
+        },
+        {
+          "type": "text",
+          "id": "url_title",
+          "label": "Link title",
+          "default": "Learn More"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "LP",
+      "name": "Cards Shapes",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

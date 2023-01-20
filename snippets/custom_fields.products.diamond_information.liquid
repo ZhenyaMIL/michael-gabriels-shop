@@ -1,0 +1,115 @@
+{% if product.metafields.custom_fields["diamond_information"] != blank %}
+  <div class="custom-field custom-field__diamond-information custom-field__type--field-collection-json">
+    <h3 class="custom-field--title">Diamond information</h3>
+    <div class="custom-field--value">
+      {% for item in product.metafields.custom_fields["diamond_information"] %}
+        <div class="fc-item fc-index--{{ forloop.index0 }}">
+           {% if item["gemstone_type_"] != blank %}
+             <div class="fc-field field__gemstone-type- field-type--text">
+               <h4 class="custom-field--title">Gemstone Type </h4>
+               <div class="custom-field--value">
+                 {{ item["gemstone_type_"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["gemstone_shape_"] != blank %}
+             <div class="fc-field field__gemstone-shape- field-type--text">
+               <h4 class="custom-field--title">Gemstone Shape </h4>
+               <div class="custom-field--value">
+                 {{ item["gemstone_shape_"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["gemstone_minimum_weight_"] != blank %}
+             <div class="fc-field field__gemstone-minimum-weight- field-type--text">
+               <h4 class="custom-field--title">Gemstone Minimum Weight </h4>
+               <div class="custom-field--value">
+                 {{ item["gemstone_minimum_weight_"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["gemstone_number"] != blank %}
+             <div class="fc-field field__gemstone-number field-type--text">
+               <h4 class="custom-field--title">Gemstone Number</h4>
+               <div class="custom-field--value">
+                 {{ item["gemstone_number"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["gemstone_average_color"] != blank %}
+             <div class="fc-field field__gemstone-average-color field-type--text">
+               <h4 class="custom-field--title">Gemstone Average Color</h4>
+               <div class="custom-field--value">
+                 {{ item["gemstone_average_color"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["gemstone_average_clarity"] != blank %}
+             <div class="fc-field field__gemstone-average-clarity field-type--text">
+               <h4 class="custom-field--title">Gemstone Average Clarity</h4>
+               <div class="custom-field--value">
+                 {{ item["gemstone_average_clarity"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_gemstone_type"] != blank %}
+             <div class="fc-field field__accent-gemstone-type field-type--text">
+               <h4 class="custom-field--title">Accent Gemstone Type</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_gemstone_type"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_shape"] != blank %}
+             <div class="fc-field field__accent-shape field-type--text">
+               <h4 class="custom-field--title">Accent Shape</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_shape"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_number"] != blank %}
+             <div class="fc-field field__accent-number field-type--text">
+               <h4 class="custom-field--title">Accent Number</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_number"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_minimum_weight"] != blank %}
+             <div class="fc-field field__accent-minimum-weight field-type--text">
+               <h4 class="custom-field--title">Accent Minimum Weight</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_minimum_weight"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_average_color"] != blank %}
+             <div class="fc-field field__accent-average-color field-type--text">
+               <h4 class="custom-field--title">Accent Average Color</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_average_color"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_average_clarity"] != blank %}
+             <div class="fc-field field__accent-average-clarity field-type--text">
+               <h4 class="custom-field--title">Accent Average Clarity</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_average_clarity"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["accent_setting_style"] != blank %}
+             <div class="fc-field field__accent-setting-style field-type--text">
+               <h4 class="custom-field--title">Accent Setting Style</h4>
+               <div class="custom-field--value">
+                 {{ item["accent_setting_style"] }}
+               </div>
+             </div>
+           {% endif %}
+         </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}

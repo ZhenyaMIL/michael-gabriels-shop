@@ -1,0 +1,187 @@
+<section id="section-{{ section.id }}">
+    <div class="ColumnWrap ColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+        <div class="ContainerCentered">
+            {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <header class="SectionHeader ContentCenter TextCenter">
+                    {%- if section.settings.subheading != blank -%}
+                        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                    {%- endif -%}
+
+                    {%- if section.settings.title != blank -%}
+                        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                    {%- endif -%}
+
+                    {%- if section.settings.content != blank -%}
+                        <div class="SectionHeader__Description TextCenter Rte">
+                            {{ section.settings.content }}
+                        </div>
+                    {%- endif -%}
+                </header>
+            {%- endif -%}
+            {%- if section.settings.image != blank -%}
+                <div class="ColorsTable">
+                    <div class="ColorsTable__ImageWrap">
+                        <div class="ColorsTable_Image Image--lazyLoad"
+                             style="background-image: url({{ section.settings.image | img_url: '1000x' }})">
+                        </div>
+                    </div>
+                    <div class="ColorsTable_Table">
+                        {% render 'table-colors' %}
+                    </div>
+                </div>
+            {%- endif -%}
+        </div>
+    </div>
+</section>
+
+<style>
+.ContainerCentered--Flex {
+    display: flex;
+}
+
+.SectionHeader.ContentCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.SectionHeader__Description.TextCenter {
+    max-width: 800px;
+}
+
+.SectionHeader.SectionHeader--MiddleIndent {
+    margin-bottom: 30px;
+}
+
+.ColumnWrap {
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.ColumnWrap--Background {
+    background-color: #fbf8f3;
+}
+
+@media (min-width: 981px) {
+    .ColumnWrap {
+        padding: 80px 20px;
+    }
+}
+
+.ColorsTable {
+    margin: 0px auto;
+    overflow-x: scroll;
+    max-width: 800px;
+    padding: 40px 0;
+}
+
+@media (min-width: 981px) {
+    .ColorsTable {
+        overflow-x: hidden;
+    }
+}
+  
+.ColorsTable__ImageWrap {
+    min-height: 150px;
+    width: 800px;
+    position: relative;
+    display: block;
+
+}
+
+.ColorsTable_Image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.ColorsTable_Table {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    border-bottom: 1px solid #acacac;
+    border-right: 1px solid #acacac;
+}
+
+.color {
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.grades {
+    display: flex;
+    flex-direction: row;
+}
+
+.grade {
+    flex-basis: 30px;
+    flex-grow: 1;
+    border-left: 1px solid #acacac;
+}
+
+.name {
+    border-top: 1px solid #acacac;
+    border-left: 1px solid #acacac;
+}
+</style>
+{% schema %}
+{
+  "name": "Text content Colors",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Show content with background",
+      "default": false
+    },
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Top section image",
+       "info": "1920 x 800px .png recommended"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

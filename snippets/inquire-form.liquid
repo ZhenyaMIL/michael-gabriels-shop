@@ -1,0 +1,322 @@
+{%- assign form_heading = section.settings.form_heading -%}
+
+{%- capture form_fields -%}
+    {%- for block in section.blocks -%}
+
+        {%- case block.type -%}
+
+            {%- when 'email' -%}
+                <div class="Form__Item Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    <input type="email" class="Form__Input" id="Form-{{ section.id }}-{{ forloop.index0 }}" name="contact[email]" autocorrect="off" autocapitalize="off" />
+                    <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__FloatingLabel">{{ block.settings.title }}</label>
+                </div>
+
+            {%- when 'body' -%}
+                <div class="Form__Item Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__Textarea" name="contact[body]"></textarea>
+                    <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__FloatingLabel">{{ block.settings.title }}</label>
+                </div>
+
+            {%- when 'text' -%}
+                <div class="Form__Item Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    <input type="text" class="Form__Input" id="Form-{{ section.id }}-{{ forloop.index0 }}" name="contact[{{ block.settings.title | handleize }}]" autocapitalize="words" value="" />
+                    <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__FloatingLabel">{{ block.settings.title }}</label>
+                </div>
+
+            {%- when 'textarea' -%}
+                <div class="Form__Item Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__FloatingLabel">{{ block.settings.title }}</label>
+                    <textarea rows="10" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__Textarea" name="contact[{{ block.settings.title | handleize }}]"></textarea>
+
+                </div>
+
+            {%- when 'telephone' -%}
+                <div class="Form__Item Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    <input type="tel" id="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__Input Form__Input--Phone" name="contact[telephone]" value="" />
+                    <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="Form__FloatingLabel">{{ block.settings.title }}</label>
+                </div>
+
+            {%- when 'spacer' -%}
+                {%- assign hr_class = 'hr--clear' -%}
+                {%- if block.settings.line-%}
+                    {%- assign hr_class = '' -%}
+                {%- endif -%}
+                <div class="Form__Item">
+                    <hr class="{{ hr_class }}" {{ block.shopify_attributes }}>
+                </div>
+
+            {%- when 'checkbox' -%}
+
+                <fieldset class="Form__Item Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.title != blank -%}
+                        <legend class="form-item__label">{{ block.settings.title }}</legend>
+                    {%- endif -%}
+
+                    {%- for i in (1..12) -%}
+                        {%- capture index -%}label-{%- cycle 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve' -%}{%- endcapture -%}
+
+                        {%- if block.settings[index] != blank -%}
+                            <div class="Form__CheckField Form__CheckField--{{ block.settings.style }} Form__CheckField--{{ forloop.index0 }}-{{ i }}">
+
+                                <input type="checkbox" id="Form-{{ section.id }}-{{ forloop.index0 }}-{{ i }}" class="Form__CheckboxInput Form__CheckboxInput--{{ block.settings.style }}-{{ forloop.index0 }}-{{ i }}" name="contact[{{ block.settings[index]  | handleize }}]" value="{{ block.settings[index] }}">
+                                <label class="Form__CheckLabel--{{ block.settings.style }}" for="Form-{{ section.id }}-{{ block.settings.style }}-{{ forloop.index0 }}-{{ i }}">
+                                    {{ block.settings[index] }}
+                                </label>
+                            </div>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </fieldset>
+
+            {%- when 'radio' -%}
+                <fieldset class="Form__Item  Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.title != blank -%}
+                        <legend class="form-item__label">{{ block.settings.title }}</legend>
+                    {%- endif -%}
+
+                    {%- for i in (1..6) -%}
+                        {%- capture index -%}label-{%- cycle 'one', 'two', 'three', 'four', 'five', 'six' -%}{%- endcapture -%}
+
+                        {%- if block.settings[index] != blank -%}
+                            <div>
+                                <label for="Form-{{ section.id }}-{{ block.settings.title }}-{{ forloop.index0 }}-{{ i }}">
+                                    <input type="radio" id="Form-{{ section.id }}-{{ forloop.index0 }}-{{ i }}" class="contactFormRadio" name="contact[{{ block.settings.title | handleize }}]" value="{{ block.settings[index] }}">
+                                    {{ block.settings[index] }}
+                                </label>
+                            </div>
+                        {%- endif -%}
+                    {%- endfor -%}
+                </fieldset>
+
+            {%- when 'select' -%}
+                <fieldset class="Form__Item  Form__Item--{{ block.settings.style }}" {{ block.shopify_attributes }}>
+                    {%- if block.settings.title != blank -%}
+                        <label for="Form-{{ section.id }}-{{ forloop.index0 }}" class="form-item__label label--block">{{ block.settings.title }}</label>
+                    {%- endif -%}
+                    <div class="Form__Select Select Select--primary">
+                        {%- render 'icon' with 'select-arrow' -%}
+                        <select id="Form-{{ section.id }}-{{ block.settings.title }}-{{ forloop.index0 }}" class="contactFormSelect" name="contact[{{ block.settings.title | handleize }}]">
+                            <option value="" disabled selected>{{ block.settings.disable | escape }}</option>
+                            {%- for i in (1..20) -%}
+                                {%- capture index -%}label-{%- cycle 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty' -%}{%- endcapture -%}
+
+                                {%- if block.settings[index] != blank -%}
+                                    <option value="{{ block.settings[index] }}">{{ block.settings[index] }}</option>
+                                {%- endif -%}
+                            {%- endfor -%}
+                        </select>
+                    </div>
+                </fieldset>
+        {%- endcase -%}
+    {%- endfor -%}
+{%- endcapture -%}
+
+<div class="PageContent PageContent--narrow">
+    {%- form 'contact', class: 'Form Form--spacingTight' -%}
+
+        {%- if form.posted_successfully? -%}
+            <div class="successForm feedback">
+                <p>{{ 'contact.form.successfully_sent' | t }}</p>
+            </div>
+        {%- else -%}
+            {%- if form.errors -%}
+                <div class="feedback error p">
+                    {{ form.errors | default_errors }}
+                </div>
+            {%- endif -%}
+
+            <div id="contactFormWrapper" class="Form__Wrap">
+                {%- if form_heading != blank -%}
+                    <div class="Form__Item Form__Item--heading">
+                        <h3 class="Heading">{{ form_heading }}</h3>
+                    </div>
+                {%- endif -%}
+
+                {%- assign types = '' -%}
+                {%- for block in section.blocks -%}
+                    {%- assign types = types | append: block.type -%}
+                {%- endfor -%}
+
+                {%- unless types contains "text" -%}
+                    <div class="Form__Item">
+                        <input type="text" class="Form__Input" id="Form-{{ section.id }}-name" name="contact[name]" autocapitalize="words" value="" />  
+                        <label for="Form-{{ section.id }}-name" class="Form__FloatingLabel">{{ 'contact.form.name' | t }}</label>
+                        </div>
+                {%- endunless -%}
+
+                {%- unless types contains "email" -%}
+                    <div class="Form__Item">             
+                        <input type="email" class="Form__Input" id="Form-{{ section.id }}-email" name="contact[email]" autocorrect="off" autocapitalize="off" />
+                        <label for="Form-{{ section.id }}-email" class="Form__FloatingLabel">{{ 'contact.form.email' | t }}</label>
+                    </div>
+                {%- endunless -%}
+
+                {{- form_fields -}}
+
+                {%- unless types contains "body" -%}
+                    <div class="Form__Item">
+                        <label for="Form-{{ section.id }}-body">{{ 'contact.form.message' | t }}</label>
+                        <textarea rows="10" id="Form-{{ section.id }}-body" class="Form__Textarea" name="contact[body]"></textarea>
+                    </div>
+                {%- endunless -%}
+
+                <div class="Form__Item"><button type="submit" id="contactFormSubmit" class="Form__Submit Button Button--primary Button--full">{{ section.settings.submit_text }}</button></div>
+            </div><!-- Inquire Wrapper -->
+        {%- endif -%}
+    {%- endform -%}
+</div>
+<style>
+  .Form__Item {
+  margin-bottom: 30px !important;
+  }
+    .Form__Item--Body {
+        padding-top: 20px;
+    }
+    .FieldHalf, .Form__Item--FieldHalf {
+        width: 48%;
+        display: inline-block;
+    }
+
+    .Form__Wrap .Form__Item--FieldHalf:ntn-child(2n){
+        margin-left: 2%;
+    }
+    .m-l {
+        margin-left: 4%;
+    }
+    fieldset.Form__Item--Radio-Style, fieldset.Form__Item--Select-Style, fieldset.Form__Item--Checkbox-Multiply {
+        border: 0px;
+        padding: 0;
+    }
+    .LabelHeading legend {
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .Form__Item--Checkbox-Multiply legend {
+        width: 100%;
+    }
+    .Form__Item--Checkbox-Multiply .Form__CheckField--Checkbox-Multiply {
+        width: 50%;
+        display: inline-block;
+        padding-right: 10px;
+        margin-bottom: 6px;
+    }
+    .Form__CheckLabel--Checkbox-Multiply {
+        width: 100%;
+        display: block;
+        position: relative;
+        padding-left: 50px;
+        line-height: 1.4;
+        height: 24px;
+    }
+    .Form__CheckLabel--Checkbox-Multiply:before {
+        position: absolute;
+        display: block;
+        border: 2px solid #b7b7b7;
+        width: 22px;
+        height: 22px;
+        content: "";
+        left: 0;
+        border-radius: 3px;
+    }
+    .Form__CheckLabel--Checkbox-Multiply:after {
+        position: absolute;
+        display: block;
+        color: #b7b7b7;
+        content: "";
+        width:24px;
+        height: 24px;
+        font-size: 24px;
+        left:3px;
+        top:0;
+        content: "✔";
+        opacity: 0;
+        line-height: 0.8;
+    }
+    input.Form__CheckboxInput:checked + .Form__CheckLabel--Checkbox-Multiply:after + {
+        opacity: 1;
+    }
+    input[type="checkbox"]:checked + label::after {
+        opacity: 1;
+    }
+    .Form__CheckboxInput--Checkbox-Multiply-0-1,
+    .Form__CheckboxInput--Checkbox-Multiply-1-2,
+    .Form__CheckboxInput--Checkbox-Multiply-2-3,
+    .Form__CheckboxInput--Checkbox-Multiply-3-4,
+    .Form__CheckboxInput--Checkbox-Multiply-4-5,
+    .Form__CheckboxInput--Checkbox-Multiply-5-6,
+    .Form__CheckboxInput--Checkbox-Multiply-6-7,
+    .Form__CheckboxInput--Checkbox-Multiply-7-8,
+    .Form__CheckboxInput--Checkbox-Multiply-8-9,
+    .Form__CheckboxInput--Checkbox-Multiply-10-11 {
+        margin-right: 30px;
+    }
+    .Form__CheckField--9-10 label, .Form__CheckField--11-12 label {
+        padding-left: 30px;
+    }
+    .Form__CheckField {
+        position: relative;
+        display: block;
+        z-index: 1;
+    }
+    input.Form__CheckboxInput {
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        opacity: 0;
+        height: 24px;
+        z-index: 2;
+    }
+    .Form__CheckField:before {
+        position: absolute;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin-left: 24px;
+        content: " ";
+        z-index: -1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -1px;
+    }
+
+    .Form__CheckField--0-1:before {
+        background-image: url('{{ 'round.svg' | asset_url }}');
+    }
+    .Form__CheckField--1-2:before {
+        background-image: url('{{ 'princess.svg' | asset_url }}');
+    }
+    .Form__CheckField--2-3:before {
+        background-image: url('{{ 'oval-vertical.svg' | asset_url }}');
+    }
+    .Form__CheckField--3-4:before {
+        background-image: url('{{ 'emerald-vertical.svg' | asset_url }}');
+    }
+    .Form__CheckField--4-5:before {
+        background-image: url('{{ 'cushion.svg' | asset_url }}');
+    }
+    .Form__CheckField--5-6:before {
+        background-image: url('{{ 'radiant.svg' | asset_url }}');
+    }
+    .Form__CheckField--6-7:before {
+        background-image: url('{{ 'pear.svg' | asset_url }}');
+    }
+    .Form__CheckField--7-8:before {
+        background-image: url('{{ 'heart.svg' | asset_url }}');
+    }
+    .Form__CheckField--8-9:before {
+        background-image: url('{{ 'vertical.svg' | asset_url }}');
+    }
+    .Form__CheckField--10-11:before {
+        background-image: url('{{ 'asscher.svg' | asset_url }}');
+    }
+    .Form__Item.Form__Item--Message {
+        margin-top: 50px;
+        position: relative;
+        display: block;
+    }
+
+</style>

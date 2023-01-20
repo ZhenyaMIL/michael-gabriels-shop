@@ -1,0 +1,227 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-diamonds-1920x1080.jpg",
+        "subheading": "Learn about",
+        "title": "Diamonds",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "education-gem-tabs": {
+      "type": "education-gem-tabs",
+      "blocks": {
+        "b6a55719-375d-4266-ba3f-cd960d95d71a": {
+          "type": "block",
+          "settings": {
+            "link_title": "Lab Grown Diamonds",
+            "link_url": "shopify:\/\/pages\/education-lab-grown-diamonds"
+          }
+        },
+        "27d5aad5-977a-45ca-b1df-032d50226cb3": {
+          "type": "block",
+          "settings": {
+            "link_title": "Mined Diamonds",
+            "link_url": "shopify:\/\/pages\/education-mined-diamonds"
+          }
+        },
+        "70840def-7aa1-4b00-99db-4c2a7d28ece7": {
+          "type": "block",
+          "settings": {
+            "link_title": "Diamond Specific Items",
+            "link_url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "b6a55719-375d-4266-ba3f-cd960d95d71a",
+        "27d5aad5-977a-45ca-b1df-032d50226cb3",
+        "70840def-7aa1-4b00-99db-4c2a7d28ece7"
+      ],
+      "settings": {}
+    },
+    "content-columns": {
+      "type": "content-columns",
+      "blocks": {
+        "cdd527af-f4fc-454b-88fe-a8e4181f5b0f": {
+          "type": "block",
+          "settings": {
+            "i_title": "ECO FRIENDLY",
+            "icon": "pagelines",
+            "i_content": "Lab grown diamonds are grown with minimal impact on the environment."
+          }
+        },
+        "c927ef91-8ff7-4d80-84e0-bdd704b6cc4d": {
+          "type": "block",
+          "settings": {
+            "i_title": "BEAUTY",
+            "icon": "gem",
+            "i_content": "Lab grown diamonds are physically, optically, and chemically indistinguishable from mined diamonds."
+          }
+        },
+        "195f3ed3-b99d-42a8-aefe-8610d4b25855": {
+          "type": "block",
+          "settings": {
+            "i_title": "PARITY",
+            "icon": "fingerprint",
+            "i_content": "Lab grown diamonds are type IIA diamonds. Only 2% of mined diamonds in the world fall under this category."
+          }
+        },
+        "f8b4e0fa-b40c-481d-a879-1781fb550de7": {
+          "type": "block",
+          "settings": {
+            "i_title": "VALUE",
+            "icon": "handshake",
+            "i_content": "Lab grown diamonds provide exceptional value and are typically more affordable than mined stones of the same size and, cut and quality."
+          }
+        }
+      },
+      "block_order": [
+        "cdd527af-f4fc-454b-88fe-a8e4181f5b0f",
+        "c927ef91-8ff7-4d80-84e0-bdd704b6cc4d",
+        "195f3ed3-b99d-42a8-aefe-8610d4b25855",
+        "f8b4e0fa-b40c-481d-a879-1781fb550de7"
+      ],
+      "settings": {
+        "subheading": "What are",
+        "title": "Lab Grown Diamonds",
+        "content": "<p>It is now scientifically possible to grow diamonds of superlative beauty in a laboratory. Using environmentally-friendly technology, lab grown diamonds are chemically, geologically and optically the same as mined diamonds. To the naked eye, with a jeweler’s loupe, or a powerful binocular microscope, these lab grown diamonds are as real and spectacular as a diamond can be. Lab grown diamonds are priced significantly below comparable mined diamonds. With these savings it may now be possible to afford a larger stone or one of greater clarity. The diamond of your dreams.<\/p>",
+        "background": true,
+        "text_color": "#ffffff",
+        "r_subheading": "Benefits of",
+        "r_title": "Lab Grown Diamonds",
+        "r_content": ""
+      }
+    },
+    "shapes": {
+      "type": "shapes",
+      "blocks": {
+        "53786543-a195-45fb-96fb-26890404045c": {
+          "type": "block",
+          "settings": {
+            "title": "Round",
+            "s_image": "round",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "8667293c-4c6e-4340-82a1-b050e6972bcc": {
+          "type": "block",
+          "settings": {
+            "title": "Princess",
+            "s_image": "princess",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "a16301a5-f4ce-4f17-ae1b-fab9eea9abca": {
+          "type": "block",
+          "settings": {
+            "title": "Cushion",
+            "s_image": "cushion",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "91d99859-5499-4b0e-a585-5d1aecce6f9d": {
+          "type": "block",
+          "settings": {
+            "title": "Asscher",
+            "s_image": "asscher",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "0e962f47-2c54-4c73-b3c0-8fb8e4459ccb": {
+          "type": "block",
+          "settings": {
+            "title": "Marquise",
+            "s_image": "vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "e14e46e6-8ea4-4130-bd02-7642d4c47b9e": {
+          "type": "block",
+          "settings": {
+            "title": "Oval",
+            "s_image": "oval-vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "ddc0b0b6-d157-4628-8629-fbd43d57ccf6": {
+          "type": "block",
+          "settings": {
+            "title": "Radiant",
+            "s_image": "radiant",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "dbad5d0a-4563-4481-a6ea-0473c6619687": {
+          "type": "block",
+          "settings": {
+            "title": "Pear",
+            "s_image": "pear",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "6561600b-ecde-4c09-a8fc-7d6932650241": {
+          "type": "block",
+          "settings": {
+            "title": "Emerald",
+            "s_image": "emerald-vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "cd443bc0-68a2-4a46-b798-c009ddb66eb5": {
+          "type": "block",
+          "settings": {
+            "title": "Heart",
+            "s_image": "heart",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "c5397350-35b1-471f-8e00-7f70d66f29ca": {
+          "type": "block",
+          "settings": {
+            "title": "Trillion",
+            "s_image": "trillion",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "53786543-a195-45fb-96fb-26890404045c",
+        "8667293c-4c6e-4340-82a1-b050e6972bcc",
+        "a16301a5-f4ce-4f17-ae1b-fab9eea9abca",
+        "91d99859-5499-4b0e-a585-5d1aecce6f9d",
+        "0e962f47-2c54-4c73-b3c0-8fb8e4459ccb",
+        "e14e46e6-8ea4-4130-bd02-7642d4c47b9e",
+        "ddc0b0b6-d157-4628-8629-fbd43d57ccf6",
+        "dbad5d0a-4563-4481-a6ea-0473c6619687",
+        "6561600b-ecde-4c09-a8fc-7d6932650241",
+        "cd443bc0-68a2-4a46-b798-c009ddb66eb5",
+        "c5397350-35b1-471f-8e00-7f70d66f29ca"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Lab Diamond Shapes",
+        "content": ""
+      }
+    },
+    "banner-fullscreen": {
+      "type": "banner-fullscreen",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/edu-diamonds-section-1920x800.jpg",
+        "subheading": "",
+        "title": "How Are Lab Grown Diamonds made?",
+        "content": "<p>Lab Grown Diamonds are created using one of two processes, Chemical Vapor Deposition (CVD) and High Pressure High Temperature (HPHT). A small flat diamond seed is placed in a controlled carbon - gas environment. Great amounts of energy breaks down and the carbon atoms attach to the diamond seed. This seed then starts to grow layer by layer. About 4-6 weeks later, depending on the size, a gem quality rough lab grown diamond is born. The rough lab grown diamond is then sent to a cutting facility and mimics the same processes a mined diamond goes through. <\/p>",
+        "content_right": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "education-gem-tabs",
+    "content-columns",
+    "shapes",
+    "banner-fullscreen"
+  ]
+}

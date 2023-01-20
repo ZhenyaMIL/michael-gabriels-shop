@@ -1,0 +1,122 @@
+<div class="Container">
+    <header class="PageHeader">
+        <div class="SectionHeader SectionHeader--center">
+            <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+        </div>
+    </header>
+
+    <div class="PageContent Rte">
+        {{ page.content }}
+    </div>
+    <section class="Section">
+    <div class="Gallery">
+        {% for block in section.blocks %}
+            <div class="GalleryCard__Wrapper">
+                <div class="GalleryCard">
+                    {%- if block.settings.image != blank -%}
+                        <div class="CardImage__Wrapper">
+                            <div class="CardImage"
+                                 style="background-image: url({{ block.settings.image | img_url: '600x' }})"
+                                 {% if block.settings.image %}data-bgset="{{ block.settings.image | img_url: mobile_size, crop: 'center' }} 750w"{% endif %}>
+                            </div>
+
+                            <noscript>
+                                <div class="CardImage__ImageWrapper"
+                                     style="background-image: url({{ block.settings.image | img_url: '600x' }})"></div>
+                            </noscript>
+
+                            {%- unless block.settings.image != blank -%}
+                                <div class="PlaceholderBackground PlaceholderBackground--Dark">
+                                    {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+                                </div>
+                            {%- endunless -%}
+                        </div>
+                    {%- endif -%}
+                    {%- if block.settings.title != blank -%}
+                        <div class="CardText">
+                            {%- if block.settings.title != blank -%}
+                                <p class="CardText__Heading Heading">{{ block.settings.title | escape }}</p>
+                            {%- endif -%}
+                        </div>
+                    {%- endif -%}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+</div>
+{% schema %}
+{
+  "name": "Gallery",
+  "class": "shopify-section",
+  "max_blocks": 16,
+  "blocks": [
+    {
+      "name": "Gallery Card",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "600 x 600px .png recommended"
+        }
+      ]
+    }
+  ],
+  "settings": [
+  ],
+  "presets": [
+    {
+      "category": "Content",
+      "name": "Gallery",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+
+.Gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 99%;
+}
+.GalleryCard__Wrapper {
+    background-color: #F5F1E6;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.CardImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+}
+.CardText {
+    text-align: center;
+    padding: 15px;
+}
+@media (min-width: 641px) {
+    .GalleryCard__Wrapper {
+      width: 48%;
+    }
+  }
+  @media (min-width: 1140px) {
+    .GalleryCard__Wrapper {
+      width: 23.5%;
+    }
+  }
+</style>
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,67 @@
+{% if product.metafields.custom_fields["product_information"] != blank %}
+  <div class="custom-field custom-field__product-information custom-field__type--field-collection-json">
+    <h3 class="custom-field--title">Product Information</h3>
+    <div class="custom-field--value">
+      {% for item in product.metafields.custom_fields["product_information"] %}
+        <div class="fc-item fc-index--{{ forloop.index0 }}">
+           {% if item["_setting_style_"] != blank %}
+             <div class="fc-field field__-setting-style- field-type--text">
+               <h4 class="custom-field--title"> Setting Style </h4>
+               <div class="custom-field--value">
+                 {{ item["_setting_style_"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["rhodium_finish"] != blank %}
+             <div class="fc-field field__rhodium-finish field-type--text">
+               <h4 class="custom-field--title">Rhodium Finish</h4>
+               <div class="custom-field--value">
+                 {{ item["rhodium_finish"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["style"] != blank %}
+             <div class="fc-field field__style field-type--text">
+               <h4 class="custom-field--title">Style</h4>
+               <div class="custom-field--value">
+                 {{ item["style"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["chain_clasp"] != blank %}
+             <div class="fc-field field__chain-clasp field-type--text">
+               <h4 class="custom-field--title">Chain Clasp</h4>
+               <div class="custom-field--value">
+                 {{ item["chain_clasp"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["chain_length"] != blank %}
+             <div class="fc-field field__chain-length field-type--text">
+               <h4 class="custom-field--title">Chain Length</h4>
+               <div class="custom-field--value">
+                 {{ item["chain_length"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["chain_type"] != blank %}
+             <div class="fc-field field__chain-type field-type--text">
+               <h4 class="custom-field--title">Chain Type</h4>
+               <div class="custom-field--value">
+                 {{ item["chain_type"] }}
+               </div>
+             </div>
+           {% endif %}
+           {% if item["backing"] != blank %}
+             <div class="fc-field field__backing field-type--text">
+               <h4 class="custom-field--title">Backing</h4>
+               <div class="custom-field--value">
+                 {{ item["backing"] }}
+               </div>
+             </div>
+           {% endif %}
+         </div>
+       {% endfor %}
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "banner-education-diamond-anatomy": {
+      "type": "banner-education-diamond-anatomy",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Laboratory_Worker_Holding_Large_Faceted_Gem.jpg",
+        "subheading": "",
+        "title": "Diamond Anatomy",
+        "content": "",
+        "link_title": "Learn More",
+        "link": "",
+        "align": "Left",
+        "content_color": "Dark"
+      }
+    },
+    "education-tabs-diamond-anatomy": {
+      "type": "education-tabs-diamond-anatomy",
+      "blocks": {
+        "ed66e7bc-8519-435b-9eff-f96c9196cc94": {
+          "type": "block",
+          "settings": {
+            "link_title": "CHOOSING A CENTER STONE",
+            "link_url": "shopify:\/\/pages\/choosing-a-center-stone"
+          }
+        },
+        "c737b869-3725-450e-9091-90ede4bb17b0": {
+          "type": "block",
+          "settings": {
+            "link_title": "SHAPES",
+            "link_url": "shopify:\/\/pages\/shapes-center-stone"
+          }
+        },
+        "b523f848-a2aa-49d7-80fc-5ee61c1d1fdf": {
+          "type": "block",
+          "settings": {
+            "link_title": "4Cs",
+            "link_url": "shopify:\/\/pages\/4cs-center-stone"
+          }
+        },
+        "859ad863-60be-41ce-b9f6-1f36e8013a27": {
+          "type": "block",
+          "settings": {
+            "link_title": "DIAMOND ANATOMY",
+            "link_url": "shopify:\/\/pages\/diamond-anatomy"
+          }
+        }
+      },
+      "block_order": [
+        "ed66e7bc-8519-435b-9eff-f96c9196cc94",
+        "c737b869-3725-450e-9091-90ede4bb17b0",
+        "b523f848-a2aa-49d7-80fc-5ee61c1d1fdf",
+        "859ad863-60be-41ce-b9f6-1f36e8013a27"
+      ],
+      "settings": {}
+    },
+    "b540dd3a-b3a7-4567-bacc-be0d8a9b884f": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Diamond Basics",
+        "title": "Diamond Anatomy Of A Cut Stone",
+        "image": "shopify:\/\/shop_images\/Round_Diamond_Anatomy.jpg",
+        "image_position": "right",
+        "content": "<p>When you buy a house, you check the roof, the  walls, the floor- the basic components that make up the structure of what you are about to be living in. Diamonds, while not something you will live inside of, are something you will potentially live with for the remainder of your life. They also have a structure, and as with a house, you want certain parts to be designed and fashioned to be both aesthetically pleasing as well as properly functional. By functional we are referring to the maximization of the diamond's optical properties per carat. <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "mosaic-diamond-anatomy": {
+      "type": "mosaic-diamond-anatomy",
+      "blocks": {
+        "8f4f5e26-a2d1-4448-98ad-ac63c6864db1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Round_Diamond_Table.jpg",
+            "subheading": "",
+            "title": "Table",
+            "content": "<p>The table is the large flat facet on the top of the diamond when viewed from above, and in most shapes, often the largest single facet on the diamond itself. This is the great window through which the stone reveals its inner self to the viewer. <\/p><p>The primary gateway for light, the most light enters the stone from this facet and if the diamond is well cut, more light leaves through this facet as well, reflected back from the pavilion below. Too large or small a table will cause light leakage or restriction, greatly affecting your appreciation of the diamond. <\/p>",
+            "link_title": "Inquire Here",
+            "link": ""
+          }
+        },
+        "e474fb00-a638-4be3-8189-adb6ab44836b": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Round_Diamond_Crown.jpg",
+            "subheading": "",
+            "title": "Crown",
+            "content": "<p>Everything above the girdle until the table is the crown. The angles and the proportions of the facets of the crown direct the light entering through there and determine how much will leave that way or leak out the sides where you won't be able to see or enjoy it. <\/p><p>Light beams down into the diamond through the facets of the crown and table, is refracted inside and reflects off the walls of the pavilion below, then it rises back to meet the viewer again through the crown and table. The facets of the crown add especially to the prismatic effect, the diamond's fire and the precision of their design directly correlate to the quality and quantity of those rainbow flashes.<\/p>",
+            "link_title": "Inquire Here",
+            "link": ""
+          }
+        },
+        "85d2da47-0af6-4944-a484-7a3ab94f8a52": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Round_Diamond_Girdle.jpg",
+            "subheading": "",
+            "title": "Girdle",
+            "content": "<p>The widest part of the stone - its outermost edge when looked at from above - is the girdle. Girdles are an important structural element in diamonds. The girdle is typically where a diamond's setting will grasp the stone, and in settings such as bezels or halos, the girdle will be encased, unseen, while in settings that use prongs the girdle will be visible. Here, some of the diamond may be “lost,” because a thick girdle will add carat weight without adding a visible difference in size or sparkle. On the other hand, a girdle too thin may be subject to damage. Therefore, you may want to alter your setting design to suit the girdle of your stone.<\/p>",
+            "link_title": "Inquire Here",
+            "link": ""
+          }
+        },
+        "0e84885f-45be-409e-8ef7-72751d59c15a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Round_Diamond_Pavilion.jpg",
+            "subheading": "",
+            "title": "Pavilion",
+            "content": "<p>Below the girdle, as the diamond narrows towards the culet is the<br\/>pavilion. In many shapes and cuts, this represents the bulk of the carat weight of the diamond, though it is the angle of its facets that represents its value toward the quality of the stone. Because this is the portion of the diamond that reflects light back up through the table and crown, if the angles of the facets are too shallow or too deep that light will be reflected out of the sides of the diamond and lost, as opposed to up towards the viewer. In pavilions that are too deep, the diamond will appear darker, and in pavilions that are too shallow, it will reflect the girdle inside the diamond, creating a dark ring called a “fish-eye,” in the center of the stone's internal visual when you look down into the table. <\/p>",
+            "link_title": "Inquire Here",
+            "link": ""
+          }
+        },
+        "66b35cfd-7813-46d8-8d15-4f05a437b469": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Round_Diamond_Culet.jpg",
+            "subheading": "",
+            "title": "Culet",
+            "content": "<p>The very bottom of the stone is the culet, the pointed or slightly faceted point at which the sides of the diamond come down and join together. In many cuts, a pointed culet will produce more scintillation, as a flat culet will allow light to flow out the bottom of the stone, and if it is too large in certain cuts it will cause a noticeable dark spot or circle. A smaller or pointed culet will produce greater brilliance and scintillation.<\/p>",
+            "link_title": "Inquire Here",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f4f5e26-a2d1-4448-98ad-ac63c6864db1",
+        "e474fb00-a638-4be3-8189-adb6ab44836b",
+        "85d2da47-0af6-4944-a484-7a3ab94f8a52",
+        "0e84885f-45be-409e-8ef7-72751d59c15a",
+        "66b35cfd-7813-46d8-8d15-4f05a437b469"
+      ],
+      "settings": {}
+    },
+    "education-bottom-special-diamond-anatomy": {
+      "type": "education-bottom-special-diamond-anatomy",
+      "settings": {
+        "title": "",
+        "content": "Share with us on Instagram by using",
+        "link_url_title": "#MichaelGabriels",
+        "link_url": ""
+      }
+    }
+  },
+  "order": [
+    "banner-education-diamond-anatomy",
+    "education-tabs-diamond-anatomy",
+    "b540dd3a-b3a7-4567-bacc-be0d8a9b884f",
+    "mosaic-diamond-anatomy",
+    "education-bottom-special-diamond-anatomy"
+  ]
+}

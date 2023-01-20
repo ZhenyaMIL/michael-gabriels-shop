@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main": {
+      "type": "gallery",
+      "blocks": {
+        "2fc7eaf8-0ac8-47e3-9220-a32ce7c87b99": {
+          "type": "block",
+          "settings": {
+            "title": "Ciara & Trent Engagement @ciara_mod @trentmattson",
+            "image": "shopify:\/\/shop_images\/Client_74ae9a63-3542-45f8-b0f9-5f4f63e18b91.jpg"
+          }
+        },
+        "9d274be9-cc63-4b64-9589-6a556a48e2b0": {
+          "type": "block",
+          "settings": {
+            "title": "Nadine & Kitric Engagement @nadinedianela @kitricweiss",
+            "image": "shopify:\/\/shop_images\/Client_76fc6cf7-6916-4377-96d3-0a530a38c303.jpg"
+          }
+        },
+        "3d5c4b8d-1e49-4be9-a4c8-d6b243f903c9": {
+          "type": "block",
+          "settings": {
+            "title": "Holly & Blake Engagement @mrblakejenkins @xxhollylorraine",
+            "image": "shopify:\/\/shop_images\/Client_ef33719e-71fa-438d-9a94-d3cdb04c4d9c.jpg"
+          }
+        },
+        "f6133495-e55e-4748-af58-f5aea5dd49a1": {
+          "type": "block",
+          "settings": {
+            "title": "Carly & Mark Engagement @mkallen3711 @carly_rochelle",
+            "image": "shopify:\/\/shop_images\/Client_6e3d25b9-8049-4996-8288-2dc4d3b95e61.jpg"
+          }
+        },
+        "98c1ebe6-a865-45ce-b120-e921a5465f02": {
+          "type": "block",
+          "settings": {
+            "title": "Rebecca & Jesse Engagement @jtsandoval19 @ms.beccaa",
+            "image": "shopify:\/\/shop_images\/Client_08e19030-0b3a-431f-9a8d-ee7cfe8f0333.jpg"
+          }
+        },
+        "2ca05d47-4b35-48ec-898a-2b446cad4893": {
+          "type": "block",
+          "settings": {
+            "title": "Adrianna & John Engagement @dontaskaboutadri @612.sp",
+            "image": "shopify:\/\/shop_images\/Client_7d4bb0ff-255b-4660-98c0-15085d51519b.jpg"
+          }
+        },
+        "387a0ae8-7934-4b41-8923-8d2d25d82eaf": {
+          "type": "block",
+          "settings": {
+            "title": "Alyssa & Robbie Engagement @robbiealbreada5 @alyssa2212",
+            "image": "shopify:\/\/shop_images\/Client_1698aa38-7685-4e76-9d23-9cb2fd90070d.jpg"
+          }
+        },
+        "496d5105-bf8e-4a8e-b4db-26beacd8499c": {
+          "type": "block",
+          "settings": {
+            "title": "Nicole & Dustin Engagement @nicoleshort18 @dustycharles",
+            "image": "shopify:\/\/shop_images\/Client_2504c47c-a5a3-44e2-b7e4-33c0a8220514.jpg"
+          }
+        },
+        "9986ba7c-6bc0-40bf-aa84-bcdf7006e25c": {
+          "type": "block",
+          "settings": {
+            "title": "Carly & Sam Engagement @samprice218 @carlyzucker",
+            "image": "shopify:\/\/shop_images\/Client_821eb26b-0752-421b-89bc-1cd70e21c2ec.jpg"
+          }
+        },
+        "daa5490c-6168-4e19-bf38-928e271dfefc": {
+          "type": "block",
+          "settings": {
+            "title": "Kelly & David Engagement @kellycassidy_ @kennedydavid15",
+            "image": "shopify:\/\/shop_images\/Client_d43256b8-d4a4-4c4f-a29a-12cabc23b997.jpg"
+          }
+        },
+        "6b7befba-b538-4c2d-b053-d613b3072bb0": {
+          "type": "block",
+          "settings": {
+            "title": "Steph & Brian Wedding @stephybabyhtx",
+            "image": "shopify:\/\/shop_images\/Client_00b5817c-3519-454f-951c-6f7983d0e1da.jpg"
+          }
+        },
+        "626eff23-c92a-42f4-8dd4-75d2d346eb08": {
+          "type": "block",
+          "settings": {
+            "title": "Chrissy & Stephanie Engagement @chrissy.amato724 @s.amato_724",
+            "image": "shopify:\/\/shop_images\/Client_256ee5cb-bc0b-480d-b8cb-06a508b9abfa.jpg"
+          }
+        },
+        "684abbac-16e4-4202-ba16-1202174f6b55": {
+          "type": "block",
+          "settings": {
+            "title": "Margarita & Jacob Engagement @mn11 @jacvoyt",
+            "image": "shopify:\/\/shop_images\/Client_ed28ded0-7168-4796-9fcc-9338cba1d11c.jpg"
+          }
+        },
+        "156dc69f-173d-440e-8bde-8234504e306d": {
+          "type": "block",
+          "settings": {
+            "title": "Becca & Ryan Engagement @becca21190 @foodmartyr",
+            "image": "shopify:\/\/shop_images\/Client_1f563e09-0c06-4114-8260-2ba46ebe5400.jpg"
+          }
+        },
+        "70752f1a-cd11-4016-bcec-33f66042e62d": {
+          "type": "block",
+          "settings": {
+            "title": "Misty & Brent Engagement @mistygranholm @mister.dusek",
+            "image": "shopify:\/\/shop_images\/Client_004cae4d-833d-4a73-b01f-1a673ddbdbb3.jpg"
+          }
+        },
+        "a4aece31-17e0-484e-a5bd-924750918c7a": {
+          "type": "block",
+          "settings": {
+            "title": "Daniel & Sabrina Engagement  @rabbanisman @sabrinapopilevsky",
+            "image": "shopify:\/\/shop_images\/Client.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "2fc7eaf8-0ac8-47e3-9220-a32ce7c87b99",
+        "9d274be9-cc63-4b64-9589-6a556a48e2b0",
+        "3d5c4b8d-1e49-4be9-a4c8-d6b243f903c9",
+        "f6133495-e55e-4748-af58-f5aea5dd49a1",
+        "98c1ebe6-a865-45ce-b120-e921a5465f02",
+        "2ca05d47-4b35-48ec-898a-2b446cad4893",
+        "387a0ae8-7934-4b41-8923-8d2d25d82eaf",
+        "496d5105-bf8e-4a8e-b4db-26beacd8499c",
+        "9986ba7c-6bc0-40bf-aa84-bcdf7006e25c",
+        "daa5490c-6168-4e19-bf38-928e271dfefc",
+        "6b7befba-b538-4c2d-b053-d613b3072bb0",
+        "626eff23-c92a-42f4-8dd4-75d2d346eb08",
+        "684abbac-16e4-4202-ba16-1202174f6b55",
+        "156dc69f-173d-440e-8bde-8234504e306d",
+        "70752f1a-cd11-4016-bcec-33f66042e62d",
+        "a4aece31-17e0-484e-a5bd-924750918c7a"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

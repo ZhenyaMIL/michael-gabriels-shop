@@ -1,0 +1,12 @@
+<div class="breadcrumbs" style="margin:10px 0px;">
+  <div class="Container">
+  <a href="/">Home</a> <span class="divider">/</span>
+  {% if template contains "product"  %}
+    {% if product.collections %}
+    <a href="/collections/all">All Products</a><span class="divider">/</span>{% endif %}     
+      <a href="{{product.url}}"><span>{{ product.title }}</span></a>
+   {% endif %}
+</div></div>
+
+
+ 

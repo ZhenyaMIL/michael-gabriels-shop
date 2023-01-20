@@ -1,0 +1,396 @@
+{
+  "sections": {
+    "banner-education-engagement-rings": {
+      "type": "banner-education-engagement-rings",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-rings-1920x1080-nofade.jpg",
+        "subheading": "Engagement Ring Education",
+        "title": "How to Purchase Engagement Rings",
+        "content": "",
+        "link_title": "",
+        "link": "",
+        "align": "Left",
+        "content_color": "Light"
+      }
+    },
+    "education-tabs": {
+      "type": "education-tabs",
+      "blocks": {
+        "70bb1b96-d619-4f41-9fdb-33ea8aa09301": {
+          "type": "block",
+          "settings": {
+            "link_title": "Engagement Rings",
+            "link_url": "shopify:\/\/pages\/education-engagement-ring"
+          }
+        },
+        "24cbccf7-cb3f-4967-aec9-c40f198ccf9e": {
+          "type": "block",
+          "settings": {
+            "link_title": "Women's Wedding Rings",
+            "link_url": "shopify:\/\/pages\/education-womens-wedding-rings"
+          }
+        },
+        "62abcdc4-eb95-4a34-ae93-2251d6964173": {
+          "type": "block",
+          "settings": {
+            "link_title": "Men's Wedding Band",
+            "link_url": "shopify:\/\/pages\/education-mens-wedding-band"
+          }
+        }
+      },
+      "block_order": [
+        "70bb1b96-d619-4f41-9fdb-33ea8aa09301",
+        "24cbccf7-cb3f-4967-aec9-c40f198ccf9e",
+        "62abcdc4-eb95-4a34-ae93-2251d6964173"
+      ],
+      "settings": {}
+    },
+    "education-how-to-buy": {
+      "type": "education-how-to-buy",
+      "settings": {
+        "subheading": "",
+        "title": "How To Buy An Engagement Ring",
+        "content": "<p>Here at Michael Gabriels, we aim to ease the process of purchasing the ideal engagement ring. Follow this guide to get a better understanding on how to choose an engagement ring that he or she will love!<\/p>",
+        "link_title_l": "Learn More",
+        "link_l": "",
+        "subheading_l": "",
+        "title_l": "Learn about the 4 C's",
+        "content_l": "<p>When starting the search for diamonds, it is important to know as much as possible about how diamonds are graded. The 4 C’s are as follows: Cut, Color, Clarity, and Carat Weight.<\/p>",
+        "background": false,
+        "image": "shopify:\/\/shop_images\/edu-rings-tile-image-cols6.jpg",
+        "text_color": "#ffffff",
+        "r_subheading": "",
+        "r_title": "Choose a Diamond",
+        "r_content": ""
+      }
+    },
+    "shapes-mined-diamonds": {
+      "type": "shapes-mined-diamonds",
+      "blocks": {
+        "f462a40a-0034-4b8f-947d-81c9e94a9b54": {
+          "type": "block",
+          "settings": {
+            "title": "Round",
+            "s_image": "round",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "683059ad-db3a-4343-b005-844ecfb98f7b": {
+          "type": "block",
+          "settings": {
+            "title": "Princess",
+            "s_image": "princess",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "4c04d019-7e01-4047-9f0e-2d69f1a42ae1": {
+          "type": "block",
+          "settings": {
+            "title": "Cushion",
+            "s_image": "cushion",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "1ac7b1ba-5fd3-4476-bd68-728dbc49cfd3": {
+          "type": "block",
+          "settings": {
+            "title": "Asscher",
+            "s_image": "asscher",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "33eed275-d05d-4759-b913-69729d9aad5c": {
+          "type": "block",
+          "settings": {
+            "title": "Marquise",
+            "s_image": "vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "a9a66cc0-af42-4cdd-81aa-723ff886a06a": {
+          "type": "block",
+          "settings": {
+            "title": "Oval",
+            "s_image": "oval-vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "94243f16-3ddd-4594-a8ae-cd29eec7b031": {
+          "type": "block",
+          "settings": {
+            "title": "Radiant",
+            "s_image": "radiant",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "1aebfa9a-2aac-47a0-9719-ca8776e85e2f": {
+          "type": "block",
+          "settings": {
+            "title": "Pear",
+            "s_image": "pear",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "1f179498-1393-4fdd-b90e-21d41b1afaf1": {
+          "type": "block",
+          "settings": {
+            "title": "Emerald",
+            "s_image": "emerald-vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "6a25b320-1f9f-4980-b805-de75d649ae4e": {
+          "type": "block",
+          "settings": {
+            "title": "Heart",
+            "s_image": "heart",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "e26d5fa5-3791-4cae-853f-a3d8b828235d": {
+          "type": "block",
+          "settings": {
+            "title": "Trillion",
+            "s_image": "trillion",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "f462a40a-0034-4b8f-947d-81c9e94a9b54",
+        "683059ad-db3a-4343-b005-844ecfb98f7b",
+        "4c04d019-7e01-4047-9f0e-2d69f1a42ae1",
+        "1ac7b1ba-5fd3-4476-bd68-728dbc49cfd3",
+        "33eed275-d05d-4759-b913-69729d9aad5c",
+        "a9a66cc0-af42-4cdd-81aa-723ff886a06a",
+        "94243f16-3ddd-4594-a8ae-cd29eec7b031",
+        "1aebfa9a-2aac-47a0-9719-ca8776e85e2f",
+        "1f179498-1393-4fdd-b90e-21d41b1afaf1",
+        "6a25b320-1f9f-4980-b805-de75d649ae4e",
+        "e26d5fa5-3791-4cae-853f-a3d8b828235d"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Diamond Shapes",
+        "content": ""
+      }
+    },
+    "6fe6a7d0-5fc0-42a3-9675-f6636f73ec9e": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/edu-rings-p1-section-1920x400_9d6def9d-1289-4327-aee3-a1898b040431.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "Fundamental Steps on purchasing an engagement ring",
+        "content": ""
+      }
+    },
+    "banner-fullscreen-steps": {
+      "type": "banner-fullscreen-steps",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/edu-rings-p1-section-1920x400.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "mosaic-blocks": {
+      "type": "mosaic-blocks",
+      "blocks": {
+        "09ae303d-6f21-4393-ab0f-031c5583b9c9": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style01.jpg",
+            "subheading": "",
+            "title": "Step One",
+            "content": "<p>Do your research: Diamond terms and references can get very confusing. Learn about a diamonds 4 C’s and engagement ring styles. Browse our website for various designs as well as our Instagram (@MichaelGabrielsNY) for some inspiration. If a certain style keeps calling your name, browse similar styles so you can narrow down the search. Create a short note of the diamond shapes and engagement ring styles you fell in love with the most. Go ahead and submit yours notes to our inquiry page and our concierge will reach out and we will do their best to assist you. <\/p>",
+            "link_title": "Inquire Here",
+            "link": "shopify:\/\/pages\/inquire"
+          }
+        },
+        "27632d59-8710-42d2-abec-b9128052b172": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style02.jpg",
+            "subheading": "",
+            "title": "Step Two",
+            "content": "<p>Budget yourself: Setting a budget early on will help you find your ideal engagement ring within your spending amount. It is best to set a minimum and maximum amount you would like to spend. Once you have the budget set, reach out to our concierge and let them know what the budget is so we may assist you accordingly. When purchasing a diamond, there are many adjustments you can make in order to find the right diamond. For example, you can choose a better color and lower clarity or go up in size by sacrificing clarity. In the end of the day, you will be the one purchasing the diamond so it is up to you what you would like to tradeoff and spend towards what is more important for you. <\/p>",
+            "link_title": "Inquire Here",
+            "link": "shopify:\/\/pages\/inquire"
+          }
+        },
+        "191b7a75-9579-4233-a43a-240645b9d1a0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style03.jpg",
+            "subheading": "",
+            "title": "Step Three",
+            "content": "<p>Contact Concierge: Speaking with or concierge will do wonders. If nearby one of our locations, make an appointment with your local MG location. Having an appointment makes it easier for us to ensure we will be available to meet and have all the proper info to assist you accordingly. If you are not nearby one of our locations, you may reach out to us via phone, email, or website chat. We can ease the process and work together remotely. We will work together to go over all options within your budget and do our best to educate you. <\/p>",
+            "link_title": "Contact Concierge",
+            "link": ""
+          }
+        },
+        "e976cbbe-9a37-41c9-b797-3bd3197f30ee": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style04.jpg",
+            "subheading": "",
+            "title": "Step Four",
+            "content": "<p>After deciding on your engagement ring and the purchase is completed, you will receive all the paperwork and appraisal for your purchase. The appraisal will describe in detail your exact purchase and what the replacement value is. This appraisal will need to be sent to your insurance company in order to insure your purchase. Finally, this is a very exciting time in your life so don’t forget to celebrate and enjoy this moment! <\/p>",
+            "link_title": "Joyous Moments",
+            "link": "shopify:\/\/pages\/our-clients"
+          }
+        }
+      },
+      "block_order": [
+        "09ae303d-6f21-4393-ab0f-031c5583b9c9",
+        "27632d59-8710-42d2-abec-b9128052b172",
+        "191b7a75-9579-4233-a43a-240645b9d1a0",
+        "e976cbbe-9a37-41c9-b797-3bd3197f30ee"
+      ],
+      "settings": {}
+    },
+    "education-metal-options": {
+      "type": "education-metal-options",
+      "blocks": {
+        "585bb9ef-8c7d-4253-a406-456266282dd8": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal02.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Platinum",
+            "url": ""
+          }
+        },
+        "05ddc5a2-4113-4fd6-9f59-0e1ca249a595": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal02.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "White Gold",
+            "url": ""
+          }
+        },
+        "da646af8-91d8-4607-9aec-10ba593664bf": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal03.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Rose Gold",
+            "url": ""
+          }
+        },
+        "b56fe3ee-8e81-4e15-82e2-af516824a4fe": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal04.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Yellow Gold",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "585bb9ef-8c7d-4253-a406-456266282dd8",
+        "05ddc5a2-4113-4fd6-9f59-0e1ca249a595",
+        "da646af8-91d8-4607-9aec-10ba593664bf",
+        "b56fe3ee-8e81-4e15-82e2-af516824a4fe"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Precious Metal Options",
+        "content": "",
+        "button_label": "Learn more",
+        "button_link": ""
+      }
+    },
+    "education-top-favorite": {
+      "type": "education-top-favorite",
+      "blocks": {
+        "ab9dfbbd-0063-4689-9311-9620caa4e64e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style01.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Delicate Halo Ring",
+            "url": ""
+          }
+        },
+        "8b18de6c-9264-4264-840a-3e722695bf97": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style02.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Floating Gem Ring",
+            "url": ""
+          }
+        },
+        "1307c03a-09ff-4be9-bff1-1ef54f67104f": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style03.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Vintage Ring",
+            "url": ""
+          }
+        },
+        "db981b94-86dd-4a25-89fb-d71d0be702ca": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p1-style04.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Solitaire Ring",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "ab9dfbbd-0063-4689-9311-9620caa4e64e",
+        "8b18de6c-9264-4264-840a-3e722695bf97",
+        "1307c03a-09ff-4be9-bff1-1ef54f67104f",
+        "db981b94-86dd-4a25-89fb-d71d0be702ca"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Our Top Favorites",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "education-bottom-special": {
+      "type": "education-bottom-special",
+      "settings": {
+        "title": "Special Engagement Ring Moments",
+        "content": "Share with us on Instagram by using",
+        "link_url_title": "#MichaelGabriels",
+        "link_url": ""
+      }
+    }
+  },
+  "order": [
+    "banner-education-engagement-rings",
+    "education-tabs",
+    "education-how-to-buy",
+    "shapes-mined-diamonds",
+    "6fe6a7d0-5fc0-42a3-9675-f6636f73ec9e",
+    "banner-fullscreen-steps",
+    "mosaic-blocks",
+    "education-metal-options",
+    "education-top-favorite",
+    "education-bottom-special"
+  ]
+}

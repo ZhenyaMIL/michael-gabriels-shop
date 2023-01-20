@@ -1,0 +1,239 @@
+{
+  "sections": {
+    "banner-education-shapes-center-stone": {
+      "type": "banner-education-shapes-center-stone",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Lab-grown_Round_Brilliant_Diamond_Held_in_tweezers.jpg",
+        "subheading": "Center Stone Shapes Education",
+        "title": "Center Stone Shapes",
+        "content": "<p><strong>Diamond shapes have evolved over the years as cutting techniques and our understanding of diamonds have advanced.<\/strong><\/p><p><strong>It goes without saying that the center stone's shape serves as the ring's main focal point, so understanding the different cuts will help you find your dream ring.<\/strong><\/p><p><strong>Today, in addition to the beauty and art of certain center stone shapes, various styles of cutting optimize certain traits of diamonds over others, so much so that, because of their cut, two ostensibly square diamonds may exhibit wildly different characteristics. <\/strong><\/p><p><strong>It can be difficult to decide on a center stone shape with so many cuts available. Before choosing a shape for the center stone, it's important to consider the cost of each center stone shape, the degree of brilliance, the size and shape of your hand, and your unique style.<\/strong><\/p><p><strong>The most common cut shapes fall into two categories; Brilliant and Step cut diamonds.<\/strong><\/p>",
+        "link_title": "Learn More",
+        "link": "",
+        "align": "Left",
+        "content_color": "Dark"
+      }
+    },
+    "education-shapes-tabs-center": {
+      "type": "education-shapes-tabs-center",
+      "blocks": {
+        "1b301015-cbe0-4751-b604-59c97b9aab65": {
+          "type": "block",
+          "settings": {
+            "link_title": "Choosing A Center Stone",
+            "link_url": "shopify:\/\/pages\/choosing-a-center-stone"
+          }
+        },
+        "23b1de47-5276-4c7f-a216-c0a699ba4078": {
+          "type": "block",
+          "settings": {
+            "link_title": "SHAPES",
+            "link_url": "shopify:\/\/pages\/shapes-center-stone"
+          }
+        },
+        "5e69349a-02e0-46b2-a5b2-78e981af9a07": {
+          "type": "block",
+          "settings": {
+            "link_title": "4Cs",
+            "link_url": "shopify:\/\/pages\/4cs-center-stone"
+          }
+        },
+        "63a25f1a-4f43-4424-84e8-c9844de42ac6": {
+          "type": "block",
+          "settings": {
+            "link_title": "DIAMOND ANATOMY",
+            "link_url": "shopify:\/\/pages\/diamond-anatomy"
+          }
+        }
+      },
+      "block_order": [
+        "1b301015-cbe0-4751-b604-59c97b9aab65",
+        "23b1de47-5276-4c7f-a216-c0a699ba4078",
+        "5e69349a-02e0-46b2-a5b2-78e981af9a07",
+        "63a25f1a-4f43-4424-84e8-c9844de42ac6"
+      ],
+      "settings": {}
+    },
+    "shapes-center-shapes": {
+      "type": "shapes-center-shapes",
+      "settings": {
+        "subheading": "",
+        "title": "Brilliant Cut Diamonds",
+        "content": "<p>Think Sparkle & Fire<\/p><p>Characterized by symmetrically shaped stones with sharply angled, diagonal faceting, a prominent pavilion, and often a pointed culet,these center stone shapes emphasize a balance of light properties within the diamond and are known for their intense scintillation and fire due to the optimization of refraction within the stone.<\/p><p><\/p>"
+      }
+    },
+    "mosaic-blocks-shapes-center-stone": {
+      "type": "mosaic-blocks-shapes-center-stone",
+      "blocks": {
+        "f68eda78-f585-4415-a860-7876da791f25": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Round-Brilliant-Shapes.jpg",
+            "subheading": "",
+            "title": "Round Brilliant",
+            "content": "<p>The most common and popular of all diamond shapes, its 58 facets have developed over time to optimize each of the diamond's unique properties and deliver a maximum of Fire, Scintillation, and Brilliance. This classic cut tends to be the most expensive center stone shape per carat, as the most stone is lost during cutting from the rough. Due to the stone's symmetry, the sparkle on this center stone is uniformly and exquisitely dispersed.<\/p><p>Perfectly cut round diamonds of exceptional color and clarity will exhibit a feature known as Hearts and Arrows: where, upon looking directly down at the table, one will enjoy the view of a wheel of arrows protruding from the center of the stone; and when flipped over, a wheel of hearts.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "71acd731-50b9-4a46-98df-1c498a18d7e1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Princess-Cut-Shapes.jpg",
+            "subheading": "",
+            "title": "Princess-Cut",
+            "content": "<p>With its sheer angles and sharp sides, this mix between step cut and brilliant cut styles is an extremely popular center stone shape though only a recent invention. Developed in the 1980s, its balance of diamond properties, versatility in setting, and more gentle expense explain its continued rise in popularity.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "711fe318-7b33-40c5-ae64-8b7b37bcde88": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Oval-Shapes.jpg",
+            "subheading": "",
+            "title": "Oval",
+            "content": "<p>A very popular cut, the current common dimensions of this center stone shape appeared only as recently as the 1950s. With the same number of facets as a round cut diamond, it also has the same characteristics of fire, brilliance, and scintillation. <\/p><p>Often enjoyed as an alternative to the round cut, its classic yet modern shape has a similar feel but offers a great difference in style. With its elongated look, it tends to appear larger per carat than other diamonds and can be very flattering because it causes fingers to appear more slender.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "5a2729a4-ba25-4732-b087-437ba64fccb0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Radiant-Shapes.jpg",
+            "subheading": "",
+            "title": "Radiant",
+            "content": "<p>A center stone shape that is lively and loud, radiant cuts were developed in the 1970s to take the brilliance of round cuts and apply it to something more square. These shapes can come either more square or rectangular, but they always have a slighter crop to their edges than an emerald cut, and so are reminiscent of a princess cut. This center stone shape is flashier because its optimal depth holds so much light, but that also makes it look slightly smaller per carat.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "f40fb608-bb59-4287-8b93-7192c6016ff6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cushion-Shapes.jpg",
+            "subheading": "",
+            "title": "Cushion",
+            "content": "<p>Enjoying continued, lengthy limelight, cushion cuts have been around for more than two centuries and are still popular. Once the closest to round that jewelers could get, this center stone shape has a great deal of brilliance, fire and scintillation but is warmer and softer than a round brilliant. It is a very versatile shape of diamond. With often extreme variation in shape from stone to stone, these center stones can have anywhere from 58-64 facets and can be more square or more rounded.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "ce345a3f-3dad-45c5-916d-8612797255cd": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pear-Shapes.jpg",
+            "subheading": "",
+            "title": "Pear",
+            "content": "<p>A romantic cut that has existed for centuries, with its asymmetry and edgy look, but still soft character, this teardrop shape offers a very different style than other cuts. This center stone blends the brilliance of a round cut stone with the originality of a marquise cut. <\/p><p>Pear cuts can appear less than brilliant if not cut very well. They also tend to show inclusions. But it is a center stone shape that appears larger per carat and more flattering since its elongated and unique shape makes fingers appear more ladylike and slender.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "d2493d35-523d-4a26-8d33-6fcacbdcda3a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Heart-Shapes.jpg",
+            "subheading": "",
+            "title": "Heart",
+            "content": "<p>For the hopeless or perhaps hopeful romantic, there is little better, as this is the single most iconic romantic shape a diamond can take. The ultimate symbol of love and actually older than many other cuts we have today, the heart center stone shape is a mastery of artisanship and a difficult shape to cut. Yet because it uses more of the stone, it can be gentler on the wallet.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "6286ee99-f656-433d-a852-81ed7d2ee5ea": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Marquise-Shapes.jpg",
+            "subheading": "",
+            "title": "Marquise",
+            "content": "<p>This myrtle-leaf or eye-shaped cut boasts almost as much romance as a heart or pear shape, but with a distinctly regal feel to it. A centuries-old center stone shape, it is incredibly remarkable and evokes the elegance of royalty but can be set to look impressively modern and chic at the same time. Because of its slender profile, this center stone makes fingers appear elongated more than many other cuts.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f68eda78-f585-4415-a860-7876da791f25",
+        "71acd731-50b9-4a46-98df-1c498a18d7e1",
+        "711fe318-7b33-40c5-ae64-8b7b37bcde88",
+        "5a2729a4-ba25-4732-b087-437ba64fccb0",
+        "f40fb608-bb59-4287-8b93-7192c6016ff6",
+        "ce345a3f-3dad-45c5-916d-8612797255cd",
+        "d2493d35-523d-4a26-8d33-6fcacbdcda3a",
+        "6286ee99-f656-433d-a852-81ed7d2ee5ea"
+      ],
+      "settings": {}
+    },
+    "shapes-center-shapes2": {
+      "type": "shapes-center-shapes2",
+      "settings": {
+        "subheading": "",
+        "title": "Step Cut Diamonds",
+        "content": "<p>Think Brightness and warmth<\/p><p>Characterized by geometrically shaped stones with mostly quadrilateral facets, that are angled and often parallel to each other, these center stone shapes generally have a shallow pavilion, which may be with or without a culet, making them often appear larger per carat than brilliant-cut stones whose weight may be largely invisible to the eye. Known for softer but more steady fire, and delivering a glowing brilliance, these center stones shine more and sparkle less than their brilliant-cut counterparts.<\/p>"
+      }
+    },
+    "mosaic-blocks-shapes-center-stone2": {
+      "type": "mosaic-blocks-shapes-center-stone2",
+      "blocks": {
+        "e9727e71-5076-4b1a-baaa-009ee724e906": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Emerald-Stone.jpg",
+            "subheading": "",
+            "title": "Emerald",
+            "content": "<p>A rectangular step cut with cropped corners, this center stone shape evokes the Art Deco era like no other and is perfect for anyone looking for a vintage feel. That being said, it can be set to look completely contemporary. It may have slightly less \"sparkle,\" but it makes up for that with the most exquisite \"Hall of Mirrors\" effect of any diamond cut. A cut that dramatically captures and retains light, this shape's exhibition of diamond clarity and color means that tints and inclusions cannot be masked or disguised.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "21ea7a0b-8b2a-46dd-bde5-a0386201879e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Asscher-Stone.jpg",
+            "subheading": "",
+            "title": "Asscher",
+            "content": "<p>Developed in 1902 by Joseph Asscher, this octagonal cut's 58 facets maintain the radiance and scintillation characteristic of brilliance cuts. Its clean, architectural feel is reminiscent of emerald cuts, but its higher crown and larger facets give it more warmth. It presents the \"Hall of Mirrors\" effect more magnificently than almost any other shape.<\/p><p>Because it allows so much rough diamond to be saved it tends to be somewhat more affordable, but it is a rare center stone shape today. Sometimes referred to as an octagonal-shaped cut, it is reminiscent of a squared emerald, but with some of the brilliance characteristic of a square radiant cut.<\/p>",
+            "link_title": "",
+            "link": ""
+          }
+        },
+        "6ad00d16-dcf5-4e9f-9506-2f81f854579f": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/AdobeStock_161689955_Preview.jpg",
+            "subheading": "",
+            "title": "Shop These Center Stone Shapes From Michael Gabriels",
+            "content": "<p>Now that you know all about the most popular center stone shapes, it’s time to design your dream ring. <\/p><p>Our lab grown diamonds are created using advanced, eco-friendly technology, and are essentially identical to mined diamonds. Even though our lab-grown center stones are far less expensive than comparable mined center stones, they are just as dazzling, magnificent, and beautiful.<\/p><p>Our lab grown <a href=\"https:\/\/michaelgabriels.com\/collections\/engagement-rings\" target=\"_blank\"><span style=\"text-decoration:underline\">engagement rings<\/span><\/a> are designed to give women a sense of confidence, bravery, and strength. Every piece of jewelry is custom-made to meet every single of our customer’s needs and desires. At <a href=\"https:\/\/michaelgabriels.com\/pages\/about-our-jewelry-company\" target=\"_blank\"><span style=\"text-decoration:underline\">Michael Gabriels<\/span><\/a>, we go above and beyond to ensure that our customers are satisfied and in love with their rings.<\/p><p>You deserve a ring that exudes elegance, ethics, and style. Inquire for your custom estimate today!  <\/p>",
+            "link_title": "Inquire Here",
+            "link": "https:\/\/michaelgabriels.com\/collections\/engagement-rings"
+          }
+        }
+      },
+      "block_order": [
+        "e9727e71-5076-4b1a-baaa-009ee724e906",
+        "21ea7a0b-8b2a-46dd-bde5-a0386201879e",
+        "6ad00d16-dcf5-4e9f-9506-2f81f854579f"
+      ],
+      "settings": {}
+    },
+    "education-shapes-bottom-special-center": {
+      "type": "education-shapes-bottom-special-center",
+      "settings": {
+        "title": "",
+        "content": "Share with us on Instagram by using",
+        "link_url_title": "#MichaelGabriels",
+        "link_url": ""
+      }
+    }
+  },
+  "order": [
+    "banner-education-shapes-center-stone",
+    "education-shapes-tabs-center",
+    "shapes-center-shapes",
+    "mosaic-blocks-shapes-center-stone",
+    "shapes-center-shapes2",
+    "mosaic-blocks-shapes-center-stone2",
+    "education-shapes-bottom-special-center"
+  ]
+}

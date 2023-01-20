@@ -1,0 +1,163 @@
+<section id="section-{{ section.id }}">
+    {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+
+    <div class="FlexboxIeFix BlockIdent">
+        <div class="ImageHero ImageHero--small" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
+            <div class="ImageHero__ImageWrapper">
+                <div class="ImageHero__Image {% if section.settings.overlay_opacity > 0 %}ImageHero__ImageWrapper--hasOverlay{% endif %} Image--lazyLoad Image--zoomOut"
+                     data-optimumx="1.4"
+                     data-expand="-150"
+                     {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+                </div>
+
+                <noscript>
+                    <div class="ImageHero__Image ImageHero__Image--Center" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+                </noscript>
+
+                {%- unless section.settings.image != blank -%}
+                    <div class="PlaceholderBackground PlaceholderBackground--Dark">
+                        {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+                    </div>
+                {%- endunless -%}
+            </div>
+
+            {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <div class="ImageHero__Content--Overlay ContainerCentered">
+                    {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+                        <header class="BannerHeader BannerHeader--{%- if section.settings.content_right == true -%}ContentRight {%- endif -%}">
+                            {%- if section.settings.subheading != blank -%}
+                                <h3 class="BannerHeader__SubHeading Heading TextCenter u-h6">{{ section.settings.subheading | escape }}</h3>
+                            {%- endif -%}
+
+                            {%- if section.settings.title != blank -%}
+                                <h2 class="BannerHeader__Heading Heading TextCenter  u-h1">{{ section.settings.title | escape }}</h2>
+                            {%- endif -%}
+
+                            {%- if section.settings.content != blank -%}
+                                <div class="BannerHeader__Description TextCenter ">
+                                    {{ section.settings.content }}
+                                </div>
+                            {%- endif -%}
+                            {%- if section.settings.button_title != blank -%}
+                                <div class="BannerHeader__Button TextCenter ">
+                                    <a id="showTable" href="" class="Button Button--primary">{{ section.settings.button_title }}</a>
+                                </div>
+                            {%- endif -%}
+                        </header>
+                    {%- endif -%}
+                </div>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="ContainerCentered">
+        <div id="char-table" class="hidden">
+            {% render 'size-chart' %}
+            <div class="ButtonWrapp">
+                <a id="hideTable" class="Link Link--underline" href="">Hide</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.ImageHero__Image--Center {
+    background-position: center top !important;
+}
+@media (min-width: 1140px) {
+    .ImageHero.ImageHero--small {
+        min-height: 550px;
+    }
+}
+.ImageHero__Content--Overlay {
+    z-index: 1;
+    text-align: left;
+}
+.BannerHeader--ContentRight {
+    padding: 40px 0;
+    text-align: right;
+    float: right;
+    max-width: 580px;
+}
+  .BannerHeader__Button {
+  margin: 50px auto;
+  }
+  @media (max-width: 1023px) {
+    .size-chart {
+      width: 100%;
+      overflow-x: scroll;
+    }
+}
+  .ButtonWrapp {
+  text-align: center;
+  }
+    .hidden {
+        display: none;
+        visibility: hidden;
+    }
+    .visible {
+        display: block;
+        visibility: visible;
+    }
+</style>
+
+{% schema %}
+  {
+  "name": "Banner fullscreen",
+  "settings": [
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Top section image",
+       "info": "1920 x 800px .png recommended"
+    },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_title",
+          "label": "Button Name",
+          "default": "Button Name"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content for section</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "content_right",
+          "label": "Content right",
+          "default": false
+        }
+
+  ]
+  }
+{% endschema %}
+<script>
+   var showBtn = document.getElementById('showTable');
+   var hideBtn = document.getElementById('hideTable');
+   var el = document.getElementById('char-table')
+   showBtn.addEventListener('click', function (e){
+       e.preventDefault();
+       el.classList.remove('hidden');
+       el.classList.add('visible');
+   })
+   hideBtn.addEventListener('click', function (e){
+       e.preventDefault();
+       el.classList.remove('visible');
+       el.classList.add('hidden');
+   })
+</script>
+{% javascript %}
+{% endjavascript %}

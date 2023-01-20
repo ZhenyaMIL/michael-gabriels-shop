@@ -1,0 +1,51 @@
+<section id="section-{{ section.id }}">
+{% render 'banner-fullscreen-text-light' %}
+</section>
+
+{% schema %}
+  {
+  "name": "Banner fullscreen",
+  "settings": [
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Top section image",
+       "info": "1920 x 800px .png recommended"
+    },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content for section</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "content_right",
+          "label": "Content right",
+          "default": false
+        }
+
+  ],
+    "presets": [
+      {
+        "category": "Banner",
+        "name": "Banner fullscreen",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}
+{% javascript %}
+{% endjavascript %}

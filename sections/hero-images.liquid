@@ -1,0 +1,150 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}"
+         data-section-type="hero-images">
+    {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+    <div class="FlexRow">
+        {% for block in section.blocks %}
+            <div class="ImageColumn">
+                    <div class="ImageHeroHalf ImageHero--large"
+                         {% if block.settings.image %}style="background: url({{ block.settings.image | img_url: '1x1', format: 'pjpg' }})"{% endif %}>
+                        <div class="ImageHero__ImageWrapper">
+                            <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
+                                 data-optimumx="1.4"
+                                 data-expand="-150"
+                                 {% if block.settings.image %}data-bgset="{{ block.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ block.settings.image | img_url: '1000x' }} 1000w, {{ block.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+                            </div>
+
+                            <noscript>
+                                <div class="ImageHeroHalf__ImageWrapper"
+                                     style="background-image: url({{ block.settings.image | img_url: '1000x' }})"></div>
+                            </noscript>
+
+                            {%- unless block.settings.image != blank -%}
+                                <div class="PlaceholderBackground PlaceholderBackground--Dark">
+                                    {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+                                </div>
+                            {%- endunless -%}
+                        </div>
+
+                        {%- if block.settings.title != blank or block.settings.content != blank or block.settings.button_label != blank -%}
+                            <div class="ImageHeroHalf__Wrapper">
+                                <div class="ImageHeroHalf__Content ImageHero__Block--{{ block.settings.block_size }}">
+                                    {%- if block.settings.content != blank -%}
+                                        <div class="ImageHeroHalf__ContentContent Rte">
+                                            {{ block.settings.content }}
+                                        </div>
+                                    {%- endif -%}
+
+                                    {%- if block.settings.title != blank -%}
+                                        <h3 class="ImageHeroHalf__ContentHeading Heading u-h6">{{ block.settings.title | escape }}</h3>
+                                    {%- endif -%}
+
+                                    {%- if block.settings.button_label != blank -%}
+                                        <a href="{{ block.settings.button_link }}"
+                                           class="ImageHeroHalf__ContentButton Button Button--Light">{{ block.settings.button_label | escape }}</a>
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                        {%- endif -%}
+                    </div>
+
+            </div>
+      <style>
+  #section-{{ section.id }},
+  #section-{{ section.id }} .Heading {
+    color: {{ block.settings.text_color }};
+  }
+
+  #section-{{ section.id }} .ImageHeroHalf__Block {
+   background: {{ block.settings.background }};
+  }
+  #section-{{ section.id }} .Button--Light:hover {
+    color: #FFFFFF;
+  }
+</style>
+        {% endfor %}
+    </div>
+</section>
+
+
+{% schema %}
+
+{
+  "name": "Hero images",
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "name": "Image with content",
+      "type": "block",
+      "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "1500 x 800px .jpg recommended"
+          },
+          {
+            "type": "color",
+            "id": "background",
+            "label": "Background",
+            "default": "#ffffff"
+          },
+          {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text",
+            "default": "#1c1b1b"
+          },
+          {
+            "type": "select",
+            "id": "block_size",
+            "label": "Block size",
+            "options": [
+              {
+                "value": "small",
+                "label": "Small"
+              },
+              {
+                "value": "normal",
+                "label": "Normal"
+              },
+              {
+                "value": "large",
+                "label": "Large"
+              }
+            ],
+            "default": "small"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Your story"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text",
+            "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Hero images",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

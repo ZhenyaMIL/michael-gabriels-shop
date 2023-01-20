@@ -1,0 +1,178 @@
+<section id="section-{{ section.id }}" class="section-middle">
+    <div class="ContainerCentered ContainerFlex">
+        {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+
+            <div class="HalfColumn">
+                <div class="ImageHero ImageHero--ImageSection"
+                     {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
+                    <div class="ImageHero__ImageWrapper">
+                        <div class="ImageHero__Image ImageHero_section-middle ImageHero{% if section.settings.overlay_opacity > 0 %}ImageHero__ImageWrapper--hasOverlay{% endif %} Image--lazyLoad Image--zoomOut"
+                             data-optimumx="1.4"
+                             data-expand="-150"
+                             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+                        </div>
+
+                        <noscript>
+                            <div class="ImageHero__Image"
+                                 style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+                        </noscript>
+
+                        {%- unless section.settings.image != blank -%}
+                            <div class="PlaceholderBackground PlaceholderBackground--Dark">
+                                {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+                            </div>
+                        {%- endunless -%}
+                    </div>
+                </div>
+            </div>
+            <div class="HalfColumn">
+                {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                    <div class="ContentWrapper ContentColumn">
+                        {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+                            <header class="SectionHeader TextCenter">
+                                {%- if section.settings.subheading != blank -%}
+                                    <h3 class="Header__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                                {%- endif -%}
+
+                                {%- if section.settings.title != blank -%}
+                                    <h2 class="Header__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                                {%- endif -%}
+                                <div class="Header__Icons">
+                                    {% for block in section.blocks %}
+                                        {% assign icon = block.settings.icon %}
+                                        <div class="IconLink">
+                                            <div class="IconLink__Icon">{%- render 'icon', icon: icon -%}
+                                            </div>
+                                            <a href="{{ block.settings.link_url }}"
+                                               class="Link IconLink__Link">{{ block.settings.link_title | escape }}</a>
+
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                                {%- if section.settings.content != blank -%}
+                                    <div class="Header__Description">
+                                        {{ section.settings.content }}
+                                    </div>
+                                {%- endif -%}
+                            </header>
+                        {%- endif -%}
+                    </div>
+                {%- endif -%}
+            </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Story Middle",
+    "max_blocks": 3,
+    "blocks": [
+    {
+      "name": "Icon",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_title",
+          "label": "Link title",
+          "default": "Link title"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name"
+        }
+      ]
+    }
+    ],
+    "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content for section</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1200 x 1200px .png recommended"
+        }
+
+]
+  }
+{% endschema %}
+<style>
+.block-center {
+    max-width: 1260px;
+    margin: 0 auto 60px auto;
+}
+.section-middle {
+    padding: 80px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media (min-width: 1008px) {
+    .section-middle: {
+        padding: 80px 0;
+
+    }
+}
+.ImageHero.ImageHero--ImageSection {
+    min-height: 600px;
+}
+.ContentWrapper.ContentColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+
+}
+.Header__Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+}
+.IconLink__Icon {
+    height: 42px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.IconLink__Icon .Icon {
+    height: 42px;
+    width: 100%;
+    fill: #B5945E;
+}
+
+.IconLink {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.IconLink__Link {
+    text-transform: uppercase;
+}
+.ImageHero_section-middle {
+
+}
+</style>
+
+{% javascript %}
+{% endjavascript %}

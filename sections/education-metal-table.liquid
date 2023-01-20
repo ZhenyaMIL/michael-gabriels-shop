@@ -1,0 +1,385 @@
+<section id="section-{{ section.id }}">
+    <div class="ContainerCentered ContainerFlex ">
+        <div class="ContentColumnWrap ContentColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+            {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <header class="SectionHeader ContentCenter BlockIdent">
+                    {%- if section.settings.subheading != blank -%}
+                        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                    {%- endif -%}
+
+                    {%- if section.settings.title != blank -%}
+                        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                    {%- endif -%}
+
+                    {%- if section.settings.content != blank -%}
+                        <div class="SectionHeader__Description Rte">
+                            {{ section.settings.content }}
+                        </div>
+                    {%- endif -%}
+                </header>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="ContainerCentered BlockIdent">
+        <div class="TableContent--Wrap">
+            <div class="TableContent TableTop">
+                {% for block in section.blocks %}
+                    {% assign video_name = block.settings.video %}
+                    <div class="TableContent__Item">
+                        <div class="TableContent__CellLeft">
+                            <span>{{ block.settings.row_title | escape }}</span>
+                        </div>
+                        <div class="TableContent__Row">
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Title">
+                                    {{ block.settings.title | escape }}
+                                </div>
+                                <div class="TableContent__Content">
+                                    {{ block.settings.content | escape }}
+                                </div>
+                            </div>
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Title">
+                                    {{ block.settings.title1 | escape }}
+                                </div>
+                                <div class="TableContent__Content">
+                                    {{ block.settings.content1 | escape }}
+                                </div>
+                            </div>
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Title">
+                                    {{ block.settings.title2 | escape }}
+                                </div>
+                                <div class="TableContent__Content">
+                                    {{ block.settings.content2 | escape }}
+                                </div>
+                            </div>
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Title">
+                                    {{ block.settings.title3 | escape }}
+                                </div>
+                                <div class="TableContent__Content">
+                                    {{ block.settings.content3 | escape }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {%- if section.settings.video != blank -%}
+                <div class="TableContent" style="max-height: 240px; margin-top: -1px;">
+                    <div class="TableContent__Item">
+                        <div class="TableContent__CellLeft">
+                            <span>{{ section.settings.video_name }}</span>
+                        </div>
+                        <div class="TableContent__Row">
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Video">
+                                    <video controls="controls" style="max-width: 100%; height: 180px;">
+                                        <source src="{{ section.settings.video | asset_url }}" type="video/mp4"/>
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Video">
+                                    <video controls="controls" style="max-width: 100%; height: 180px;">
+                                        <source src="{{ section.settings.video1 | asset_url }}" type="video/mp4"/>
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Video">
+                                    <video controls="controls" style="max-width: 100%; height: 180px;">
+                                        <source src="{{ section.settings.video2 | asset_url }}" type="video/mp4"/>
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="TableContent__Cell">
+                                <div class="TableContent__Video">
+                                    <video controls="controls" style="max-width: 100%; height: 180px;">
+                                        <source src="{{ section.settings.video3 | asset_url }}" type="video/mp4"/>
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {%- endif -%}
+        </div>
+    </div>
+</section>
+
+<style>
+    .SectionHeader {
+        margin-bottom: 25px;
+    }
+
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+
+    .ImageHero__Content .ImageHero__Content--Image {
+        padding: 0;
+    }
+
+    .ContentColumnWrap {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .ContentColumnWrap--Background {
+        background-color: #F6F6F6;
+        padding: 20px 40px 10px 40px;
+    }
+
+    @media (min-width: 981px) {
+        .ContentColumnWrap--Background {
+            padding: 40px 80px 20px 80px;
+        }
+
+        .TableContent--Wrap {
+            padding-left: 20px;
+        }
+
+        .ContentColumnWrap {
+            margin-bottom: 0px;
+            margin-right: 20px;
+        }
+    }
+
+    .TableContent__Item:last-child {
+        border-bottom-width: 0px;
+    }
+
+    .TableContent--Wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .TableContent {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        border: 1px solid #acacac;
+        width: 100%;
+        min-width: 695px;
+      
+    }
+
+    .TableContent__Row {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .TableContent__Cell {
+        flex-grow: 1;
+        flex-basis: 250px;
+        border-right: 1px solid #acacac;
+        padding: 10px;
+
+    }
+
+    .TableContent__Cell:last-child {
+        border-right: 0px;
+    }
+
+    .TableTop  .TableContent:last-child {
+        border-bottom: 0px;
+    }
+
+    .TableContent__Item {
+        position: relative;
+        display: block;
+        padding-left: 140px;
+        flex-grow: 1;
+        border-bottom: 1px solid #acacac;
+        flex-basis: 90px;
+    }
+
+    .TableContent .TableContent__Item:nth-child(2n) .TableContent__CellLeft {
+        background-color: #E7DBC1;
+    }
+
+    .TableContent__Title {
+        font-weight: bold;
+    }
+
+    .TableContent__Content {
+        line-height: 1.3;
+        width: 100%;
+    }
+
+    .TableContent__CellLeft {
+        display: table;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: 140px;
+        border-right: 1px solid #acacac;
+        background-color: #F0EADA;
+        text-align: center;
+        line-height: 1;
+        height: 100%;
+        text-transform: uppercase;
+    }
+
+    .TableContent__CellLeft span {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 10px;
+    }
+
+    .TableContent__Video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .TableTop .TableContent__Item:first-child .TableContent__Row .TableContent__Cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  @media (max-width: 767px){
+    .TableContent--Wrap {
+       overflow-x: scroll;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Content Columns Table",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Column 1 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Column 1  Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column 1 Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+        {
+          "type": "text",
+          "id": "video_name",
+          "label": "Video name",
+          "default": "Video"
+        },
+        {
+          "type": "text",
+          "id": "video",
+          "label": "Video file name",
+          "default": "test.mp4"
+        },
+        {
+          "type": "text",
+          "id": "video1",
+          "label": "Video 1 file name",
+          "default": "test.mp4"
+        },
+        {
+          "type": "text",
+          "id": "video2",
+          "label": "Video 2 file name",
+          "default": "test.mp4"
+        },
+        {
+          "type": "text",
+          "id": "video3",
+          "label": "Video 3 file name",
+          "default": "test.mp4"
+        },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Show content with background",
+      "default": false
+    }
+  ],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "name": "Text in table",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "row_title",
+          "label": "Cell Title",
+          "default": "Cell left"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "Text content"
+        },
+        {
+          "type": "text",
+          "id": "title1",
+          "label": "Title1"
+        },
+        {
+          "type": "textarea",
+          "id": "content1",
+          "label": "Content1",
+          "default": "Text content"
+        },
+        {
+          "type": "text",
+          "id": "title2",
+          "label": "Title2"
+        },
+        {
+          "type": "textarea",
+          "id": "content2",
+          "label": "Content2",
+          "default": "Text content"
+        },
+        {
+          "type": "text",
+          "id": "title3",
+          "label": "Title3"
+        },
+        {
+          "type": "textarea",
+          "id": "content3",
+          "label": "Content3",
+          "default": "Text content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,247 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-diamonds-1920x1080.jpg",
+        "subheading": "Learn about",
+        "title": "Diamonds",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "education-gem-tabs": {
+      "type": "education-gem-tabs",
+      "blocks": {
+        "4b0159f3-dc64-4bfb-a4a6-a5993118a0e2": {
+          "type": "block",
+          "settings": {
+            "link_title": "Lab Grown Diamonds",
+            "link_url": "shopify:\/\/pages\/education-lab-grown-diamonds"
+          }
+        },
+        "7403c184-e4e4-4230-9e68-48b3dc4278c4": {
+          "type": "block",
+          "settings": {
+            "link_title": "Mined Diamonds",
+            "link_url": "shopify:\/\/pages\/education-mined-diamonds"
+          }
+        },
+        "058f6bf4-be16-4018-94dd-d5b63eb02eff": {
+          "type": "block",
+          "settings": {
+            "link_title": "Diamond Specific Items",
+            "link_url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "4b0159f3-dc64-4bfb-a4a6-a5993118a0e2",
+        "7403c184-e4e4-4230-9e68-48b3dc4278c4",
+        "058f6bf4-be16-4018-94dd-d5b63eb02eff"
+      ],
+      "settings": {}
+    },
+    "content-columns-mined-diamonds": {
+      "type": "content-columns-mined-diamonds",
+      "settings": {
+        "subheading": "Select a",
+        "title": "Diamond Shape",
+        "content": "<p>The first step in selecting the diamond of your dreams is choosing a shape that is right for you. The amount of facets on a diamond varies from 40 facets to 58 facets. These facets refract the light within a diamond, making a diamond shine bright. The round brilliant cut has 58 facets, making this shape one of the most popular as the light refracts the most. Learn more about the round brilliant cut shape as well as fancy cut diamonds such as oval, emerald, and princess cut diamonds. See below for available shapes. <\/p>",
+        "background": false,
+        "image": "shopify:\/\/shop_images\/edu-diamonds-tile-image-cols6.jpg",
+        "text_color": "#ffffff",
+        "r_subheading": "",
+        "r_title": "",
+        "r_content": ""
+      }
+    },
+    "shapes-mined-diamonds": {
+      "type": "shapes-mined-diamonds",
+      "blocks": {
+        "30c37a41-27b2-4604-a25a-428fa5032cbf": {
+          "type": "block",
+          "settings": {
+            "title": "Round",
+            "s_image": "round",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "9a745b6f-acc8-4f09-9706-82b67e4a22a6": {
+          "type": "block",
+          "settings": {
+            "title": "Princess",
+            "s_image": "princess",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "3e950827-ca47-40c7-ac3e-2cc239be5880": {
+          "type": "block",
+          "settings": {
+            "title": "Cushion",
+            "s_image": "cushion",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "0a555e75-c194-46c6-b9b1-5891a4927b03": {
+          "type": "block",
+          "settings": {
+            "title": "Asscher",
+            "s_image": "asscher",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "1a142302-dfb0-4e5b-82fb-79c3bdf40b6b": {
+          "type": "block",
+          "settings": {
+            "title": "Marquise",
+            "s_image": "vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "b99bbe8e-bd0c-4719-8946-f9ce92c7614f": {
+          "type": "block",
+          "settings": {
+            "title": "Oval",
+            "s_image": "oval-vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "913c78cb-15c4-4974-8d28-cb24a3ff2bdd": {
+          "type": "block",
+          "settings": {
+            "title": "Radiant",
+            "s_image": "radiant",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "af121ef2-4318-4790-8247-e06bb1bfb9a8": {
+          "type": "block",
+          "settings": {
+            "title": "Pear",
+            "s_image": "pear",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "6237c8ad-83a7-44c3-b46b-d1accf191d3d": {
+          "type": "block",
+          "settings": {
+            "title": "Emerald",
+            "s_image": "emerald-vertical",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "5da386e9-789c-4b35-84be-ad9240f79940": {
+          "type": "block",
+          "settings": {
+            "title": "Heart",
+            "s_image": "heart",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "876efef0-ef12-4e26-8dd9-49abf8ab9045": {
+          "type": "block",
+          "settings": {
+            "title": "Trillion",
+            "s_image": "trillion",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "30c37a41-27b2-4604-a25a-428fa5032cbf",
+        "9a745b6f-acc8-4f09-9706-82b67e4a22a6",
+        "3e950827-ca47-40c7-ac3e-2cc239be5880",
+        "0a555e75-c194-46c6-b9b1-5891a4927b03",
+        "1a142302-dfb0-4e5b-82fb-79c3bdf40b6b",
+        "b99bbe8e-bd0c-4719-8946-f9ce92c7614f",
+        "913c78cb-15c4-4974-8d28-cb24a3ff2bdd",
+        "af121ef2-4318-4790-8247-e06bb1bfb9a8",
+        "6237c8ad-83a7-44c3-b46b-d1accf191d3d",
+        "5da386e9-789c-4b35-84be-ad9240f79940",
+        "876efef0-ef12-4e26-8dd9-49abf8ab9045"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Diamond Shapes",
+        "content": ""
+      }
+    },
+    "banner-fullscreen-mined-diamonds": {
+      "type": "banner-fullscreen-mined-diamonds",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/edu-diamonds-section-1920x400.jpg",
+        "subheading": "The 4 C's",
+        "title": "Of Diamonds",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "forms-mined-diamonds": {
+      "type": "forms-mined-diamonds",
+      "blocks": {
+        "d919f20b-4704-4958-975d-ce6dab6515e1": {
+          "type": "block",
+          "settings": {
+            "title": "CUT",
+            "content": "<p>A diamonds ability to refract light and shine so intensely is one of the reasons a diamond is the gem of choice for most people. Learn more about a diamonds cut here.<\/p>",
+            "url_title": "Learn More",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "3478560f-5147-44f6-86a5-fb065ffc4f1d": {
+          "type": "block",
+          "settings": {
+            "title": "COLOR",
+            "content": "<p>Despite all thoughts on diamond color referring to the amount of color seen in a diamond, it actually refers to the lack of color found in a diamond. Learn more about a diamonds color here.<\/p>",
+            "url_title": "Learn More",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "8152eecf-f874-4254-93fd-3f9bffbc86db": {
+          "type": "block",
+          "settings": {
+            "title": "CLARITY",
+            "content": "<p>There is a lot more to a diamond than meets the eye. Learn more about a diamonds clarity here.<\/p>",
+            "url_title": "Learn More",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        },
+        "d958cc0b-4d99-4030-bd9c-d251b281b255": {
+          "type": "block",
+          "settings": {
+            "title": "CARAT",
+            "content": "<p>The diamond carat weight refers to the actual weight of the diamond. Learn about all different diamond sizes here.<\/p>",
+            "url_title": "Learn More",
+            "url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "d919f20b-4704-4958-975d-ce6dab6515e1",
+        "3478560f-5147-44f6-86a5-fb065ffc4f1d",
+        "8152eecf-f874-4254-93fd-3f9bffbc86db",
+        "d958cc0b-4d99-4030-bd9c-d251b281b255"
+      ],
+      "settings": {}
+    },
+    "text-content-mined-diamonds": {
+      "type": "text-content-mined-diamonds",
+      "settings": {
+        "subheading": "",
+        "title": "Certification",
+        "content": "<p>Every engagement diamond receives a detailed grading report from the Gemological Institute of America (GIA), Independent Gemological Institute (IGI), or Gem Certification & Assurance Lab (Gcal), three of the world’s largest gem certification and appraisal firms. Each diamond is graded on the 4Cs: cut, color, clarity and carat weight. The Certificate is the passport for the diamond. Each diamond is inscribed with the report number in tiny letters on the girdle of the diamond. <\/p>",
+        "background": true
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "education-gem-tabs",
+    "content-columns-mined-diamonds",
+    "shapes-mined-diamonds",
+    "banner-fullscreen-mined-diamonds",
+    "forms-mined-diamonds",
+    "text-content-mined-diamonds"
+  ]
+}

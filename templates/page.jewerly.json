@@ -1,0 +1,182 @@
+{
+  "sections": {
+    "banner-jewerly": {
+      "type": "banner-jewerly",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/bottom-box-right.jpg",
+        "subheading": "Lab Grown Diamond Jewelry",
+        "title": "",
+        "content": "<p>Lab grown diamond jewelry is becoming increasingly popular, and for good reason. Not only are lab grown diamonds more environmentally friendly than mined diamonds, they are also just as beautiful and lustrous. Lab grown diamonds are produced in a controlled environment, they tend to be of higher quality than mined diamonds.<br\/><br\/>If you're looking for lab grown diamond earrings or bracelets, you'll find that there's a wide variety of styles to choose from. Lab created diamonds are less expensive than mined diamonds, you can afford to splurge on a piece or two without breaking the bank. So why not add some lab grown diamond jewelry to your collection? You won't be disappointed.<\/p>",
+        "link_title": "",
+        "link": "",
+        "align": "Left",
+        "content_color": "Dark"
+      }
+    },
+    "category-cards-drittel-simple": {
+      "type": "category-cards-drittel-simple",
+      "blocks": {
+        "fdc5a778-d019-4550-ae3e-3d8734b89411": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MG_Emerald_with_pave_basket_and_pave_band_set_solitaire_2.webp",
+            "title": "Lab grown diamond Bridal Rings",
+            "content": "<p>We offer lab grown diamond bridal rings that are just as beautiful as mined diamonds, but without the ethical concerns. Our rings are made with conflict-free diamonds, so you can feel good about your purchase.<\/p>",
+            "url_title": "Shop Engagement Rings",
+            "url": "shopify:\/\/collections\/engagement-rings"
+          }
+        },
+        "34bc9f15-7f3f-4cbb-94a6-1afd7a0deb58": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/labgrown-cat-earrings.jpg",
+            "title": "Lab Grown Diamond Earrings",
+            "content": "<p>Our lab grown diamond earrings are the perfect way to show your loved one how much you care. They offer all of the beauty and sparkle of traditional diamonds, but at a fraction of the cost.<\/p>",
+            "url_title": "Shop Earrings",
+            "url": "shopify:\/\/collections\/earrings"
+          }
+        },
+        "b3b5bca3-5c1e-4c50-abc6-c57cec063808": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bracelet.jpg",
+            "title": "Lab Grown Diamond Bracelets",
+            "content": "<p>Our lab grown diamond bracelets are elegant in white gold, yellow gold, rose gold, or platinum. They are the perfect way to add some sparkle to your wardrobe.<\/p>",
+            "url_title": "Shop Bracelets",
+            "url": "shopify:\/\/collections\/bracelets"
+          }
+        }
+      },
+      "block_order": [
+        "fdc5a778-d019-4550-ae3e-3d8734b89411",
+        "34bc9f15-7f3f-4cbb-94a6-1afd7a0deb58",
+        "b3b5bca3-5c1e-4c50-abc6-c57cec063808"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "category-collection-list-new-arrivals": {
+      "type": "category-collection-list-new-arrivals",
+      "blocks": {
+        "d291c61a-6a40-48a7-bb01-97a194819f7c": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings",
+            "title": "Earrings",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        },
+        "648b0bcb-c99f-4441-a885-9959a114623e": {
+          "type": "collection",
+          "settings": {
+            "collection": "bracelets",
+            "title": "Bracelets",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "d291c61a-6a40-48a7-bb01-97a194819f7c",
+        "648b0bcb-c99f-4441-a885-9959a114623e"
+      ],
+      "settings": {
+        "title": "Lab Grown Diamond Fine Jewelry",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": true,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "category-collection-cards": {
+      "type": "category-collection-cards",
+      "disabled": true,
+      "blocks": {
+        "18325760-2c0d-4fe2-bb7f-d69a866c8006": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jewelry-tile-image-cols4-01.jpg",
+            "title": "",
+            "content": "<p>Crafted by the hands of hard working jewelry crafters, our products our made with love and passion. Each and every material is hand selected by our professional designers to ensure the best quality for each product. <\/p>",
+            "url_title": "Coming in 2021",
+            "url": ""
+          }
+        },
+        "0a6ac083-db44-4a68-a84a-3578017b38c6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jewelry-tile-image-cols4-02.jpg",
+            "title": "",
+            "content": "<p>The perfect vintage ring captures the essence of a bygone era while maintaining a beauty that transcends time. Discover the perfect match by exploring our collection of fine vintage rings.<\/p>",
+            "url_title": "Coming in 2021",
+            "url": ""
+          }
+        },
+        "4e2ea9a8-6c7b-4e4c-a33b-a049c7e25d83": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jewelry-tile-image-cols4-03.jpg",
+            "title": "",
+            "content": "<p>Expressing your identity without having to say a word is what fashion is all about. Discover your perfect match by exploring our collection of fine fashion rings.<\/p>",
+            "url_title": "Shop Fashion Rings",
+            "url": "shopify:\/\/collections\/engagement-rings"
+          }
+        }
+      },
+      "block_order": [
+        "18325760-2c0d-4fe2-bb7f-d69a866c8006",
+        "0a6ac083-db44-4a68-a84a-3578017b38c6",
+        "4e2ea9a8-6c7b-4e4c-a33b-a049c7e25d83"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Coming Soon",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "most-popular-products": {
+      "type": "most-popular-products",
+      "disabled": true,
+      "blocks": {
+        "8ca116ac-39cf-49e8-9f4c-c60b54918bd7": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "title": "Most Popular",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "8ca116ac-39cf-49e8-9f4c-c60b54918bd7"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": true,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    }
+  },
+  "order": [
+    "banner-jewerly",
+    "category-cards-drittel-simple",
+    "category-collection-list-new-arrivals",
+    "category-collection-cards",
+    "most-popular-products"
+  ]
+}

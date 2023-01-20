@@ -1,0 +1,186 @@
+<section id="section-{{ section.id }}">
+    <div class="ColumnWrap ColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+        <div class="ContainerCentered">
+            {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <header class="SectionHeader ContentCenter TextCenter">
+                    {%- if section.settings.subheading != blank -%}
+                        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                    {%- endif -%}
+
+                    {%- if section.settings.title != blank -%}
+                        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                    {%- endif -%}
+
+                    {%- if section.settings.content != blank -%}
+                        <div class="SectionHeader__Description TextCenter Rte">
+                            {{ section.settings.content }}
+                        </div>
+                    {%- endif -%}
+                </header>
+            {%- endif -%}
+            <div class="CaratTable">
+                <div class="CaratTable_Table">
+                    {% render 'table-carat-weight' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .SectionHeader.ContentCenter {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .SectionHeader__Description.TextCenter {
+        max-width: 800px;
+    }
+
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+
+    .ColumnWrap {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .ColumnWrap--Background {
+        background-color: #fbf8f3;
+    }
+
+    @media (min-width: 981px) {
+        .ColumnWrap {
+            padding: 80px 20px;
+        }
+    }
+
+    .CaratTable {
+        margin: 0px auto;
+        overflow-x: scroll;
+        max-width: 800px;
+        padding: 40px 0;
+    }
+
+    @media (min-width: 981px) {
+        .CaratTable {
+            overflow-x: hidden;
+        }
+    }
+
+    .CaratTable_Table {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .carat-weight {
+        width: 100%;
+        border: 1px solid #acacac;
+        padding: 20px;
+    }
+      .carat-weight tr td {
+        padding: 15px;
+        border: 1px solid #acacac;
+    }
+
+    .carat-weight tr td:first-child {
+        text-align: left;
+    }
+  
+    .carat-weight .Carat {
+        background-image: url('{{ 'round.svg' | asset_url }}');
+        min-height: 20px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+  }
+        .carat-weight .Carat {
+        background-image: url('{{ 'round.svg' | asset_url }}');
+        min-height: 20px;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+    }
+    .Carat1 {
+        width: 20px;
+        height: 20px;
+    }
+    .Carat2 {
+        width: 25px;
+        height: 25px;
+    }
+    .Carat3 {
+        width: 30px;
+        height: 30px;
+    }
+    .Carat4 {
+        width: 35px;
+        height: 35px;
+    }
+    .Carat5 {
+        width: 40px;
+        height: 40px;
+    }
+    .Carat6 {
+        width: 45px;
+        height: 45px;
+    }
+    .Carat7 {
+        width: 50px;
+        height: 50px;
+    }
+    .Carat8 {
+        width: 55px;
+        height: 55px;
+    }
+    .Carat9 {
+        width: 60px;
+        height: 60px;
+    }
+
+</style>
+{% schema %}
+{
+  "name": "Text Carat Weight",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Column Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Show content with background",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Text",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

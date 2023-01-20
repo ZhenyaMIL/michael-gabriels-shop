@@ -1,0 +1,149 @@
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="image-with-text-block">
+  {%- capture mobile_size -%}750x{% if section.settings.image.height >= 960 %}960{% else %}{{ section.settings.image.height }}{% endif %}{%- endcapture -%}
+
+  <div class="FlexboxIeFix">
+    <div class="ImageHero ImageHero--large" {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1', format: 'pjpg' }})"{% endif %}>
+      <div class="ImageHero__ImageWrapper">
+        <div class="ImageHero__Image ImageHero_section-bottom Image--lazyLoad Image--zoomOut {% if section.settings.show_parallax %}ImageHero__Image--parallax{% endif %}"
+             data-optimumx="1.4"
+             data-expand="-150"
+             {% if section.settings.image %}data-bgset="{{ section.settings.image | img_url: mobile_size, crop: 'center' }} 750w, {{ section.settings.image | img_url: '1000x' }} 1000w, {{ section.settings.image | img_url: '1500x' }} 1500w"{% endif %}>
+        </div>
+
+        <noscript>
+          <div class="ImageHero__ImageWrapper" style="background-image: url({{ section.settings.image | img_url: '1000x' }})"></div>
+        </noscript>
+
+        {%- unless section.settings.image != blank -%}
+          <div class="PlaceholderBackground PlaceholderBackground--Dark">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+        {%- endunless -%}
+      </div>
+
+      {%- if section.settings.title != blank or section.settings.content != blank or section.settings.button_label != blank -%}
+        <div class="ImageHero__ContentWrapper ContainerCentered">
+          <div class="ImageHero__BlockContent BlockRight TextRight">
+            {%- if section.settings.title != blank -%}
+              <h2 class="ImageHero__BlockHeading Heading u-h1">{{ section.settings.title | escape }}</h2>
+            {%- endif -%}
+            {%- if section.settings.title != blank -%}
+              <h3 class="ImageHero__BlockSubheading Heading u-h2">{{ section.settings.subheading | escape }}</h3>
+            {%- endif -%}
+
+            {%- if section.settings.content != blank -%}
+              <div class="ImageHero__BlockText Rte">
+                {{ section.settings.content }}
+              </div>
+            {%- endif -%}
+
+            {%- if section.settings.link_url != blank -%}
+              <a href="{{ section.settings.link_url }}" class="ImageHero__BlockLink Button Button--primary">{{ section.settings.link_text | escape }}</a>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+  {%- if section.settings.b_title != blank or section.settings.b_content != blank -%}
+  <div class="Container">
+    <div class="Lookbook">
+      {%- if section.settings.b_title != blank -%}
+      <div class="LookbookTitle Heading u-h1 TextCenter">{{ section.settings.b_title | escape }}</div>
+      {%- endif -%}
+      {%- if section.settings.b_content != blank -%}
+      <div class="LookbookText TextCenter"><p>{{ section.settings.b_content | escape }} <a href="{{ section.settings.b_link_url }}">{{ section.settings.b_link_url_title | escape }}</a></p></div>
+      {%- endif -%}
+    </div>
+   {%- endif -%}  
+  </div>
+</section>
+
+{% schema %}
+  {
+  "name": "Story Bottom",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Full screen section title",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Full screen section Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Full screen section text",
+      "default": "Add your own custom content to give more information about your store, availability details..."
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Full screen link text"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Full screen section URL"
+    },
+    {
+       "type": "image_picker",
+        "id": "image",
+        "label": "Full screen Image",
+        "info": "1920 x 800px .png recommended"
+    },
+    {
+      "type": "text",
+      "id": "b_title",
+      "label": "Bottom section title"
+    },
+    {
+      "type": "text",
+      "id": "b_content",
+      "label": "Bottom section content",
+      "default": "Share with us on Instagram by using "
+    },
+    {
+      "type": "text",
+      "id": "b_link_url_title",
+      "label": "Bottom section URL Title",
+      "default": "#MichaelGabriels"
+    },
+    {
+      "type": "url",
+      "id": "b_link_url",
+      "label": "Bottom section URL"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  .ImageHero_section-bottom {
+    background-position-y: top;
+  }
+  .ImageHero__ContentWrapper {
+  z-index:1;
+  }
+  .ImageHero__BlockContent {
+  max-width: 550px;
+  }
+  .ImageHero__BlockText  {
+    margin-bottom: 40px;
+  }
+  .Lookbook {
+    margin: 50px 0;
+  }
+  .LookbookTitle {
+  margin-bottom: 40px;
+  }
+</style>
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

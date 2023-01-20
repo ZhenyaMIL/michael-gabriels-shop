@@ -1,0 +1,80 @@
+{% assign custom = shop.metafields.deliveryEstimation.Settings %}
+{% assign is_install = custom.is_install %}
+
+{% assign edd_options = custom.edd_options %}
+{% assign is_enable = edd_options.is_enabled %}
+{% assign message = edd_options.message %}
+{% assign cutoff_time = edd_options.cutoff_time %}
+{% assign off_day = edd_options.off_day %}
+{% assign msg_preview = edd_options.msg_preview %}
+{% assign date_format = edd_options.date_format %}
+{% assign cutofftime_enable = edd_options.cutofftime_enable %}
+{% assign detail_page_class = edd_options.detail_page_class %}
+{% assign additional_script = edd_options.additional_script %}
+{% assign delivery_icon = edd_options.delivery_icon %}
+{% assign custom_date_format = edd_options.custom_date_format %}
+
+{% assign plan_info = custom.plan_info %}
+{% assign is_active = plan_info.is_active %}
+{% assign plan = plan_info.plan %}
+
+{% if template contains 'product' %}
+{% assign available = product.available  %}
+{% assign product_id = product.id  %}
+{% assign product_handle = product.handle  %}
+{% assign product_tag = product.tags  %}
+{% assign product_type = product.type  %}
+{% assign product_vendor = product.vendor  %}
+{% assign collection = collections %}
+{% assign tagCount = 0 %}
+{% assign collectionCount = 0 %}
+
+<div class='sb_info metafield_update' style='display:none'>
+<div class='sb_store_date'>{{ "now" | date: "%b %d, %Y %H:%M" }}</div>
+<div >Product available : <span class='product_available'>{{available}}</span></div>
+<div >Product Id : <span class='product_id'>{{product_id}}</span></div>
+<div >Product Handle : <span class='product_handle'>{{product_handle}}</span></div>
+<div >Product Vendor : <span class='product_vendor'>{{product_vendor}}</span></div>
+<div >Product Type : <span class='product_type'>{{product_type}}</span></div>
+<div >Product Tag : 
+{% for getproduct_tag in product_tag %} 
+<div> {{tagCount}} : 
+<span class='product_tag product_tag_{{tagCount}}'>{{getproduct_tag}}</span>
+  {% assign tagCount = tagCount | plus: 1 %}
+  </div>
+{% endfor %}
+  </div>
+
+</div>
+{% endif %}
+<script>
+        msg_preview = `{{msg_preview}}`;
+        msg_preview = msg_preview.replaceAll('=>',':');
+        
+        responseData_ode = 
+        {
+          "is_active":`{{is_active}}`,
+          "is_install":`{{is_install}}`,
+          "is_enable": `{{is_enable}}`,
+          "message":`{{message}}`,                   
+          "plan":`{{plan}}`,
+          "edd_options":{
+             "cutoff_time":`{{cutoff_time}}`,
+             "off_day":`{{off_day}}`,
+             "msg_preview":JSON.parse(msg_preview),
+             "date_format":`{{date_format}}`,
+             "is_all_products":`{{is_all_products}}`,
+             "display_on_other_page":`{{display_on_other_page}}`,
+             "cutofftime_enable":`{{cutofftime_enable}}`,
+             "detail_page_class":`{{detail_page_class}}`,
+             "additional_script":`{{additional_script}}`,
+             "delivery_icon":`{{delivery_icon}}`,
+             "countdown_formate":`{{countdown_formate}}`,
+             "custom_cart_label":`{{custom_cart_label}}`,
+             "cart_msg_apperance":`{{cart_msg_apperance}}`,
+             "date_option":`{{date_option}}`,
+             "custom_date_format":`{{custom_date_format}}`},
+        }                       
+</script>
+<script src='https://estimated-delivery-days.setubridgeapps.com/estimated-delivery-days/app/edd-proxy/main/element_picker_for_change_message_position.js'> </script>
+<script src="https://estimated-delivery-days.setubridgeapps.com/estimated-delivery-days/app/edd-proxy/main/edd.js?ed27_112021"></script>   

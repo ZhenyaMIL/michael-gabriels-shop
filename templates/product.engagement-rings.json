@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": true,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "447d8969-1885-4146-b478-c60bb0743c27": {
+          "type": "shape_selector",
+          "settings": {}
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": true,
+            "show_color_carousel": true,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": true,
+            "show_payment_button": false
+          }
+        },
+        "bcb5d25d-c332-4a3c-ae8e-48e281302b2b": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0569\/6136\/8231\/files\/AdobeStock_192978335.jpg?v=1668093304\" style=\"height:30px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\nIdeal Cut | <strong> IGI Certified <\/strong> <\/p> \n<p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0569\/6136\/8231\/files\/AdobeStock_234385476.jpg?v=1668093812\" style=\"height:31px;float:left;margin-left:-8px;margin-right:4px;padding-bottom: 0px;\"\/>\nMade to order. Estimated to ship by <strong><span id=\"fromDate\"><\/span>  <span id=\"toDate\"><\/span><\/strong><\/p>\n{{ '\/\/cdnjs.cloudflare.com\/ajax\/libs\/datejs\/1.0\/date.min.js' | script_tag }}\n<script>\nvar fromDate = Date.today().addDays(14);\nif (fromDate.is().saturday() || fromDate.is().sunday()) {\nfromDate = fromDate.next().monday();\n}\ndocument.getElementById('fromDate').innerHTML = fromDate.toString('dddd MMMM dS');\n<\/script>\n<p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0569\/6136\/8231\/files\/AdobeStock_214419580.jpg?v=1668094332\" style=\"height:35px;float:left;margin-left:-2px;margin-right:6px;padding-bottom: 4px;\"\/> Free Shipping & Returns\n<br\/> <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0569\/6136\/8231\/files\/AdobeStock_440897419.jpg?v=1668095548\" style=\"height:30px;float:left;margin-right:10px;padding-bottom: 4px;\"\/> One Year Warranty"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "447d8969-1885-4146-b478-c60bb0743c27",
+        "variant_selector",
+        "buy_buttons",
+        "bcb5d25d-c332-4a3c-ae8e-48e281302b2b",
+        "description"
+      ],
+      "settings": {
+        "image_size": "medium",
+        "stack_images": false,
+        "show_thumbnails": true,
+        "enable_image_zoom": true,
+        "enable_video_looping": true
+      }
+    },
+    "166732874197579354": {
+      "type": "apps",
+      "blocks": {
+        "9dcd8a2e-8345-4e56-a47b-d144fc37a570": {
+          "type": "shopify:\/\/apps\/maestrooo-section-feed\/blocks\/app-block\/43cd482b-515a-4e82-b170-05d391763cd2",
+          "settings": {
+            "title": "Follow us on Instagram!",
+            "subheading": "",
+            "button_text": "@MichaelGabrielsNY",
+            "button_link": "https:\/\/www.instagram.com\/michaelgabrielsny\/",
+            "layout": "grid",
+            "image_size": "medium",
+            "add_spacing": false,
+            "rows_count": 2,
+            "show_author": false,
+            "show_caption": true,
+            "show_date": false,
+            "click_action": "open_instagram",
+            "heading_color": "#000000",
+            "subheading_color": "#000000",
+            "button_background": "#000000",
+            "button_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_text_color": "#ffffff",
+            "overlay_opacity": 65
+          }
+        }
+      },
+      "block_order": [
+        "9dcd8a2e-8345-4e56-a47b-d144fc37a570"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "ec431e08-b0f5-4714-a859-a75bd0f0a3cc": {
+      "type": "custom-fields-products",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "recommendations_count": 4,
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "166732874197579354",
+    "ec431e08-b0f5-4714-a859-a75bd0f0a3cc",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

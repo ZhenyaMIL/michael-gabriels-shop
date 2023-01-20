@@ -1,0 +1,55 @@
+<div class="ContentOverlay Image--lazyLoad Image--zoomOut">
+    {%- if section.settings.image != blank -%}
+        <style>
+            .ContentOverlay {
+                background-image: url("{{ section.settings.image | img_url: 'master' }}");
+                background-size: cover;
+                background-position: left;
+                background-repeat: no-repeat;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            @media (min-width: 1140px) {
+                .ContentOverlay {
+                    min-height: 550px;
+                }
+            }
+
+            .ContentOverlay .ContainerCentered .PageHeader .SectionHeader__Heading {
+                text-align: left;
+            }
+            .ContentOverlay .ContainerCentered .PageContent {
+                display: inline-block;
+                margin: 0 0 50px 0;
+            }
+        </style>
+    {%- endif -%}
+    <div class="ContainerCentered">
+        <header class="PageHeader">
+            <div class="SectionHeader SectionHeader--center">
+                <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
+            </div>
+        </header>
+
+        <div class="PageContent PageContent--narrow Rte">
+            {{ page.content }}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+  "name": "Story Top Image",
+  "settings": [
+    {
+       "type": "image_picker",
+       "id": "image",
+       "label": "Top section image",
+       "info": "1920 x 800px .png recommended"
+    }
+]
+  }
+{% endschema %}
+{% javascript %}
+{% endjavascript %}

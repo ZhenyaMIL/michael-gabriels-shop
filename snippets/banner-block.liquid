@@ -1,0 +1,91 @@
+<div class="ImageHero--Wrap">
+    <div class="ImageHero {% if section.settings.align == 'right' %}ImageHero--ContentRight{% endif %}
+                                   {% if section.settings.align == 'left' %}ImageHero--ContentLeft{% endif %}"
+         {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
+        <div class="ImageHero__ImageWrapper">
+            <div class="ImageHero__Image {% if section.settings.overlay_opacity > 0 %}ImageHero__ImageWrapper--hasOverlay{% endif %} Image--lazyLoad Image--zoomOut"
+                 data-optimumx="1.4"
+                 data-expand="-150"
+                 style="background-image: url({{ section.settings.image | img_url: '700x' }})">
+            </div>
+
+            <noscript>
+                <div class="ImageHero__Image"
+                     style="background-image: url({{ section.settings.image | img_url: '700x' }})"></div>
+            </noscript>
+           {%- unless section.settings.image != blank -%}
+          <div class="PlaceholderBackground PlaceholderBackground--Dark">
+            {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+          {%- endunless -%}
+        </div>
+        <div class="ImageHero__Content ImageHero__Content--{% if section.settings.image != blank %}Image{% endif %}">
+            {%- if section.settings.r_subheading != blank or section.settings.r_title != blank or section.settings.r_content != blank -%}
+                {%- if section.settings.r_subheading != blank or section.settings.r_title != blank -%}
+                    <header class="SectionHeader SectionHeader--MiddleIndent {% if section.settings.align == 'right' %}TextRight BlockRight{% endif %}
+                                   {% if section.settings.align == 'left' %}TextLeft BlockLeft{% endif %}">
+                        {%- if section.settings.r_subheading != blank -%}
+                            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.r_subheading | escape }}</h3>
+                        {%- endif -%}
+
+                        {%- if section.settings.r_title != blank -%}
+                            <p class="SectionHeader__Heading Heading u-h1">{{ section.settings.r_title | escape }}</p>
+                        {%- endif -%}
+
+                        {%- if section.settings.r_content != blank -%}
+                            <div class="SectionHeader__Description">
+                                {{ section.settings.r_content }}
+                            </div>
+                        {%- endif -%}
+                        {%- if section.settings.r_link_title != blank -%}
+                            <div class="SectionHeader__Link">
+                                <a class="link Link--underline" href="{{ section.settings.r_link }}" >{{ section.settings.r_link_title }}</a>
+                            </div>
+                        {%- endif -%}
+
+                    </header>
+                {%- endif -%}
+            {%- endif -%}
+        </div>
+    </div>
+</div>
+<style>
+    .ImageHero--Wrap {
+        width: 100%;
+    }
+    .ImageHero__Content {
+        position: relative;
+        flex-basis: auto;
+        padding: 20px 40px 10px 40px;
+    }
+    .SectionHeader {
+        margin-bottom: 25px;
+    }
+    .ImageHero--ContentRight{
+        text-align: right;
+        height: 100%;
+        align-items: center;
+    }
+      .ImageHero--ContentLeft{
+        text-align: left;
+        height: 100%;
+        align-items: center;
+    }
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+    .ImageHero__Content .ImageHero__Content--Image {
+        padding: 0;
+    }
+    @media (min-width: 981px) {
+        .ImageHero__Content {
+            padding: 40px 80px 20px 80px;
+        }
+    }
+    .ImageHero--Wrap {
+        height: 100%;
+    }
+    .SectionHeader__Link {
+        padding: 40px 0;
+    }
+</style>

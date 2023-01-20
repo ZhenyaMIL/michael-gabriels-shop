@@ -1,0 +1,247 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Man-putting-Ring-on-finger.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Man-putting-Ring-on-finger-for-mobile.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "Sustainable and Ethically Made Fine Jewelry",
+            "title": "Where Ethics Meets Elegance",
+            "button_1_text": "Browse Lab grown diamond engagement ring",
+            "button_1_link": "shopify:\/\/collections\/engagement-rings",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "slide-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-0",
+        "slide-1"
+      ],
+      "settings": {
+        "show_fullscreen": true,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "e38cc82d-9b81-4cce-8bc4-57aa51b8fe56": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p>Our sustainable fine jewelry exceeds the industry’s standards and is expertly crafted to meet your specific needs and wants. We take pride in creating the best ethical sustainable jewelry through our commitment to responsible sourcing and full transparency. <\/p>\n\n<p>Our luxury ethical custom jewelry is made from mined and lab grown diamonds that are designed to empower women around the world and make them feel more confident than ever before. <\/p>"
+      }
+    },
+    "8a8eb0fc-4aa1-44f3-a8ba-d53a7e31a2b1": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16641199636730__8a8eb0fc-4aa1-44f3-a8ba-d53a7e31a2b1-16661872566abe4bfb-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "title": "Best Sellers",
+            "grid_items_count": 10,
+            "button_text": "View More Styles"
+          }
+        }
+      },
+      "block_order": [
+        "template--16641199636730__8a8eb0fc-4aa1-44f3-a8ba-d53a7e31a2b1-16661872566abe4bfb-0"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "ec0d2b30-24fd-462f-9401-a4a3ccab1629": {
+      "type": "blocks-text-with-image",
+      "blocks": {
+        "1a9d6912-558b-47a9-8080-85a8af73eb89": {
+          "type": "block",
+          "settings": {
+            "subheading": "",
+            "title": "Lab Grown Diamonds",
+            "heading_align": "center",
+            "image_position": "top",
+            "text_align": "center",
+            "content": "<p>Engineered in controlled facilities that duplicate the natural process that creates mined diamonds, lab grown ethical fine jewelry using lab grown diamonds have the exact same chemical and physical make-up as mined stones. <\/p><p>To the naked eye, there is no difference between mined diamonds and lab grown diamonds. Unlike simulated stones like cubic zirconia or moissanite that mimic the look of real diamonds, lab grown diamonds share the same chemical properties as mined diamonds.<\/p><p>Our lab grown ethically made jewelry represents the spectacular progression of technology. It allows us to offer you the opportunity to choose a diamond that is affordable, high quality, and one you can trust.<\/p>",
+            "checklist": false,
+            "link_text": "Learn more",
+            "link_url": "shopify:\/\/pages\/education-lab-grown-diamonds",
+            "icon": "flask",
+            "background": true
+          }
+        },
+        "e39707ad-8530-410f-a271-7e3d4f71bcf0": {
+          "type": "block",
+          "settings": {
+            "subheading": "",
+            "title": "Mined Diamonds",
+            "heading_align": "center",
+            "image_position": "top",
+            "text_align": "center",
+            "content": "<p>Mined diamonds are diamonds that have formed through natural occurrences and are extracted from the Earth. Made of carbon that has crystalized, diamonds are formed under great pressure and temperature and are pushed to the earth's surface following a volcanic eruption. Extracting mined stones is a costly and often dangerous process.<\/p><p>Mined diamonds are readily available in an array of designs, shapes, and styles. Our mined ethical fine jewelry is attractive to buyers as the diamonds are formed from Earth’s crust with exquisite quality. <\/p>",
+            "checklist": false,
+            "link_text": "Learn more",
+            "link_url": "shopify:\/\/pages\/education-mined-diamonds",
+            "icon": "gem",
+            "background": true
+          }
+        }
+      },
+      "block_order": [
+        "1a9d6912-558b-47a9-8080-85a8af73eb89",
+        "e39707ad-8530-410f-a271-7e3d4f71bcf0"
+      ],
+      "settings": {
+        "title": "Lab Grown Diamonds vs Mined Diamonds",
+        "subheading": "",
+        "content": "",
+        "container": true
+      }
+    },
+    "20edaab1-f057-471b-9f78-793ca777bd04": {
+      "type": "blocks-text-with-image",
+      "blocks": {
+        "42edc06a-952a-43b8-8cb8-a6af3f40bde8": {
+          "type": "block",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "heading_align": "left",
+            "image": "shopify:\/\/shop_images\/diamond-left.jpg",
+            "image_position": "top",
+            "text_align": "center",
+            "content": "<p>Technology has made it so that lab grown diamonds can be cultivated both efficiently and effectively. The price to cultivate diamonds is a fraction of the cost that’s required to mine diamonds, which means consumers aren’t forced to carry the cost of souring and extracting diamonds from the Earth.<\/p>",
+            "checklist": false,
+            "link_text": "Inquire About Lab Grown Diamonds",
+            "link_url": "shopify:\/\/pages\/inquire",
+            "icon": "",
+            "background": true
+          }
+        },
+        "97471195-101f-47e2-b519-f7f5c130b751": {
+          "type": "block",
+          "settings": {
+            "subheading": "",
+            "title": "",
+            "heading_align": "left",
+            "image": "shopify:\/\/shop_images\/diamond-right.jpg",
+            "image_position": "top",
+            "text_align": "center",
+            "content": "<p>The cost to explore for diamonds and extract the stones is tremendous, and the price is passed along to the jeweler, which then determines how much you, the consumer, will pay.<\/p>",
+            "checklist": false,
+            "link_text": "Inquire About Mined Diamonds",
+            "link_url": "shopify:\/\/pages\/inquire",
+            "icon": "",
+            "background": true
+          }
+        }
+      },
+      "block_order": [
+        "42edc06a-952a-43b8-8cb8-a6af3f40bde8",
+        "97471195-101f-47e2-b519-f7f5c130b751"
+      ],
+      "settings": {
+        "title": "Price Difference",
+        "subheading": "",
+        "content": "<p>Revolutionary in every way, lab grown diamonds are cultivated in a controlled space and cost 35-50% less than mined diamonds of the same carat size, cut and quality.<\/p>\n<p>When it comes to cutting and polishing, mined diamonds and lab grown diamonds have the same costs. The main difference in price comes from the heavy cost of mining and multiple middlemen throughout the process leading up to that final point. <\/p>\n<p>Technology has made it so that lab grown diamonds can be cultivated both efficiently and effectively. The price to cultivate diamonds is a fraction of the cost that's required to mine diamonds, which means consumers aren't forced to carry the cost of souring and extracting diamonds from the Earth.<\/p>\n<p>The cost to explore for diamonds and extract the stones is tremendous, and the price is passed along to the jeweler, which then determines how much you, the consumer, will pay.<\/p>",
+        "container": true
+      }
+    },
+    "a8de6484-18ff-41d5-b5ea-0484494f90dd": {
+      "type": "blocks-text-with-image",
+      "blocks": {
+        "1427f14e-8220-4365-ba15-22f84d0ceb78": {
+          "type": "block",
+          "settings": {
+            "subheading": "Advantages",
+            "title": "Lab Grown Diamonds",
+            "heading_align": "left",
+            "image": "shopify:\/\/shop_images\/bottom-box-left.jpg",
+            "image_position": "bottom",
+            "text_align": "left",
+            "content": "<p>40-50% more affordable than mined diamonds<\/p><p>100% ethical<\/p><p>Created using the same technique that occurs in nature to produce mined diamonds<\/p><p>Physically and chemically identical to mined diamonds<\/p><p>Can be insured and appraised<\/p>",
+            "checklist": true,
+            "link_text": "Experience Lab Grown Diamonds",
+            "link_url": "shopify:\/\/pages\/lab-grown-diamonds",
+            "icon": "",
+            "background": true
+          }
+        },
+        "8cc3d009-8b3b-47b1-b778-96e7cf849e69": {
+          "type": "block",
+          "settings": {
+            "subheading": "Advantages",
+            "title": "Mined Diamonds",
+            "heading_align": "left",
+            "image": "shopify:\/\/shop_images\/bottom-box-right.jpg",
+            "image_position": "bottom",
+            "text_align": "left",
+            "content": "<p>Higher perceived value<\/p><p>Rare and relatively hard to find<\/p><p>Natural geological processes<\/p><p>Established secondary market value<\/p><p>Kimberley process<\/p>",
+            "checklist": true,
+            "link_text": "Experience Mined Diamonds",
+            "link_url": "shopify:\/\/pages\/education-mined-diamonds",
+            "icon": "",
+            "background": true
+          }
+        }
+      },
+      "block_order": [
+        "1427f14e-8220-4365-ba15-22f84d0ceb78",
+        "8cc3d009-8b3b-47b1-b778-96e7cf849e69"
+      ],
+      "settings": {
+        "title": "Why one might choose one over the other",
+        "subheading": "",
+        "content": "Choosing between a mined diamond and sustainable fine jewelry made from lab grown  diamonds is a personal decision, and there are several key factors that can help you decide which type is stone is right for your investment.",
+        "container": true
+      }
+    },
+    "a8209343-ad76-4caf-bc17-d431a36b9a90": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<p>It all comes down to what is important to the buyer. A consumer may choose a mined diamond because it has historical significance or has a connection to nature. One might choose a lab grown diamond because it signifies modern love. <\/p>\n<p>No matter what, all diamonds represent love. It isn’t about a diamond’s origin, grade, or size, but it is about what the diamond represents. <\/p>\n<p>If you are looking for the best sustainable jewelry, the search is finally over. At Michael Gabriels, we offer both lab grown and mined sustainable luxurious jewelry that is elegant, stylish, and timeless. <\/p>\n<p><a href=\"https:\/\/michaelgabriels.com\/pages\/engagement-inquire-utm_source-xxxxx-utm_medium-xxxxx-utm_campaign-xxxxx-utm_term-xxxxx-utm_content-xxxxx-product-xxxxx-shape-xxxxx-size-xxxxx-stone-xxxxx-color-xxxxx\" target=\"_blank\">Inquire<\/a> for your custom estimate today! <\/p>"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "e38cc82d-9b81-4cce-8bc4-57aa51b8fe56",
+    "8a8eb0fc-4aa1-44f3-a8ba-d53a7e31a2b1",
+    "ec0d2b30-24fd-462f-9401-a4a3ccab1629",
+    "20edaab1-f057-471b-9f78-793ca777bd04",
+    "a8de6484-18ff-41d5-b5ea-0484494f90dd",
+    "a8209343-ad76-4caf-bc17-d431a36b9a90"
+  ]
+}

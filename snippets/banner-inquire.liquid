@@ -1,0 +1,70 @@
+<section id="section-{{ section.id }}">
+    <div class="FlexboxIeFix">
+        <div class="ImageHero ImageHero--middle" {% if banner_image %} style="background: url({{ banner_image | img_url: '1x1' }})"{% endif %}>
+            <div class="ImageHero__ImageWrapper">
+                <div class="ImageHero__Image Image--lazyLoad Image--zoomOut"
+                     data-optimumx="1.4"
+                     data-expand="-150"
+                     {% if banner_image %}data-bgset="{{ banner_image | img_url: '750x' }} 750w, {{ banner_image | img_url: '1500x' }} 1500w"{% endif %}>
+                </div>
+
+                <noscript>
+                    <div class="ImageHero__Image ImageHero__Image--Center"
+                         style="background-image: url({{ banner_image | img_url: '1500x' }})"></div>
+                </noscript>
+
+                {%- unless banner_image != blank -%}
+                    <div class="PlaceholderBackground PlaceholderBackground--Dark">
+                        {{ 'lifestyle-1' | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+                    </div>
+                {%- endunless -%}
+            </div>
+
+            {%- if section.settings.banner_subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <div class="ImageHero__Content--Overlay ContainerCentered">
+                    {%- if section.settings.banner_subheading != blank or section.settings.title != blank -%}
+                        <header class="BannerHeader BannerHeader--CenterBottom BannerHeader--{%- if section.settings.content_right == true -%}ContentRight {%- endif -%}">
+                            {%- if section.settings.banner_subheading != blank -%}
+                                <h3 class="BannerHeader__Heading BannerHeader__Heading--Light Heading Heading TextCenter">{{ section.settings.banner_subheading | escape }}</h3>
+                            {%- endif -%}
+
+                            {%- if section.settings.banner_heading != blank -%}
+                                <h2 class="BannerHeader__Heading BannerHeader__Heading--Light Heading">{{ section.settings.banner_heading | escape }}</h2>
+                            {%- endif -%}
+                        </header>
+                    {%- endif -%}
+                </div>
+            {%- endif -%}
+        </div>
+    </div>
+</section>
+<style>
+  .ImageHero.ImageHero--middle {
+   align-items: flex-end;
+  }
+    .ImageHero__Image--Center {
+        background-position: center center !important;
+    }
+
+    @media (min-width: 1140px) {
+        .ImageHero.ImageHero--middle {
+            min-height: 550px;
+        }
+    }
+
+    .ImageHero__Content--Overlay {
+        z-index: 1;
+        text-align: left;
+    }
+
+    .BannerHeader--ContentRight {
+        padding: 40px 0;
+        text-align: right;
+        float: right;
+        max-width: 580px;
+    }
+
+    .BannerHeader--CenterBottom {
+        margin-bottom: 80px;
+    }
+</style>

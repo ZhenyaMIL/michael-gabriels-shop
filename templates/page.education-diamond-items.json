@@ -1,0 +1,268 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-diamonds-1920x1080.jpg",
+        "subheading": "Learn about",
+        "title": "Diamonds",
+        "content": "",
+        "content_right": false
+      }
+    },
+    "education-gem-tabs": {
+      "type": "education-gem-tabs",
+      "blocks": {
+        "aefb6d96-bc13-46e2-839b-ea11961219a7": {
+          "type": "block",
+          "settings": {
+            "link_title": "Lab Grown Diamonds",
+            "link_url": "shopify:\/\/pages\/education-lab-grown-diamonds"
+          }
+        },
+        "eb435c89-3368-4664-97e8-38262f349fd5": {
+          "type": "block",
+          "settings": {
+            "link_title": "Mined Diamonds",
+            "link_url": "shopify:\/\/pages\/education-mined-diamonds"
+          }
+        },
+        "2d161797-23b3-4ee4-a206-f4eb38ae0305": {
+          "type": "block",
+          "settings": {
+            "link_title": "Diamond Specific Items",
+            "link_url": "shopify:\/\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "aefb6d96-bc13-46e2-839b-ea11961219a7",
+        "eb435c89-3368-4664-97e8-38262f349fd5",
+        "2d161797-23b3-4ee4-a206-f4eb38ae0305"
+      ],
+      "settings": {}
+    },
+    "content-columns-items": {
+      "type": "content-columns-items",
+      "blocks": {
+        "18620175-584e-454e-b535-7377bc45edf2": {
+          "type": "block",
+          "settings": {
+            "i_title": "Cut",
+            "icon": "check",
+            "link": "",
+            "i_content": ""
+          }
+        },
+        "9002c7bc-14bf-4f47-b61d-c68ebd1331c4": {
+          "type": "block",
+          "settings": {
+            "i_title": "Color",
+            "icon": "check",
+            "link": "",
+            "i_content": ""
+          }
+        },
+        "71de7131-a464-49f2-9e04-88794f06fe5f": {
+          "type": "block",
+          "settings": {
+            "i_title": "Clarity",
+            "icon": "check",
+            "link": "",
+            "i_content": ""
+          }
+        },
+        "65cad953-775d-419d-bc4a-a1c1afcc3aff": {
+          "type": "block",
+          "settings": {
+            "i_title": "Carat Weight",
+            "icon": "check",
+            "link": "",
+            "i_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "18620175-584e-454e-b535-7377bc45edf2",
+        "9002c7bc-14bf-4f47-b61d-c68ebd1331c4",
+        "71de7131-a464-49f2-9e04-88794f06fe5f",
+        "65cad953-775d-419d-bc4a-a1c1afcc3aff"
+      ],
+      "settings": {
+        "subheading": "Diamond",
+        "title": "4 C's",
+        "content": "",
+        "background": false,
+        "image": "shopify:\/\/shop_images\/edu-diamonds-tile-image-cols8.jpg",
+        "text_color": "#ffffff",
+        "r_subheading": "Choosing The",
+        "r_title": "Right Diamond",
+        "r_content": "For centuries, the diamond has been the jewel of choice to express love, devotion, and the promise of a beautiful life together. It is imperative to become <a href=\"https:\/\/michaelgabriels.com\/pages\/education-engagement-ring\">educated<\/a> all about the details of the diamond before purchasing so you can choose the right diamond to express your love for eternity."
+      }
+    },
+    "text-content-cut": {
+      "type": "text-content-cut",
+      "settings": {
+        "subheading": "",
+        "title": "Diamond Cut",
+        "content": "<p>A diamonds ability to refract light and shine so intensely is one of the reasons a diamond is the gem of choice for most people. Many think about a diamond shape when referring to the diamonds cut, but a diamonds cut grade is really referring to how the light interacts with the facets on the diamond. Each diamond is cut to deliver the top return of light possible for that particular diamond. <\/p>",
+        "background": false
+      }
+    },
+    "content-columns-items-table": {
+      "type": "content-columns-items-table",
+      "blocks": {
+        "06c18d1c-7cc1-484a-9eb8-a0c2f667076f": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "IDEAL",
+            "content": "Cut to the most exacting standarts. These diamonds have the most desirable dimensions and are proportioned to return the maximum possible light. Roind diamonds will show a 'hearts and arrows' facet patern."
+          }
+        },
+        "75aafaba-79bf-4c9c-845b-37f176a181c8": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "EXCELLENT",
+            "content": "Exquisite quality cut to create the optimal combination of brilliance and fire. Reflects nearly all light that enters the diamond. Top 3% of diamond quality based on cut."
+          }
+        },
+        "4ae1b066-9f3f-46c8-bbbb-269889471ba2": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "VERY GOOD",
+            "content": "Superior quality cut that reflects nearly as much light as the ideal cut while at a substantially lower cost."
+          }
+        },
+        "fadda5bf-643a-462e-9c91-862d9a4b4cea": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "GOOD",
+            "content": "Premium quality cut to optimize the size without sacraficing quality and beauty. Reflects most light that enters."
+          }
+        },
+        "a21f216e-f9a2-43de-a841-481bba80fbdd": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "FAIR",
+            "content": "Premium quality cut to optimize the size without sacraficing quality and beauty. Reflects most light that enters."
+          }
+        }
+      },
+      "block_order": [
+        "06c18d1c-7cc1-484a-9eb8-a0c2f667076f",
+        "75aafaba-79bf-4c9c-845b-37f176a181c8",
+        "4ae1b066-9f3f-46c8-bbbb-269889471ba2",
+        "fadda5bf-643a-462e-9c91-862d9a4b4cea",
+        "a21f216e-f9a2-43de-a841-481bba80fbdd"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "About Cut",
+        "content": "<p>A diamond cut doesn’t refer to the shape of the diamond, but to the diamonds proportions, symmetry, and polish completed by the diamond cutters. Although difficult to analyze, the general beauty of a diamond is directly related to the cut of the diamond. The diamond cut has three crucial properties, which affect the appearance: Brilliance (the brightness of the white light that is reflected from the interior and exterior of the diamond. The light enters through the top of the diamond and gets broken down into rainbow like colors); Fire (the spectacular appearance of the rainbow colors when the diamond is tilted from side to side); Scintillation (the amount of rainbow colors the diamond produces)<\/p>",
+        "background": true
+      }
+    },
+    "text-content-color": {
+      "type": "text-content-color",
+      "settings": {
+        "subheading": "",
+        "title": "Diamond Color",
+        "content": "<p>Despite all thoughts on diamond color referring to the amount of color seen in a diamond, it actually refers to the lack of color found in a diamond. Besides for fancy colored diamonds (pink, blue, etc.), the less yellow appearance in a stone, the more value a diamond has. The color grading starts at D (colorless) and goes down to Z (most color). <\/p>",
+        "background": false,
+        "image": "shopify:\/\/shop_images\/edu-diamonds-table-img01.jpg"
+      }
+    },
+    "text-content-clarity": {
+      "type": "text-content-clarity",
+      "settings": {
+        "subheading": "",
+        "title": "Diamond Clarity",
+        "content": "<p>There is a lot more to a diamond than meets the eye. See below to learn about the different inclusions and blemishes inside a diamond and how they affect the grading. <\/p>",
+        "image": "shopify:\/\/shop_images\/edu-diamonds-table-img02.png"
+      }
+    },
+    "content-columns-chart-table": {
+      "type": "content-columns-chart-table",
+      "blocks": {
+        "2e9411c2-36d5-4f58-83cc-9ea048e4f00a": {
+          "type": "block",
+          "settings": {
+            "title": "INTERNALLY FLAWLESS",
+            "row_title": "IF",
+            "content": "Free from internal blemishes visible under 10x magnification (small eternal details tolerated)."
+          }
+        },
+        "c082d351-9ffc-4150-a366-34490d5aacc3": {
+          "type": "block",
+          "settings": {
+            "title": "VERY VERY SLIGHTLY INCLUDED",
+            "row_title": "VVS1 VVS2",
+            "content": "Inclusions and\/or external blemishes very difficult to locate under 10x magnification."
+          }
+        },
+        "6a7d4b69-4396-476f-9bd5-28d670731d51": {
+          "type": "block",
+          "settings": {
+            "title": "VERY SLIGHTLY INCLUDED",
+            "row_title": "VS1 VS2",
+            "content": "Inclusions and\/or external blemishes difficult to locate under 10x magnification."
+          }
+        },
+        "306f3039-a2f4-4a46-835d-9abd35c87502": {
+          "type": "block",
+          "settings": {
+            "title": "SLIGHTLY INCLUDED",
+            "row_title": "SI1 SI2",
+            "content": "Inclusions and external blemishes easy to locate under 10x magnification."
+          }
+        },
+        "04014282-a2fe-497e-a8ad-73bd64e32592": {
+          "type": "block",
+          "settings": {
+            "title": "INCLUDED",
+            "row_title": "I1 I2 I3",
+            "content": "Inclusions and external blemishes very easy to locate under 10x magnification or with naked eye."
+          }
+        }
+      },
+      "block_order": [
+        "2e9411c2-36d5-4f58-83cc-9ea048e4f00a",
+        "c082d351-9ffc-4150-a366-34490d5aacc3",
+        "6a7d4b69-4396-476f-9bd5-28d670731d51",
+        "306f3039-a2f4-4a46-835d-9abd35c87502",
+        "04014282-a2fe-497e-a8ad-73bd64e32592"
+      ],
+      "settings": {
+        "subheading": "Diamonds",
+        "title": "Clarity Chart",
+        "content": "<p>The diamond clarity grade refers to the lack of marks and inclusions within the diamond. Inclusions are characteristics formed inside a diamond while being formed under high temperature and pressure. Characteristics within the stone can look like tiny crystals, clouds, feathers, twinning wisp, knots, and pin points<\/p>",
+        "background": true
+      }
+    },
+    "text-content-carat-weight": {
+      "type": "text-content-carat-weight",
+      "settings": {
+        "subheading": "",
+        "title": "Diamond carat weight",
+        "content": "<p>The diamond carat weight refers to the actual weight of the diamond. For comparison, 200 milligrams equals 1 carat. Every carat can be allocated into 100 points. For example, a diamond which weighs 0.50 carats, can also be referred to a 50 point, 50 pointer diamond, or half carat diamond. <br\/><\/p>",
+        "background": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "education-gem-tabs",
+    "content-columns-items",
+    "text-content-cut",
+    "content-columns-items-table",
+    "text-content-color",
+    "text-content-clarity",
+    "content-columns-chart-table",
+    "text-content-carat-weight"
+  ]
+}

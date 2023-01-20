@@ -1,0 +1,220 @@
+<section id="section-{{ section.id }}" class="">
+    <div class="ContainerCentered ContainerFlex">
+        <div class="WideColumn p-1">
+            {% render 'banner-block' %}
+        </div>
+        <div class="ThinColumn p-1">
+            {% render 'banner-block-column' %}
+        </div>
+    </div>
+</section>
+
+<style>
+    .ContainerCentered--Flex {
+        display: flex;
+    }
+    .WideColumn {
+        flex-grow: 1;
+    }
+    .ThinColumn {
+        flex-grow: 1;
+    }
+
+    .SectionHeader {
+        margin-bottom: 25px;
+    }
+    .SectionHeader.SectionHeader--MiddleIndent {
+        margin-bottom: 30px;
+    }
+    .ThinColumnWrap {
+        width: 100%;
+        padding: 40px 10%;
+
+    }
+    .ColumnWrap--Background {
+        background-color: #F6F6F6;
+        padding: 20px 40px 10px 40px;
+    }
+    @media (max-width: 980px) {
+        .WideColumn {
+            margin-bottom:30px;
+        }
+    }
+    @media (min-width: 981px) {
+        .ThinColumn {
+            max-width: 530px;
+        }
+        .ColumnWrap--Background {
+            padding: 40px 80px 20px 80px;
+        }
+        .ThinColumnWrap {
+            width: 100%;
+            padding: 40px 15%;
+        }
+    }
+    .Header__Icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 40px 0;
+    }
+    .IconLink__Icon {
+        height: 42px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .IconLink__Icon .Icon {
+        height: 42px;
+        width: 100%;
+        fill: #B5945E;
+    }
+
+    .IconLink {
+        display: flex;
+        flex-direction: column;
+        padding: 0 35px;
+    }
+    .IconLink__Link {
+        text-transform: uppercase;
+    }
+    .SectionHeader__Link {
+        padding: 40px 0;
+    }
+</style>
+
+
+{% schema %}
+{
+  "name": "Content Columns",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_l",
+      "label": "Column 1 Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "text_color_l",
+      "label": "Column 1 Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "l_subheading",
+      "label": "Column 1 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "l_title",
+      "label": "Heading",
+      "default": "Column 1  Tell your story"
+    },
+    {
+      "type": "textarea",
+      "id": "l_content",
+      "label": "Column 1 Text",
+      "default": "Add your own custom content to give more information about your store, availability details..."
+    },
+    {
+      "type": "text",
+      "id": "l_link_title",
+      "label": "Link Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "l_link",
+      "label": "Link"
+    },
+    {
+      "type": "select",
+      "id": "align_l",
+      "label": "Banner 1 text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Column 2 Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Column 2 Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "r_subheading",
+      "label": "Column 2 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "r_title",
+      "label": "Heading",
+      "default": "Column 2  Tell your story"
+    },
+    {
+      "type": "textarea",
+      "id": "r_content",
+      "label": "Column 2 Text",
+      "default": "Add your own custom content to give more information about your store, availability details..."
+    },
+    {
+      "type": "text",
+      "id": "r_link_title",
+      "label": "Link Title",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "r_link",
+      "label": "Button Title"
+    },
+    {
+      "type": "select",
+      "id": "align",
+      "label": "Banner text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

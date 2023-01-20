@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "banner-education-center-stone": {
+      "type": "banner-education-center-stone",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_286543195.jpg",
+        "subheading": "Center Stone Education",
+        "title": "Choosing a Center Stone",
+        "content": "",
+        "link_title": "Learn More",
+        "link": "",
+        "align": "Left",
+        "content_color": "Dark"
+      }
+    },
+    "education-tabs-center": {
+      "type": "education-tabs-center",
+      "blocks": {
+        "9a8dbf70-31c7-4396-8c63-49307b89ecb2": {
+          "type": "block",
+          "settings": {
+            "link_title": "Choosing A Center Stone",
+            "link_url": "shopify:\/\/pages\/choosing-a-center-stone"
+          }
+        },
+        "c24dce03-9e73-438a-a7dc-8fad2ae9b442": {
+          "type": "block",
+          "settings": {
+            "link_title": "Shapes",
+            "link_url": "shopify:\/\/pages\/shapes-center-stone"
+          }
+        },
+        "b7a0b0c8-0487-4af6-87ee-25b2c51a6db7": {
+          "type": "block",
+          "settings": {
+            "link_title": "4Cs",
+            "link_url": "shopify:\/\/pages\/4cs-center-stone"
+          }
+        },
+        "c8c06d4b-9b65-4d68-8630-249b08dcbfd1": {
+          "type": "block",
+          "settings": {
+            "link_title": "Diamond Anatomy",
+            "link_url": "shopify:\/\/pages\/diamond-anatomy"
+          }
+        }
+      },
+      "block_order": [
+        "9a8dbf70-31c7-4396-8c63-49307b89ecb2",
+        "c24dce03-9e73-438a-a7dc-8fad2ae9b442",
+        "b7a0b0c8-0487-4af6-87ee-25b2c51a6db7",
+        "c8c06d4b-9b65-4d68-8630-249b08dcbfd1"
+      ],
+      "settings": {}
+    },
+    "65ba88a3-a9f6-4712-b5c4-9d14c0d675f0": {
+      "type": "blocks-text-with-image",
+      "blocks": {
+        "f67bedb3-b2fd-4ab2-b587-c54981f1a020": {
+          "type": "block",
+          "settings": {
+            "subheading": "",
+            "title": "Why buy a Lab Grown Center Stone?",
+            "heading_align": "left",
+            "image_position": "top",
+            "text_align": "left",
+            "content": "<p>You are here to buy a diamond for a lifetime’s appreciation of its beauty, and probably for few, if any, other reasons. Diamonds are among the most expensive luxury products available and are not likely to lose their place at the exclusive table any time soon. Lab-grown diamonds, which are identical or superior to most of their mined counterparts, are likewise an exclusive and rarified luxury item. You can be certain that this investment in your future happiness will be rewarding every day for the rest of your life.<\/p>",
+            "checklist": false,
+            "link_text": "",
+            "link_url": "",
+            "icon": "",
+            "background": false
+          }
+        },
+        "f6e122ea-ecd5-4962-9828-c508485b1bb3": {
+          "type": "block",
+          "settings": {
+            "subheading": "",
+            "title": "When Buying a Lab-Grown Diamond, keep in mind:",
+            "heading_align": "left",
+            "image_position": "top",
+            "text_align": "left",
+            "content": "<p>The beauty of a cut diamond is the result of a variety of natural and man-made factors. Whether they are born as lab-grown beauties or are dug from the pits of a mine, all diamonds have the same carbon crystal lattice that gives them the fire, scintillation, and brilliance<strong> <\/strong>we associate with them. However, our ability to appreciate that depends not only on the nature of the stone but how it has been crafted and set.<\/p><p>Keep in mind that all lab-grown diamonds are unique and have their own distinctive character, sometimes markedly different from their neighbor in the lab where they grew.  That's why it is important to understand the components of the 4 Cs, the globally accepted method for the evaluation of a diamond's material quality: Carat, Color, Clarity, Cut. This will help you choose the diamond you will enjoy the most. <\/p>",
+            "checklist": false,
+            "link_text": "",
+            "link_url": "",
+            "icon": "",
+            "background": false
+          }
+        }
+      },
+      "block_order": [
+        "f67bedb3-b2fd-4ab2-b587-c54981f1a020",
+        "f6e122ea-ecd5-4962-9828-c508485b1bb3"
+      ],
+      "settings": {
+        "title": "Choosing a Lab Grown Diamond",
+        "subheading": "",
+        "content": "At Michael Gabriels, we have simplified one of the most challenging aspects of purchasing an engagement ring: the choice of a center stone. Elsewhere an overcomplicated headache with too many options and too much information, here you will learn exactly what you need to know about how choosing a center stone works, and how our Michael Gabriels process positions you to find your perfect stone. ",
+        "container": false
+      }
+    },
+    "cfaa99a7-689b-4e27-aba0-86f7db6d1cc8": {
+      "type": "text-content-recycled",
+      "settings": {
+        "subheading": "",
+        "title": "Diamond grading & third-party evaluation",
+        "content": "<p>Keep in mind that cut and carat are mostly positive traits that you want to maximize while clarity and color are potentially negative traits you likely want to minimize. <\/p><p>Optimize for a more beautiful stone by balancing the 4cs together rather than focusing on maximizing or minimizing a single category. You are buying a whole diamond, not one of its components or light effects.<\/p>",
+        "background": false
+      }
+    },
+    "shapes-center": {
+      "type": "shapes-center",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
+    "banner-fullscreen-steps-center": {
+      "type": "banner-fullscreen-steps-center",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AdobeStock_182022098.jpg",
+        "subheading": "",
+        "title": "",
+        "content": "<p>Content for section<\/p>",
+        "content_right": false
+      }
+    },
+    "e2fc0540-5e77-4940-bc08-f96f76bc07ff": {
+      "type": "text-content-recycled",
+      "settings": {
+        "subheading": "",
+        "title": "When thinking 4 cs",
+        "content": "<p>Keep in mind that cut and carat are mostly positive traits that you want to maximize while clarity and color are potentially negative traits you likely want to minimize. <\/p><p>Optimize for a more beautiful stone by balancing the 4cs together rather than focusing on maximizing or minimizing a single category. You are buying a whole diamond, not one of its components or light effects.<\/p>",
+        "background": false
+      }
+    },
+    "education-bottom-special-center": {
+      "type": "education-bottom-special-center",
+      "settings": {
+        "title": "",
+        "content": "Share with us on Instagram by using",
+        "link_url_title": "#MichaelGabriels",
+        "link_url": ""
+      }
+    }
+  },
+  "order": [
+    "banner-education-center-stone",
+    "education-tabs-center",
+    "65ba88a3-a9f6-4712-b5c4-9d14c0d675f0",
+    "cfaa99a7-689b-4e27-aba0-86f7db6d1cc8",
+    "shapes-center",
+    "banner-fullscreen-steps-center",
+    "e2fc0540-5e77-4940-bc08-f96f76bc07ff",
+    "education-bottom-special-center"
+  ]
+}

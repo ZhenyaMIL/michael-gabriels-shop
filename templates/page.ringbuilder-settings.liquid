@@ -1,0 +1,9 @@
+{{ 'ringbuilder-settings.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'ringbuilder-settings.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<script src="{{ 'ringbuilder-settings.js' | asset_url }}" defer="defer"></script>
+
+<div id="root"></div>
+
+<script src="https://apis.google.com/js/api.js"></script>

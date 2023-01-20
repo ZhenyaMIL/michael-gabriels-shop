@@ -1,0 +1,154 @@
+{% if product.metafields["custom_fields"]["additional-information"] != blank %}
+{% style %}
+{% if block.settings.title_font_custom != blank %}{{ block.settings.title_font | font_face }}{% endif %}
+#block-{{ block.id }} {
+  {% if block.settings.title_font_custom != blank %}
+  --title-font-weight: {{ block.settings.title_font.weight }};
+  --title-font-style: {{ block.settings.title_font.style }};
+  --title-font-family: {{ block.settings.title_font.family }};
+  {% endif %}
+  --margin-top: {{ block.settings.margin_top }}rem;
+  --margin-bottom: {{ block.settings.margin_bottom }}rem;
+  --title-font-size: {{ block.settings.title_font_size }}px;
+  --title-font-color: {{ block.settings.title_font_color }};
+  --title-margin-top: {{ block.settings.title_margin_top }}rem;
+  --title-margin-bottom: {{ block.settings.title_margin_bottom }}rem;
+  --title-line-height: {{ block.settings.title_line_height }}em;
+  --card-bg-color: {{ block.settings.card_bg_color }};
+  --card-border: {{ block.settings.card_border }};
+  --card-border-radius: {{ block.settings.card_border_radius }};
+  --card-box-shadow: {{ block.settings.card_box_shadow }};
+  --body-font-size: {{ block.settings.body_font_size }}px;
+  --body-font-color: {{ block.settings.body_font_color }};
+  --image-border: {{ block.settings.image_border }};
+  --image-border-radius: {{ block.settings.image_border_radius }};
+  --image-box-shadow: {{ block.settings.image_box_shadow }};
+  --column-gutter: {{ block.settings.column_gutter }}px;
+  --mobile-columns: repeat({{ block.settings.widget_mobile_grid_width }}, 1fr);
+  {% if block.settings.margin_top != blank %}padding-top: var(--margin-top);{% endif %}
+  {% if block.settings.margin_bottom != blank %}padding-bottom: var(--margin-bottom);{% endif %}
+  {% if block.settings.block_bg_color != blank %}background-color: var(--block-bg-color);{% endif %}
+  {% if block.settings.text_center != blank %}
+  text-align: center;
+  {% endif %}
+}
+
+#block-{{ block.id }} .cf-widget-items-wrapper {
+  {% if block.settings.column_gutter != blank %}
+  grid-column-gap: var(--column-gutter);
+  grid-row-gap: var(--column-gutter);
+  {% endif %}
+}
+
+@media screen and (max-width: 768px) {
+  #block-{{ block.id }} .cf-widget-items-wrapper {
+    grid-template-columns: var(--mobile-columns);
+  }
+}
+
+#block-{{ block.id }} .cf-widget-items-wrapper .cf-widget-item {
+  {% if block.settings.card_bg_color != blank %}background-color: var(--card-bg-color);{% endif %}
+  {% if block.settings.card_border != blank %}border: var(--card-border);{% endif %}
+  {% if block.settings.card_border_radius != blank %}border-radius: var(--card-border-radius);{% endif %}
+  {% if block.settings.card_box_shadow != blank %}box-shadow: var(--card-box-shadow);{% endif %}
+}
+
+#block-{{ block.id }} .cf-widget-field__image img {
+  {% if block.settings.image_border != blank %}border: var(--image-border);{% endif %}
+  {% if block.settings.image_border_radius != blank %}border-radius: var(--image-border-radius);{% endif %}
+  {% if block.settings.image_box_shadow != blank %}box-shadow: var(--image-box-shadow);{% endif %}
+  {% case block.settings.image_size %}
+  {% when "large" %}
+  max-width: 85%;
+  {% when "medium" %}
+  max-width: 50%;
+  {% when "small" %}
+  max-width: 25%;
+  {% endcase %}
+}
+
+#block-{{ block.id }} .cf-widget-field__title {
+  {% if block.settings.title_font_size != blank %}font-size: var(--title-font-size);{% endif %}
+  {% if block.settings.title_font_color != blank %}color: var(--title-font-color);{% endif %}
+  {% if block.settings.title_margin_top != blank %}margin-top: var(--title-margin-top);{% endif %}
+  {% if block.settings.title_margin_bottom != blank %}margin-bottom: var(--title-margin-bottom);{% endif %}
+  {% if block.settings.title_line_height != blank %}line-height: var(--title-line-height);{% endif %}
+  {% if block.settings.title_font_custom != blank %}
+  font-weight: var(--title-font-weight) !important;
+  font-style: var(--title-font-style) !important;
+  font-family: var(--title-font-family) !important;
+  {% endif %}
+}
+
+#block-{{ block.id }} .cf-widget-field__body {
+  {% if block.settings.body_font_size != blank %}font-size: var(--body-font-size);{% endif %}
+  {% if block.settings.body_font_color != blank %}color: var(--body-font-color);{% endif %}
+}
+
+{% if block.settings.section_title_text != blank %}
+#block-{{ block.id }} .cf-widget-section-title {
+  {% if block.settings.section_title_margin_bottom != blank %}margin-bottom: {{ block.settings.section_title_margin_bottom }}em;{% endif %}
+}
+{% endif %}
+
+{% if block.settings.section_title_color != blank %}
+#block-{{ block.id }} .cf-widget-section-title {{ block.settings.section_title_tag }}{
+  color: {{ block.settings.section_title_color }};
+}
+{% endif %}
+
+{% assign image_width = 500 %}
+{% assign image_height = blank %}
+
+{% case block.settings.image_ratio %}
+  {% when "landscape" %}
+    {% assign image_height = 350 %}
+  {% when "portrait" %}
+    {% assign image_height = 750 %}
+  {% when "square" %}
+    {% assign image_height = 500 %}
+{% endcase %}
+
+{% endstyle %}
+<div class="cf-widget-additional-information cf-widget__columns-v2" id="block-{{ block.id }}" data-grid-width="{{ block.settings.widget_grid_width }}">
+  {% if block.settings.section_title_text != blank %}
+  <div class="cf-widget-section-title">
+    <{{ block.settings.section_title_tag }} class="cf-widget-sectiont-title__text">{{ block.settings.section_title_text }}</{{ block.settings.section_title_tag }}>
+  </div>
+  {% endif %}
+  <div class="cf-widget-items-wrapper">
+    {% for item in product.metafields["custom_fields"]["additional-information"] %}
+    <div class="cf-widget-item">
+      <div class="inner">
+        
+          {% if item.image != blank %}
+          <div class="cf-widget-field cf-widget-field__image cf-widget-field--image">
+                          {% assign image_scale = image_width | append: "x" %}
+              {% if image_height != blank %}
+              {% assign image_scale = image_scale | append: image_height %}
+              {% endif %}
+              {% render "cf-image" with image: item.image, crop: "center", size: image_scale %}
+            
+          </div>
+          {% endif %}
+        
+          {% if item.title != blank %}
+          <div class="cf-widget-field cf-widget-field__title cf-widget-field--text">
+                          {{ item.title }}
+            
+          </div>
+          {% endif %}
+        
+          {% if item.body != blank %}
+          <div class="cf-widget-field cf-widget-field__body cf-widget-field--html">
+                          {{ item.body }}
+            
+          </div>
+          {% endif %}
+        
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

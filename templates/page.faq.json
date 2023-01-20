@@ -1,0 +1,108 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-faq",
+      "blocks": {
+        "777ae63f-9b82-44c4-bb05-da32205c4377": {
+          "type": "separator",
+          "settings": {
+            "title": "Shipping"
+          }
+        },
+        "9e417dc0-7857-492f-ada8-718d42b547a5": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+          }
+        },
+        "c33babaf-46cc-4f83-8071-6e6cb288aaad": {
+          "type": "question",
+          "settings": {
+            "title": "How long will it take to get my order?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+          }
+        },
+        "659e4bf5-d3e8-4f5b-8a8c-aedb5d185f12": {
+          "type": "question",
+          "settings": {
+            "title": "What shipping carriers do you use?",
+            "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+          }
+        },
+        "efb36af8-6d0e-46b7-965d-30b7594d4847": {
+          "type": "separator",
+          "settings": {
+            "title": "Product"
+          }
+        },
+        "0212442c-72bd-4778-8002-43c652458dcf": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return my product?",
+            "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+          }
+        },
+        "56ae10ae-1cb5-485d-9c25-569c9fa6315d": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get my product personalized?",
+            "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+          }
+        },
+        "f3ec3673-6cc6-49cd-ab69-f910ea92c2bb": {
+          "type": "separator",
+          "settings": {
+            "title": "Other"
+          }
+        },
+        "c5b5d831-3d2c-4836-8237-25414c5c8b98": {
+          "type": "question",
+          "settings": {
+            "title": "Can i see your jewelry in person?",
+            "answer": "<p>Yes, we have 3 showroom locations: New York, Los Angeles, West Virginia.<br\/> These locations are by appointment only. Please contact us for an <br\/>appointment. <br\/><\/p>"
+          }
+        },
+        "3d4d1c5a-c3a9-4177-af7b-f81700587827": {
+          "type": "question",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "answer": "<p><br\/>We accept all major US and Canadian credit cards, bank wire payment, and layaway financing (Affirm).<br\/><\/p>"
+          }
+        },
+        "ed15e21c-e286-4b1a-8a65-d9323f32ac7d": {
+          "type": "question",
+          "settings": {
+            "title": "Will i be charged tax?",
+            "answer": "<p>We will be shipping from New York and will only charge tax for orders <br\/>being shipped to New York. All orders shipped out of New York State will<br\/> not be charged tax.<br\/><\/p>"
+          }
+        },
+        "bb22ff27-8dd3-44f9-92d4-bb97ac1f1ba8": {
+          "type": "question",
+          "settings": {
+            "title": "Can I expedite my order to receive it sooner?",
+            "answer": "<p>Yes, please email Michael@MichaelGabriels.com and let them know the date<br\/> you need your order by. We will do our best to fulfill your request.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "777ae63f-9b82-44c4-bb05-da32205c4377",
+        "9e417dc0-7857-492f-ada8-718d42b547a5",
+        "c33babaf-46cc-4f83-8071-6e6cb288aaad",
+        "659e4bf5-d3e8-4f5b-8a8c-aedb5d185f12",
+        "efb36af8-6d0e-46b7-965d-30b7594d4847",
+        "0212442c-72bd-4778-8002-43c652458dcf",
+        "56ae10ae-1cb5-485d-9c25-569c9fa6315d",
+        "f3ec3673-6cc6-49cd-ab69-f910ea92c2bb",
+        "c5b5d831-3d2c-4836-8237-25414c5c8b98",
+        "3d4d1c5a-c3a9-4177-af7b-f81700587827",
+        "ed15e21c-e286-4b1a-8a65-d9323f32ac7d",
+        "bb22ff27-8dd3-44f9-92d4-bb97ac1f1ba8"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

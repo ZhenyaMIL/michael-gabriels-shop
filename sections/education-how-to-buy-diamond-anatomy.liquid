@@ -1,0 +1,238 @@
+<section id="section-{{ section.id }}">
+    <div class="ColumnWrap BlockIdent ColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+        <div class="ContainerCentered">
+            {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                <header class="SectionHeader ContentCenter TextCenter">
+                    {%- if section.settings.subheading != blank -%}
+                        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                    {%- endif -%}
+
+                    {%- if section.settings.title != blank -%}
+                        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                    {%- endif -%}
+
+                    {%- if section.settings.content != blank -%}
+                        <div class="SectionHeader__Description SectionHeader__Description--Center  TextCenter Rte">
+                            {{ section.settings.content }}
+                        </div>
+                    {%- endif -%}
+                </header>
+            {%- endif -%}
+        </div>
+    </div>
+    <div class="ContainerCentered ContainerFlex">                                                                       
+        <div class="HalfColumn">
+            <div class="ImageHero--Wrap">
+                <div class="ImageHero ImageHero--ContentLeft"
+                     {% if section.settings.image %}style="background: url({{ section.settings.image | img_url: '1x1' }})"{% endif %}>
+                    <div class="ImageHero__ImageWrapper">
+                        <div class="ImageHero__Image {% if section.settings.overlay_opacity > 0 %}ImageHero__ImageWrapper--hasOverlay{% endif %} Image--lazyLoad Image--zoomOut"
+                             data-optimumx="1.4"
+                             data-expand="-150"
+                             style="background-image: url({{ section.settings.image | img_url: '700x' }})">
+                        </div>
+
+                        <noscript>
+                            <div class="ImageHero__Image"
+                                 style="background-image: url({{ section.settings.image | img_url: '700x' }})"></div>
+                        </noscript>
+                    </div>
+
+                    <div class="ImageHero__Content ImageHero__Content--{% if section.settings.image != blank %}Image{% endif %}">
+                        {%- if section.settings.r_subheading != blank or section.settings.r_title != blank or section.settings.r_content != blank -%}
+                            {%- if section.settings.r_subheading != blank or section.settings.r_title != blank -%}
+                                <header class="SectionHeader SectionHeader--MiddleIndent">
+                                    {%- if section.settings.r_subheading != blank -%}
+                                        <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.r_subheading | escape }}</h3>
+                                    {%- endif -%}
+
+                                    {%- if section.settings.r_title != blank -%}
+                                        <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.r_title | escape }}</h2>
+                                    {%- endif -%}
+
+                                    {%- if section.settings.r_content != blank -%}
+                                        <div class="SectionHeader__Description">
+                                            {{ section.settings.r_content }}
+                                        </div>
+                                    {%- endif -%}
+
+                                </header>
+                            {%- endif -%}
+                        {%- endif -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+           <div class="HalfColumn">
+            <div class="ColumnWrap ColumnWrap--{% if section.settings.background == true %}Background{% endif %}">
+                {%- if section.settings.subheading_l != blank or section.settings.title-l != blank or section.settings.content_l!= blank -%}
+                    <header class="SectionHeader BlockIdent">
+                        {%- if section.settings.subheading_l != blank -%}
+                            <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading_l | escape }}</h3>
+                        {%- endif -%}
+
+                        {%- if section.settings.title_l != blank -%}
+                            <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title_l | escape }}</h2>
+                        {%- endif -%}
+
+                        {%- if section.settings.content_l != blank -%}
+                            <div class="SectionHeader__Description Rte MiddleIndent">
+                                {{ section.settings.content_l }}
+                            </div>
+                        {%- endif -%}
+                        {%- if section.settings.content_l != blank -%}
+                            <div class="SectionHeader__Link">
+                              <a class="Link Link--underline" href="{{ section.settings.link_l }}">{{ section.settings.link_title_l }}</a>
+                            </div>
+                        {%- endif -%}
+                    </header>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.ContainerCentered--Flex {
+    display: flex;
+}
+.ImageHero--Wrap {
+    width: 100%;
+}
+.ImageHero__Content {
+    position: relative;
+    flex-basis: auto;
+    padding: 20px 40px 10px 40px;
+    width: 100%;
+}
+.SectionHeader {
+    margin-bottom: 25px;
+}
+.ImageHero.ImageHero--ContentLeft {
+    text-align: left;
+    height: 100%;
+    align-items: initial;
+}
+.SectionHeader.SectionHeader--MiddleIndent {
+    margin-bottom: 30px;
+}
+  .SectionHeader__Description--Center {
+  margin: 0 auto;
+  }
+.ImageHero__Content .ImageHero__Content--Image {
+    padding: 0;
+}
+.ColumnWrap {
+    width: 100%;
+    padding: 20px 40px 10px 40px;
+}
+.ColumnWrap--Background {
+    background-color: #F6F6F6;
+    padding: 20px 40px 10px 40px;
+}
+
+@media (min-width: 981px) {
+    .ColumnWrap {
+        padding: 40px 80px 20px 80px;
+    }
+    .ImageHero__Content {
+        padding: 40px 80px 20px 80px;
+    }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Content How To",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "text",
+      "id": "link_title_l",
+      "label": "Link title",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "link_l",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "subheading_l",
+      "label": "Column 2 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "title_l",
+      "label": "Column 2  Heading",
+      "default": "Tell your story"
+    },
+    {
+      "type": "richtext",
+      "id": "content_l",
+      "label": "Column 2 Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "background",
+      "label": "Show content with background",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Column 1 Image",
+      "info": "1500 x 800px .jpg recommended"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Column 1 Text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "r_subheading",
+      "label": "Column 1 Sub-heading"
+    },
+    {
+      "type": "text",
+      "id": "r_title",
+      "label": "Heading",
+      "default": "Column 1  Tell your story"
+    },
+    {
+      "type": "textarea",
+      "id": "r_content",
+      "label": "Column 1 Text",
+      "default": "Add your own custom content to give more information about your store, availability details..."
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Columns",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+

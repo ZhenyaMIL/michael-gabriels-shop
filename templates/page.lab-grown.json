@@ -1,0 +1,350 @@
+{
+  "sections": {
+    "banner-category-lab-grown": {
+      "type": "banner-category-lab-grown",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-labgrown-1920x1080-nofade.jpg",
+        "subheading": "Lab Grown Diamonds",
+        "title": "Where Ethics Meets Elegance",
+        "content": "",
+        "link_title": "Browse Products",
+        "link": "https:\/\/michaelgabriels.com\/collections\/all",
+        "align": "Left",
+        "content_color": "Light"
+      }
+    },
+    "category-collection-list": {
+      "type": "category-collection-list",
+      "blocks": {
+        "2c719bec-8404-4e95-943d-ebbdf59eb3fe": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-sellers",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View Our Best sellers"
+          }
+        }
+      },
+      "block_order": [
+        "2c719bec-8404-4e95-943d-ebbdf59eb3fe"
+      ],
+      "settings": {
+        "title": "",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4,
+        "image": "shopify:\/\/shop_images\/best-sellers-1920x1000.jpg"
+      }
+    },
+    "category-cards-drittel": {
+      "type": "category-cards-drittel",
+      "blocks": {
+        "b2d44129-1434-4f74-8dde-c21ff8b5fcbc": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/example-prod01.jpg",
+            "image_background": "shopify:\/\/shop_images\/tile-image-cols4-01.jpg",
+            "title": "Engagement Rings",
+            "content": "<p>An everlasting romance begins with the ultimate symbol of love. Our selection of engagement rings feature stones and styles that are as unique and timeless as your love story. <\/p>",
+            "url_title": "Shop Engagement Rings",
+            "url": "https:\/\/michaelgabriels.com\/collections\/engagement-rings"
+          }
+        },
+        "6a92c2fe-b62c-4a69-81ef-fb2591b4cb89": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/example-prod02.jpg",
+            "image_background": "shopify:\/\/shop_images\/tile-image-cols4-02.jpg",
+            "title": "Wedding Bands",
+            "content": "<p>From creative rings to pieces that are subtle and elegant, every bride and groom will find a wedding band that matches their style from our vast selection of rings for men and women.<\/p>",
+            "url_title": "Shop Wedding Bands",
+            "url": "https:\/\/michaelgabriels.com\/collections\/womens-wedding-bands"
+          }
+        }
+      },
+      "block_order": [
+        "b2d44129-1434-4f74-8dde-c21ff8b5fcbc",
+        "6a92c2fe-b62c-4a69-81ef-fb2591b4cb89"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "category-cards-shapes": {
+      "type": "category-cards-shapes",
+      "blocks": {
+        "86b64e54-203f-4a12-879e-fdf2d07588c0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond-shapes-photos-01-round.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Round",
+            "url": "https:\/\/michaelgabriels.com\/pages\/education-diamond-items"
+          }
+        },
+        "5002bdbe-a5c0-4233-aa99-a506589d7c1f": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond-shapes-photos-02-oval-vertical.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Oval",
+            "url": "https:\/\/michaelgabriels.com\/pages\/education-diamond-items"
+          }
+        },
+        "ee9301f2-e8ba-4850-a272-51f07810e253": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond-shapes-photos-03-cushion.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Cushion",
+            "url": "https:\/\/michaelgabriels.com\/pages\/education-diamond-items"
+          }
+        },
+        "cfe08697-6dc7-4318-8e12-566eac0d5aba": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond-shapes-photos-04-pear.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Pear",
+            "url": "https:\/\/michaelgabriels.com\/pages\/education-diamond-items"
+          }
+        },
+        "f4986223-dee1-4294-92d6-2d139c7c730a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond-shapes-photos-05-princess.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Princess",
+            "url": "https:\/\/michaelgabriels.com\/pages\/education-diamond-items"
+          }
+        },
+        "814fc0f4-80bb-4610-b51e-7a18bb81b555": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/diamond-shapes-photos-07-emerald-vertical.jpg",
+            "title": "",
+            "content": "",
+            "url_title": "Emerald",
+            "url": "https:\/\/michaelgabriels.com\/pages\/education-diamond-items"
+          }
+        }
+      },
+      "block_order": [
+        "86b64e54-203f-4a12-879e-fdf2d07588c0",
+        "5002bdbe-a5c0-4233-aa99-a506589d7c1f",
+        "ee9301f2-e8ba-4850-a272-51f07810e253",
+        "cfe08697-6dc7-4318-8e12-566eac0d5aba",
+        "f4986223-dee1-4294-92d6-2d139c7c730a",
+        "814fc0f4-80bb-4610-b51e-7a18bb81b555"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Learn about diamonds",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "category-cards-drittel-simple": {
+      "type": "category-cards-drittel-simple",
+      "blocks": {
+        "e2f6686c-2a54-4c4b-a3a6-40f93cf86721": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/labgrown-cat-earrings.jpg",
+            "title": "Earrings",
+            "content": "<p>No look is complete without the right pair of earrings. Shop our collection of fine earrings ranging from dramatic statement pieces ideal for special occasions to understated earrings that can be worn every day.<\/p>",
+            "url_title": "Shop Earrings",
+            "url": "shopify:\/\/collections\/earrings"
+          }
+        },
+        "fc0033ad-3d3a-4c15-b67f-24d8a7c48c27": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/labgrown-cat-necklaces.jpg",
+            "title": "Necklaces",
+            "content": "<p>Causal chain necklaces crafted from fine gold and luxurious diamond collar necklaces are just the beginning. There's a piece for every occasion in our line of fine necklaces. <\/p>",
+            "url_title": "Shop Necklaces",
+            "url": "shopify:\/\/collections\/necklaces"
+          }
+        },
+        "7fe49288-b5a4-4351-bf0b-df685ac2dffa": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/labgrown-cat-bracelet.jpg",
+            "title": "Bracelets",
+            "content": "<p>Our radiant diamond bracelets and elegant, rose gold, yellow gold, white gold, and platinum bangles are the essence of elegant accessories. <\/p>",
+            "url_title": "Shop Bracelets",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "e2f6686c-2a54-4c4b-a3a6-40f93cf86721",
+        "fc0033ad-3d3a-4c15-b67f-24d8a7c48c27",
+        "7fe49288-b5a4-4351-bf0b-df685ac2dffa"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "banner-fullscreen-category-lab-grown": {
+      "type": "banner-fullscreen-category-lab-grown",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/labgrown-section-1920x800.jpg",
+        "subheading": "Handmade",
+        "title": "Handmade Jewelry Collection",
+        "content": "",
+        "link_title": "Coming in 2022",
+        "link": "",
+        "content_right": true
+      }
+    },
+    "category-content-columns-items": {
+      "type": "category-content-columns-items",
+      "blocks": {
+        "84562389-cae9-4261-9c90-db347ec0bb27": {
+          "type": "block",
+          "settings": {
+            "i_title": "Learn about lab grown diamonds",
+            "icon": "gem",
+            "link": "shopify:\/\/pages\/education-lab-grown-diamonds",
+            "i_content": ""
+          }
+        },
+        "2118c7d7-073b-42c4-88c3-6711387124ca": {
+          "type": "block",
+          "settings": {
+            "i_title": "Learn about the 4 C's",
+            "icon": "flask",
+            "link": "shopify:\/\/pages\/education-diamond-items",
+            "i_content": ""
+          }
+        },
+        "8f32fb51-78ae-4beb-82ae-70bc6d208b5a": {
+          "type": "block",
+          "settings": {
+            "i_title": "Learn about our metals",
+            "icon": "gem",
+            "link": "",
+            "i_content": ""
+          }
+        },
+        "98dd730d-4876-4d84-a97c-821dc7008ada": {
+          "type": "block",
+          "settings": {
+            "i_title": "Frequently Asked Questions",
+            "icon": "flask",
+            "link": "",
+            "i_content": "Text content"
+          }
+        },
+        "3aff87b1-64fa-4d8e-bbcf-05b27095910f": {
+          "type": "block",
+          "settings": {
+            "i_title": "Engagement Ring Guide",
+            "icon": "gem",
+            "link": "shopify:\/\/pages\/education-engagement-ring",
+            "i_content": ""
+          }
+        }
+      },
+      "block_order": [
+        "84562389-cae9-4261-9c90-db347ec0bb27",
+        "2118c7d7-073b-42c4-88c3-6711387124ca",
+        "8f32fb51-78ae-4beb-82ae-70bc6d208b5a",
+        "98dd730d-4876-4d84-a97c-821dc7008ada",
+        "3aff87b1-64fa-4d8e-bbcf-05b27095910f"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Learning Center",
+        "content": "",
+        "background": false,
+        "image": "shopify:\/\/shop_images\/labgrown-tile-image-cols8.jpg",
+        "text_color": "#ffffff",
+        "r_subheading": "A Diamond is a Diamond",
+        "r_title": "Is A Diamond",
+        "r_content": "Luxury should not come at a compromise. Our lab grown diamonds provide the quality you expect from your fine diamonds without sacrificing on substance and style. Rare and coveted, our gems are type IIA diamonds, with only two percent of the world’s mined diamonds qualifying for this prestigious category.",
+        "r_link_title": "Inquire about a lab grown diamond",
+        "r_link": "shopify:\/\/pages\/inquire",
+        "align": "right"
+      }
+    },
+    "category-content-columns-invert": {
+      "type": "category-content-columns-invert",
+      "blocks": {
+        "19a0737a-abb2-4f05-a470-7b6b6e083cff": {
+          "type": "block",
+          "settings": {
+            "link_title": "",
+            "link_url": "",
+            "icon": "leaf"
+          }
+        },
+        "c609df3c-4173-4cb9-99ef-0e2380d958d9": {
+          "type": "block",
+          "settings": {
+            "link_title": "",
+            "link_url": "",
+            "icon": "gem"
+          }
+        },
+        "3ed324c5-786b-4749-8810-4b9134c6e5cc": {
+          "type": "block",
+          "settings": {
+            "link_title": "",
+            "link_url": "",
+            "icon": "globe"
+          }
+        }
+      },
+      "block_order": [
+        "19a0737a-abb2-4f05-a470-7b6b6e083cff",
+        "c609df3c-4173-4cb9-99ef-0e2380d958d9",
+        "3ed324c5-786b-4749-8810-4b9134c6e5cc"
+      ],
+      "settings": {
+        "subheading": "A Beautiful Tomorrow is Worth the Investment",
+        "title": "Is Worth The Investment",
+        "content": "<p>All of the splendor of a mined diamond without harming communities and the environment.<\/p>",
+        "background": false,
+        "image": "shopify:\/\/shop_images\/labgrown-tile-image-cols7.jpg",
+        "text_color": "#ffffff",
+        "r_subheading": "Quality You Can See & Origin You Can Trust",
+        "r_title": "Origin You Can Trust",
+        "r_content": "Physically, optically, and chemically indistinguishable from mined diamonds, lab grown diamonds from Michael Gabriels offer the same quality of traditionally sourced stones for a fraction of the price.",
+        "r_link_title": "Shop Lab Diamond Rings",
+        "r_link": "shopify:\/\/collections\/engagement-rings",
+        "align": "left"
+      }
+    }
+  },
+  "order": [
+    "banner-category-lab-grown",
+    "category-collection-list",
+    "category-cards-drittel",
+    "category-cards-shapes",
+    "category-cards-drittel-simple",
+    "banner-fullscreen-category-lab-grown",
+    "category-content-columns-items",
+    "category-content-columns-invert"
+  ]
+}

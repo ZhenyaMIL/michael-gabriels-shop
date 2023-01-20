@@ -1,0 +1,94 @@
+{% assign vertical_offset_for_trigger = 300 %}
+{% assign position_from_bottom = '6em' %}
+
+<button id="BackToTop" class="back-to-top hide">
+{% comment %}{%- render 'icon' with 'arrow' -%}{% endcomment %}
+  {%- render 'icon' with 'shevron-up' -%}
+</button>
+<style>
+    .back-to-top {
+    position: fixed;
+    bottom: {{ position_from_bottom }};
+    right: 30px;
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: var(--button-text-color);
+    color: var(--button-background);
+    cursor: pointer;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 2px 10px rgba(54,54,54,.15);
+    vertical-align: middle;
+    line-height: 0;
+    transform: scale(1.001);
+    transition: background .15s ease-in-out,opacity .15s ease-in-out,transform .2s ease-in-out,color .2s ease-in-out;
+    overflow: hidden;
+    }
+    .back-to-top:before {
+    }
+    .back-to-top:hover {
+        text-decoration: none;
+    }
+    .back-to-top:hover svg {
+        animation: buttonFromBottomToTop .5s ease-in-out forwards;
+    }
+    .hide {
+        display: none !important;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .visible {
+        opacity: 1;
+    }
+
+    .transparent {
+        opacity: 0;
+    }
+
+    .back-to-top .Icon.Icon--shevron-up {
+        width: 16px;
+        height: 16px;
+        margin-top: -3px;
+        fill: #A4A4A4;
+    }
+</style>
+<script>
+    (function () {
+        var prevPos = 0;
+
+        function trackScroll() {
+            var scrolled = window.pageYOffset;
+            var coords = {{ vertical_offset_for_trigger }};
+
+            if (scrolled > coords) {
+                goTopBtn.classList.remove('hide');
+            }
+            if (scrolled < coords || prevPos > scrolled) {
+                if (!goTopBtn.classList.contains('hide')) {
+                    goTopBtn.classList.add('transparent');
+                    setTimeout(function () {
+                        goTopBtn.classList.add('hide');
+                        goTopBtn.classList.remove('transparent');
+                    }, 400);
+                }
+            }
+            prevPos = scrolled;
+        }
+
+        function backToTop() {
+            if (window.pageYOffset > 0) {
+                setTimeout(function(){ 
+                  window.scrollTo({top: 0, behavior: 'smooth'});
+                },100)
+            }
+        }
+
+        var goTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', trackScroll);
+        goTopBtn.addEventListener('click', backToTop);
+    })();
+</script>

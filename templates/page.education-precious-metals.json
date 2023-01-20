@@ -1,0 +1,168 @@
+{
+  "sections": {
+    "banner-precious-metals": {
+      "type": "banner-precious-metals",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-rings-1920x1080-nofade.jpg",
+        "subheading": "Learn about",
+        "title": "Precious Metals",
+        "content": "<p>Choosing a precious metal can be a confusing part of the engagement ring process. Learn about appearance, durability, and price of  the available precious metal options here at MG. <\/p>",
+        "link_title": "",
+        "link": "",
+        "align": "Left",
+        "content_color": "Light"
+      }
+    },
+    "education-metal-table": {
+      "type": "education-metal-table",
+      "blocks": {
+        "df7ec923-6ad1-4f31-a53b-b0c39b43bda8": {
+          "type": "block",
+          "settings": {
+            "title": "Platinum",
+            "row_title": "",
+            "content": "",
+            "title1": "18k White Gold",
+            "content1": "",
+            "title2": "14k Rose Gold",
+            "content2": "",
+            "title3": "14k Rose Gold",
+            "content3": ""
+          }
+        },
+        "a70c5e41-38ef-4768-a5b4-0dc99be8bbae": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "Appearance",
+            "content": "Considered to be non-toxic and hypoallergenic, platinum is a precious metal with a naturel beautiful silvery-white color.",
+            "title1": "",
+            "content1": "18K gold is the least likely to tarnish and is the most expensive gold\nchoice for jewelry. 18K has a lighter and more intense appearance.",
+            "title2": "",
+            "content2": "14K is the most common gold used in the US. While very close in color, 14K will not be as rich and vivid as 18K gold.",
+            "title3": "",
+            "content3": "10K has a lower gold content so it may tarnish quicker than 14K or 18K."
+          }
+        },
+        "ff09b87b-5d7e-47bb-85f0-f74ddc9bfa7e": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "Durability",
+            "content": "Unlike gold, platinum doesn’t require as much maintenance. Platinum wears down at a much slower rate and does not tarnish.",
+            "title1": "",
+            "content1": "Since 18K is a purer form of gold, it is softer than 14K and 10K. It will require more maintenance than other metals.",
+            "title2": "",
+            "content2": "14K gold is made up of 58.3% pure gold making it a stronger metal. This purity is best for delicate rings.",
+            "title3": "",
+            "content3": "10K gold is that hardest metal out of the other options because of its lower gold content and higher other metal mixture."
+          }
+        },
+        "3e71359e-099f-4717-82d0-7b83714a3bd3": {
+          "type": "block",
+          "settings": {
+            "title": "",
+            "row_title": "Price",
+            "content": "Platinum is the typically the priciest out of the precious metals. Platinum is denser than gold, so platinum jewelry will usually weigh more than other precious metals.",
+            "title1": "",
+            "content1": "Being that 18K contains 75% gold, it is more expensive than 10K and 14K gold.",
+            "title2": "",
+            "content2": "14K is more affordable than platinum and 18K gold. 14K has more metal other metal content than 18K giving it a lower price point.",
+            "title3": "",
+            "content3": "10K is the most affordable \/ least expensive metal option. 10K contains 41.7% pure gold and is mixed with other metals such as silver or nickel."
+          }
+        }
+      },
+      "block_order": [
+        "df7ec923-6ad1-4f31-a53b-b0c39b43bda8",
+        "a70c5e41-38ef-4768-a5b4-0dc99be8bbae",
+        "ff09b87b-5d7e-47bb-85f0-f74ddc9bfa7e",
+        "3e71359e-099f-4717-82d0-7b83714a3bd3"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Precious Metal Options",
+        "content": "",
+        "video_name": "Video",
+        "video": "test.mp4",
+        "video1": "test.mp4",
+        "video2": "test.mp4",
+        "video3": "test.mp4",
+        "background": false
+      }
+    },
+    "text-content-recycled": {
+      "type": "text-content-recycled",
+      "settings": {
+        "subheading": "",
+        "title": "Recycled precious metals",
+        "content": "<p>Precious Metal mining has a large negative impact on our environment. <br\/>Metal mining has a long history of below minimum wages, civil wars, and <br\/>devastating impacts on the environment. <a href=\"https:\/\/michaelgabriels.com\/collections\/engagement-rings\" title=\"https:\/\/michaelgabriels.com\/collections\/engagement-rings\">Our jewelry<\/a> is mostly crafted <br\/>with recycled and re-refined precious metals. <\/p>",
+        "background": true
+      }
+    },
+    "education-recommended-products": {
+      "type": "education-recommended-products",
+      "blocks": {
+        "74e5aa39-dcfa-477c-8cfc-0bc96cd3b7a4": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal01.jpg",
+            "title": "",
+            "content": "<p>Platinum is considered the best of the best. It is pure, rare, and naturally white. There is no better choice to show your unlimited love and commitment.<\/p>",
+            "url_title": "Platinum",
+            "url": ""
+          }
+        },
+        "3109d8b6-1d08-4661-8ba3-f0b69579b09e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal02.jpg",
+            "title": "",
+            "content": "<p>18K has a richer and more intense color than 14K. Top choice for more simplistic designs and styles.<\/p>",
+            "url_title": "White Gold",
+            "url": ""
+          }
+        },
+        "8c090497-7771-401f-9810-d8d80127b80e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal03.jpg",
+            "title": "",
+            "content": "<p>Most popular due to its durability, 14k is less expensive and more scratch resistant. 14K is the top option for people who have active jobs and use their hands actively.<\/p>",
+            "url_title": "Rose Gold",
+            "url": ""
+          }
+        },
+        "481fc6c2-2dba-4c52-a614-7eb643510648": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-metal04.jpg",
+            "title": "",
+            "content": "<p>Most durable and great value, this option is best for active lifestyles and for those on a budget. 10K is least expensive precious metal for jewelry.<\/p>",
+            "url_title": "Yellow Gold",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "74e5aa39-dcfa-477c-8cfc-0bc96cd3b7a4",
+        "3109d8b6-1d08-4661-8ba3-f0b69579b09e",
+        "8c090497-7771-401f-9810-d8d80127b80e",
+        "481fc6c2-2dba-4c52-a614-7eb643510648"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Recommended products",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "banner-precious-metals",
+    "education-metal-table",
+    "text-content-recycled",
+    "education-recommended-products"
+  ]
+}

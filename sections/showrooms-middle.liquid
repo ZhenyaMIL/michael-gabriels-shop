@@ -1,0 +1,176 @@
+<section id="section-{{ section.id }}" class="showrooms-middle">
+    <div class="ContainerCentered">
+        {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+            <div class="ContentWrapper ContentColumn">
+                {%- if section.settings.subheading != blank or section.settings.title != blank -%}
+                    <header class="SectionHeader TextCenter">
+                        {%- if section.settings.subheading != blank -%}
+                            <h3 class="Header__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+                        {%- endif -%}
+
+                        {%- if section.settings.title != blank -%}
+                            <h2 class="Header__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
+                        {%- endif -%}
+                        {%- if section.settings.content != blank -%}
+                            <div class="Header__Description c-80">
+                                {{ section.settings.content }}
+                            </div>
+                        {%- endif -%}
+                        <div class="Header__Icons">
+                            {% for block in section.blocks %}
+                                {% assign icon = block.settings.icon %}
+                                {%- if block.settings.icon != blank or block.settings.url != blank or block.settings.content != blank-%}
+                                    <div class="IconLink">
+                                        <div class="IconLink__Icon">{%- render 'icon', icon: icon -%}
+                                        </div>
+                                        <a href="{{ block.settings.link_url }}"
+                                           class="Link IconLink__Link">{{ block.settings.link_title | escape }}</a>
+                                        <div class="IconLink__Content"> {{ block.settings.content | escape }}</div>
+                                    </div>
+                                {%- endif -%}
+                            {% endfor %}
+                        </div>
+                    </header>
+                {%- endif -%}
+            </div>
+        {%- endif -%}
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Showrooms Middle",
+    "max_blocks": 3,
+    "blocks": [
+    {
+      "name": "Icon",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "link_title",
+          "label": "Link title",
+          "default": "Link title"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content for section</p>"
+        }
+      ]
+    }
+    ],
+    "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Content for section</p>"
+        }
+
+]
+  }
+{% endschema %}
+<style>
+.showrooms-middle {
+    background-color:#FBF8F3;
+    padding: 50px 0 100px 0;
+}
+
+.block-center {
+    max-width: 1260px;
+    margin: 0 auto 60px auto;
+}
+.showrooms-middle {
+    padding: 80px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media (min-width: 1008px) {
+    .showroom-section-middle {
+        padding: 80px 0;
+
+    }
+}
+.ImageHero.ImageHero--ImageSection {
+    min-height: 600px;
+}
+.ContentWrapper.ContentColumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.Header__Icons {
+    flex-direction: column;
+}
+.Header__Icons .IconLink {
+    margin-bottom: 40px;
+
+}
+.Header__Icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0;
+}
+@media (min-width: 781px) {
+    .Header__Icons {
+        flex-direction: row;
+    }
+}
+.IconLink__Icon {
+    height: 42px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.IconLink__Icon .Icon {
+    height: 42px;
+    width: 100%;
+    fill: #B5945E;
+}
+
+.IconLink {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.IconLink__Link {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+.ImageHero_section-middle {
+}
+.c-80 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+</style>
+
+{% javascript %}
+{% endjavascript %}

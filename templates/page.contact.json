@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "e4186a08-95cb-458f-b5a5-dade4f71f2aa": {
+          "type": "text",
+          "settings": {
+            "title": "Your phone (optional)",
+            "use_long_text": false,
+            "is_required": false
+          }
+        }
+      },
+      "block_order": [
+        "e4186a08-95cb-458f-b5a5-dade4f71f2aa"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

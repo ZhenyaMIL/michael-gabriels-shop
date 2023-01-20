@@ -1,0 +1,338 @@
+<section class="Section {% unless section.settings.image %}Section--spacingNormal{% endunless %}">
+    <div class="Container Container{%- if section.settings.container == true -%}Centered {%- endif -%}">
+        <div class="BlockText__ContentWrapper">
+            <div class="BlockText__Content">
+                {%- if section.settings.subheading != blank or section.settings.title != blank or section.settings.content != blank -%}
+                    <header class="SectionHeader BlockIdent">
+                        {%- if section.settings.subheading != blank -%}
+                            <h3 class="SectionHeader__SubHeading Heading u-h6 FeatureText">{{ section.settings.subheading | escape }}</h3>
+                        {%- endif -%}
+
+                        {%- if section.settings.title != blank -%}
+                            <h2 class="SectionHeader__Heading Heading u-h1 FeatureText">{{ section.settings.title | escape }}</h2>
+                        {%- endif -%}
+
+                        {%- if section.settings.content != blank -%}
+                            <div class="SectionHeader__Description Rte FeatureText CenteredColumn">
+                                {{ section.settings.content }}
+                            </div>
+                        {%- endif -%}
+
+                    </header>
+                {%- endif -%}
+            </div>
+        </div>
+        <div class="FlexboxIeFix flex-row">
+            {% for block in section.blocks %}
+                <div class="HalfColumn">
+                    {%- capture block_content -%}
+                        <div class="BlockFeatureText__ContentWrapper Block-{{ section.id }} Block{%- if block.settings.background == true -%}_p-80{%- endif -%}">
+                            <div class="BlockFeatureText__Content">
+                                {%- if block.settings.subheading != blank or block.settings.title != blank or block.settings.content != blank -%}
+                                    <div class="BlockHeader FlexColumn">
+                                        {%- if block.settings.icon != blank -%}
+                                            {% assign icon = block.settings.icon %}
+                                            <div class="BlockHeader__Icon">{%- render 'icon', icon: icon -%}</div>
+                                        {%- endif -%}
+                                        {%- if block.settings.subheading != blank -%}
+                                            <p class="BlockHeader__SubHeading Heading u-h6"
+                                                style="text-align: {{ block.settings.heading_align }}">{{ block.settings.subheading | escape }}</p>
+                                        {%- endif -%}
+
+                                        {%- if block.settings.title != blank -%}
+                                            <h2 class="BlockHeader__Heading Heading u-h1"
+                                                style="text-align: {{ block.settings.heading_align }}">{{ block.settings.title | escape }}</h2>
+                                        {%- endif -%}
+
+                                        {%- if block.settings.content != blank -%}
+                                            <div class="BlockHeader__Description Rte Content{%- if block.settings.checklist == true -%}Checklist{%- endif -%}"
+                                                 style="text-align: {{ block.settings.text_align }}">
+                                                {{ block.settings.content }}
+                                            </div>
+                                        {%- endif -%}
+                                        {%- if block.settings.link_text != blank -%}
+                                            <div class="LinkWrapp" style="text-align: {{ block.settings.text_align }}">
+                                                <a href="{{ block.settings.link_url }}"
+                                                   class="Link Link--underline Link--{{ block.settings.text_align }}">{{ block.settings.link_text | escape }}</a>
+                                            </div>
+                                        {%- endif -%}
+                                    </div>
+                                {%- endif -%}
+                            </div>
+                        </div>
+                    {%- endcapture -%}
+
+                    {%- capture block_image -%}
+                        {%- if block.settings.image != blank -%}
+                            <div class="ImageBackground--Wrap ImageBackground--Wrap--{{ section.id }}">
+                                <div class="ImageBackground ImageBackground--ContentRight"
+                                     {% if block.settings.image %}style="background: url({{ block.settings.image | img_url: '1x1' }})"{% endif %}>
+                                    <div class="ImageBackground__ImageWrapper">
+                                        <div class="ImageBackground__Image {% if block.settings.overlay_opacity > 0 %}ImageBackground__ImageWrapper--hasOverlay{% endif %} Image--lazyLoad Image--zoomOut ImageBackground__Image--{{ section.id }}"
+                                             data-optimumx="1.4"
+                                             data-expand="-150"
+                                             style="background-image: url('{{ block.settings.image | img_url: '700x' }}')">
+                                        </div>
+
+                                        <noscript>
+                                            <div class="ImageBackground__Image"
+                                                 style="background-image: url({{ block.settings.image | img_url: '700x' }})"></div>
+                                        </noscript>
+                                    </div>
+                                </div>
+                            </div>
+                        {%- endif -%}
+                    {%- endcapture -%}
+
+                    <div class="BlockFeatureText {% if block.settings.image != blank %}{%- if block.settings.image_position == 'bottom' -%}  FeatureText--image-bottom {% endif %}  BlockFeatureText--withImage FeatureText--image {% endif %}  Block{%- if block.settings.background == true -%}Background{% endif %}">
+                        {%- if block.settings.image_position == 'top' -%}
+                            {{- block_image -}}
+                            {{- block_content -}}
+                        {%- else -%}
+                            {{- block_content -}}
+                            {{- block_image -}}
+                        {%- endif -%}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+.BlockHeader__Icon {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.BlockHeader__Icon .Icon {
+    width: 100%;
+    height: 36px;
+    fill: #B5945E;
+}
+.ContentChecklist {
+}
+.ContentChecklist p {
+    position: relative;
+    display: block;
+    padding-left: 30px;
+}
+.ContentChecklist p:before {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    content: " ";
+    opacity: 1;
+    background-image: url("{{ 'check-gold.svg' | asset_url }}");
+    background-size: 100%;
+}
+.ImageBackground--Wrap {
+    width: 100%;
+}
+.ImageBackground__Content .ImageBackground__Content--Image {
+    padding: 0;
+}
+@media (min-width: 981px) {
+    .ImageBackground--Wrap {
+        /*                 height: 350px;
+                        width: 350px; */
+    }
+    .BlockText__ContentWrapper {
+        margin-bottom: 80px;
+    }
+}
+.ImageBackground--Wrap {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    margin: 0;
+}
+.ImageBackground__Image, .ImageBackground__ImageWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.BlockBackground {
+    overflow: hidden;
+    max-width: 700px;
+    margin-bottom: 40px;
+    background-color: #fbfbfb;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Blocks text with image",
+  "class": "shopify-section--bordered",
+  "max_blocks": 2,
+  "blocks": [
+    {
+      "name": "Rich text with image",
+      "type": "block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Sub-heading",
+          "default": "Sub-heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Title"
+        },
+        {
+          "type": "select",
+          "id": "heading_align",
+          "label": "Heading align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "1200 x 1200px .png recommended"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "Image position",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "top"
+        },
+        {
+          "type": "select",
+          "id": "text_align",
+          "label": "Text align",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "justify",
+              "label": "Justify"
+            }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Text",
+          "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "checklist",
+          "label": "Show content as checklist",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Link text"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Link URL"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name"
+        },
+        {
+          "type": "checkbox",
+          "id": "background",
+          "label": "Block with background",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Title"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Sub-heading",
+      "default": "Sub-heading"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Text",
+      "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "container",
+      "label": "Centered container",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "category": "Blocks",
+      "name": "Blocks with rich text with images",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,17 @@
+<div class="TextColumnWrap TextColumnWrap--InquireBlock">
+    <div class="ContainerCentered">
+        {%- if section.settings.inquire != blank -%}
+            <div class="SectionHeader ContentCenter TextCenter">
+                <h3 class="SectionHeader__SubHeading Heading u-h1">{{ section.settings.inquire | escape }}</h3>
+                <a class="Button Button--primary" href="/pages/inquire">{{ section.settings.btn_inquire }}</a>
+            </div>
+        {%- endif -%}
+    </div>
+</div>
+<style>
+  .TextColumnWrap--InquireBlock {
+    background-color: #F5F1E6;
+    min-height: 150px;
+    padding-top: 25px;
+  }
+</style>

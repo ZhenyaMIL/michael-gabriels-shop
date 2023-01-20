@@ -1,0 +1,220 @@
+{
+  "sections": {
+    "banner-education-men": {
+      "type": "banner-education-men",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-edu-rings-1920x1080-nofade.jpg",
+        "subheading": "Learn about",
+        "title": "Mens bands",
+        "content": "",
+        "link_title": "",
+        "link": "",
+        "align": "Left",
+        "content_color": "Light"
+      }
+    },
+    "education-tabs": {
+      "type": "education-tabs",
+      "blocks": {
+        "87cc22f3-8f42-4e7c-a2e5-a24879a93eb1": {
+          "type": "block",
+          "settings": {
+            "link_title": "Engagement Rings",
+            "link_url": "shopify:\/\/pages\/education-engagement-ring"
+          }
+        },
+        "e419de67-60a1-481d-b419-f583c7b5394e": {
+          "type": "block",
+          "settings": {
+            "link_title": "Women's Wedding Rings",
+            "link_url": "shopify:\/\/pages\/education-womens-wedding-rings"
+          }
+        },
+        "74049795-f476-4de7-9291-9a04c4d4d2ca": {
+          "type": "block",
+          "settings": {
+            "link_title": "Men's Wedding Band",
+            "link_url": "shopify:\/\/pages\/education-mens-wedding-band"
+          }
+        }
+      },
+      "block_order": [
+        "87cc22f3-8f42-4e7c-a2e5-a24879a93eb1",
+        "e419de67-60a1-481d-b419-f583c7b5394e",
+        "74049795-f476-4de7-9291-9a04c4d4d2ca"
+      ],
+      "settings": {}
+    },
+    "education-bands-styles": {
+      "type": "education-bands-styles",
+      "blocks": {
+        "339a0b79-49e2-480f-9dfe-ebe946b4aaef": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p3-box01.jpg",
+            "subheading": "",
+            "title": "Plain men's wedding bands",
+            "content": "<p>This timeless men’s wedding band is a band most men prefer. These rings are available in platinum, 10kt, 14kt, and 18kt metals. They are also available in white, yellow, and rose colors. A bride and groom typically choose the same type of metal as their significant other.<\/p>",
+            "link_title": "Shop plain men's wedding bands",
+            "link": "shopify:\/\/collections\/mens-wedding-bands"
+          }
+        },
+        "ac9be032-8a60-45da-8a51-47dca546d37b": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p3-box02.jpg",
+            "subheading": "",
+            "title": "Unique Men's Wedding Bands",
+            "content": "<p>Many men prefer adding their personal flair to the overall look of the wedding band. Some options are; matte finishing (rougher and darker polish), high polish (shiniest polish), hammered (look that appears as if metal was hammered), and diamond (band with diamonds added).<\/p>",
+            "link_title": "Shop Wide Men's Wedding Bands",
+            "link": "shopify:\/\/collections\/mens-wedding-bands"
+          }
+        },
+        "72a65c21-38f5-4d7a-8738-916c31bba216": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p3-box03.jpg",
+            "subheading": "",
+            "title": "Wide Men's Wedding Bands",
+            "content": "<p>Men’s wedding bands are produced in an assortment of widths. Thinner bands give off a simpler look while wider bands are more noticeable on the finger. Wider bands are typically heavier as they require more metal to achieve its wide look. <\/p>",
+            "link_title": "Shop Unique Men's Wedding Bands",
+            "link": "shopify:\/\/collections\/mens-wedding-bands"
+          }
+        },
+        "b304742f-707b-40bf-a03e-b93effae6aed": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p3-box04.jpg",
+            "subheading": "",
+            "title": "Men's Diamond Wedding Bands",
+            "content": "<p>For a man who prefers to stand out, these rings have just the right amount of sparkle and flashes of color. Men’s diamond bands are typically wider and heavier than women’s diamond bands.<\/p>",
+            "link_title": "Shop Wide Men's Wedding Bands",
+            "link": "shopify:\/\/collections\/mens-wedding-bands"
+          }
+        }
+      },
+      "block_order": [
+        "339a0b79-49e2-480f-9dfe-ebe946b4aaef",
+        "ac9be032-8a60-45da-8a51-47dca546d37b",
+        "72a65c21-38f5-4d7a-8738-916c31bba216",
+        "b304742f-707b-40bf-a03e-b93effae6aed"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Types of men's wedding bands",
+        "content": ""
+      }
+    },
+    "text-content-find-size": {
+      "type": "text-content-find-size",
+      "settings": {
+        "subheading": "",
+        "title": "Find your ring size",
+        "content": "<p>Here at MG, we are more than happy in assisting you in finding your correct ring size. If your ring size is not listed on the product you would like to purchase, feel free to email us at Michael@MichaelGabriels.com. If you don’t get the size right the first time, no worries! We offer one complimentary ring resizing within 90 days of your shipment. <\/p>",
+        "background": true
+      }
+    },
+    "education-top-rings": {
+      "type": "education-top-rings",
+      "blocks": {
+        "616a4c4f-8f81-495c-adbb-5569a386061a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style01_47e54a04-a590-4099-bf57-aa4c4f98bc19.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Commercy",
+            "url": ""
+          }
+        },
+        "ec8a8670-4211-49cc-a899-0d119857e9f0": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style01_47e54a04-a590-4099-bf57-aa4c4f98bc19.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Lucey",
+            "url": ""
+          }
+        },
+        "7fd1d3b4-7fbc-422d-8c9c-7eab90fbf934": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style02_76e2fd57-e0e1-410b-a410-0043c5bca51a.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Soucia",
+            "url": ""
+          }
+        },
+        "8fdfadc2-1c6d-407b-b563-04a64561762e": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/edu-rings-p2-style03_d983b0c9-53ba-4448-b224-7f57576ead1e.jpg",
+            "title": "",
+            "content": "<p>14K Gold<\/p>",
+            "url_title": "Soucia",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "616a4c4f-8f81-495c-adbb-5569a386061a",
+        "ec8a8670-4211-49cc-a899-0d119857e9f0",
+        "7fd1d3b4-7fbc-422d-8c9c-7eab90fbf934",
+        "8fdfadc2-1c6d-407b-b563-04a64561762e"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Top Women's Wedding Rings",
+        "content": "",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "education-get-started": {
+      "type": "education-get-started",
+      "blocks": {
+        "2b2d54b7-3f82-4d1a-8c1b-aec744898659": {
+          "type": "block",
+          "settings": {
+            "subtitle": "Browse",
+            "title": "Men's Wedding Rings",
+            "content": "",
+            "url_title": "Shop Now",
+            "url": ""
+          }
+        },
+        "62e3e722-3404-4ee3-9798-62bff7fbd99a": {
+          "type": "block",
+          "settings": {
+            "subtitle": "Browse",
+            "title": "Women's Wedding Rings",
+            "content": "",
+            "url_title": "Shop Now",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "2b2d54b7-3f82-4d1a-8c1b-aec744898659",
+        "62e3e722-3404-4ee3-9798-62bff7fbd99a"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/rings-transparent.png",
+        "subheading": "",
+        "title": "Get Started",
+        "content": "",
+        "background": true
+      }
+    }
+  },
+  "order": [
+    "banner-education-men",
+    "education-tabs",
+    "education-bands-styles",
+    "text-content-find-size",
+    "education-top-rings",
+    "education-get-started"
+  ]
+}

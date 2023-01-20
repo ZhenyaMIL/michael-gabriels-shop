@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "story-top": {
+      "type": "story-top",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/hero-about-1920x1080.jpg"
+      }
+    },
+    "story-middle": {
+      "type": "story-middle",
+      "blocks": {
+        "7ecf4126-a738-4d3d-92e4-880c8b5e9d74": {
+          "type": "block",
+          "settings": {
+            "link_title": "Sustainability",
+            "link_url": "",
+            "icon": "leaf"
+          }
+        },
+        "749ae9b3-5379-4ca0-98a6-3ca03f3997b5": {
+          "type": "block",
+          "settings": {
+            "link_title": "Responsibility",
+            "link_url": "",
+            "icon": "gem"
+          }
+        },
+        "e241c639-1b74-48a5-ba2b-a6fa27a1eab1": {
+          "type": "block",
+          "settings": {
+            "link_title": "Transparency",
+            "link_url": "",
+            "icon": "globe"
+          }
+        }
+      },
+      "block_order": [
+        "7ecf4126-a738-4d3d-92e4-880c8b5e9d74",
+        "749ae9b3-5379-4ca0-98a6-3ca03f3997b5",
+        "e241c639-1b74-48a5-ba2b-a6fa27a1eab1"
+      ],
+      "settings": {
+        "subheading": "Sustainable",
+        "title": "luxury",
+        "content": "<p>Investing in a Michael Gabriels piece is an investment in protecting the planet. Our man made diamonds and mined stones are an ethical alternative to many diamonds on the market, and our commitment to responsible sourcing is leading the way for transparency in the fine jewelry industry. When it’s time to propose or celebrate your anniversary, we hope you’ll choose Michael Gabriels as your local, conscious New York City diamond dealer.<\/p>",
+        "image": "shopify:\/\/shop_images\/about-tile-image-cols7.jpg"
+      }
+    },
+    "story-bottom": {
+      "type": "story-bottom",
+      "settings": {
+        "title": "Schedule an",
+        "subheading": "Appointment",
+        "content": "<p>Visit our New York City jewelry showroom to browse our collection of rings, necklaces, and bracelets, and to learn about our lab grown diamonds from the most knowledgeable jewelers in the industry.  <\/p>",
+        "link_text": "Our Showrooms",
+        "link_url": "shopify:\/\/pages\/showrooms",
+        "image": "shopify:\/\/shop_images\/about-section-1920x800.jpg",
+        "b_title": "Lookbook",
+        "b_content": "Share with us on Instagram by using",
+        "b_link_url_title": "#MichaelGabriels",
+        "b_link_url": "https:\/\/www.instagram.com\/michaelgabrielsny\/"
+      }
+    }
+  },
+  "order": [
+    "story-top",
+    "story-middle",
+    "story-bottom"
+  ]
+}
